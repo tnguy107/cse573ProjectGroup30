@@ -1,0 +1,704 @@
+2021-03-26 06:39:07.826 INFO  (main) [   ] o.e.j.u.log Logging initialized @936ms to org.eclipse.jetty.util.log.Slf4jLog
+2021-03-26 06:39:08.011 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.34.v20201102; built: 2020-11-02T14:15:39.302Z; git: e46af88704a893fc12cb0e3bf46e2c7b48a009e7; jvm 11.0.10+9-Ubuntu-0ubuntu1.18.04
+2021-03-26 06:39:08.034 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///home/tnguy107/Desktop/573/solr-8.8.1/server/contexts/] at interval 0
+2021-03-26 06:39:08.275 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+2021-03-26 06:39:08.287 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
+2021-03-26 06:39:08.287 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
+2021-03-26 06:39:08.289 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 660000ms
+2021-03-26 06:39:08.356 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2021-03-26 06:39:08.360 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 8.8.1
+2021-03-26 06:39:08.361 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in cloud mode on port 8983
+2021-03-26 06:39:08.361 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /home/tnguy107/Desktop/573/solr-8.8.1
+2021-03-26 06:39:08.361 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2021-03-26T06:39:08.361819Z
+2021-03-26 06:39:08.394 INFO  (main) [   ] o.a.s.c.SolrPaths Using system property solr.solr.home: /home/tnguy107/Desktop/573/solr-8.8.1/example/cloud/node1/solr
+2021-03-26 06:39:08.395 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /home/tnguy107/Desktop/573/solr-8.8.1/example/cloud/node1/solr/solr.xml
+2021-03-26 06:39:08.473 INFO  (main) [   ] o.a.s.c.SolrXmlConfig MBean server found: com.sun.jmx.mbeanserver.JmxMBeanServer@7d9d0818, but no JMX reporters were configured - adding default JMX reporter.
+2021-03-26 06:39:09.024 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory Host whitelist initialized: WhitelistHostChecker [whitelistHosts=null, whitelistHostCheckingEnabled=true]
+2021-03-26 06:39:09.207 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@507b79f7[provider=null,keyStore=null,trustStore=null]
+2021-03-26 06:39:09.207 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@507b79f7[provider=null,keyStore=null,trustStore=null]
+2021-03-26 06:39:09.383 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@41522537[provider=null,keyStore=null,trustStore=null]
+2021-03-26 06:39:09.384 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@41522537[provider=null,keyStore=null,trustStore=null]
+2021-03-26 06:39:09.441 INFO  (main) [   ] o.a.s.c.SolrZkServerProps Reading configuration from: /home/tnguy107/Desktop/573/solr-8.8.1/example/cloud/node1/solr/zoo.cfg
+2021-03-26 06:39:09.444 INFO  (main) [   ] o.a.s.c.SolrZkServer STARTING EMBEDDED STANDALONE ZOOKEEPER SERVER at port 9983
+2021-03-26 06:39:09.444 WARN  (main) [   ] o.a.s.c.SolrZkServer Embedded Zookeeper is not recommended in production environments. See Reference Guide for details.
+2021-03-26 06:39:09.509 WARN  (Thread-11) [   ] o.a.z.s.ServerCnxnFactory maxCnxns is not configured, using default value 0.
+2021-03-26 06:39:09.597 ERROR (Thread-11) [   ] o.a.z.s.p.FileTxnSnapLog 2842(highestZxid) > 2827(next log) for type -10
+2021-03-26 06:39:09.597 WARN  (Thread-11) [   ] o.a.z.s.DataTree Message:Digests are not matching. Value is Zxid. Value:2827
+2021-03-26 06:39:09.597 ERROR (Thread-11) [   ] o.a.z.s.DataTree First digest mismatch on txn: 72058011135770624,0,2827,1616739533119,-10
+, 30000
+, expected digest is 2,748507036432
+, actual digest is 694368635904, 
+2021-03-26 06:39:09.599 ERROR (Thread-11) [   ] o.a.z.s.p.FileTxnSnapLog 2842(highestZxid) > 2828(next log) for type 1
+2021-03-26 06:39:09.599 ERROR (Thread-11) [   ] o.a.z.s.p.FileTxnSnapLog 2842(highestZxid) > 2829(next log) for type 1
+2021-03-26 06:39:09.599 ERROR (Thread-11) [   ] o.a.z.s.p.FileTxnSnapLog 2842(highestZxid) > 2830(next log) for type 14
+2021-03-26 06:39:09.599 ERROR (Thread-11) [   ] o.a.z.s.p.FileTxnSnapLog 2842(highestZxid) > 2831(next log) for type 1
+2021-03-26 06:39:09.600 ERROR (Thread-11) [   ] o.a.z.s.p.FileTxnSnapLog 2842(highestZxid) > 2832(next log) for type 1
+2021-03-26 06:39:09.600 ERROR (Thread-11) [   ] o.a.z.s.p.FileTxnSnapLog 2842(highestZxid) > 2833(next log) for type 1
+2021-03-26 06:39:09.600 ERROR (Thread-11) [   ] o.a.z.s.p.FileTxnSnapLog 2842(highestZxid) > 2834(next log) for type -10
+2021-03-26 06:39:09.600 ERROR (Thread-11) [   ] o.a.z.s.p.FileTxnSnapLog 2842(highestZxid) > 2835(next log) for type -11
+2021-03-26 06:39:09.600 ERROR (Thread-11) [   ] o.a.z.s.p.FileTxnSnapLog 2842(highestZxid) > 2836(next log) for type -10
+2021-03-26 06:39:09.600 ERROR (Thread-11) [   ] o.a.z.s.p.FileTxnSnapLog 2842(highestZxid) > 2837(next log) for type 1
+2021-03-26 06:39:09.601 ERROR (Thread-11) [   ] o.a.z.s.p.FileTxnSnapLog 2842(highestZxid) > 2838(next log) for type 1
+2021-03-26 06:39:09.601 ERROR (Thread-11) [   ] o.a.z.s.p.FileTxnSnapLog 2842(highestZxid) > 2839(next log) for type 14
+2021-03-26 06:39:09.601 ERROR (Thread-11) [   ] o.a.z.s.p.FileTxnSnapLog 2842(highestZxid) > 2840(next log) for type 1
+2021-03-26 06:39:09.601 ERROR (Thread-11) [   ] o.a.z.s.p.FileTxnSnapLog 2842(highestZxid) > 2841(next log) for type 1
+2021-03-26 06:39:09.607 WARN  (Thread-11) [   ] o.a.z.s.DataTree Ignoring NoNodeException for path /overseer_elect/election/72057696939606018-127.0.1.1:7574_solr-n_0000000011 while removing ephemeral for dead session 0x1000017f56b0002
+2021-03-26 06:39:09.607 WARN  (Thread-11) [   ] o.a.z.s.DataTree Ignoring NoNodeException for path /collections/localDocs/leader_elect/shard1/election/72057696939606018-core_node5-n_0000000005 while removing ephemeral for dead session 0x1000017f56b0002
+2021-03-26 06:39:09.607 WARN  (Thread-11) [   ] o.a.z.s.DataTree Ignoring NoNodeException for path /collections/localDOcs/leader_elect/shard1/election/72057696939606018-core_node3-n_0000000003 while removing ephemeral for dead session 0x1000017f56b0002
+2021-03-26 06:39:09.607 WARN  (Thread-11) [   ] o.a.z.s.DataTree Ignoring NoNodeException for path /live_nodes/127.0.1.1:7574_solr while removing ephemeral for dead session 0x1000017f56b0002
+2021-03-26 06:39:09.607 WARN  (Thread-11) [   ] o.a.z.s.DataTree Ignoring NoNodeException for path /collections/techproducts/leader_elect/shard1/election/72057696939606018-core_node3-n_0000000009 while removing ephemeral for dead session 0x1000017f56b0002
+2021-03-26 06:39:09.607 WARN  (Thread-11) [   ] o.a.z.s.DataTree Ignoring NoNodeException for path /collections/localDOcs/leader_elect/shard2/election/72057696939606018-core_node7-n_0000000003 while removing ephemeral for dead session 0x1000017f56b0002
+2021-03-26 06:39:09.607 WARN  (Thread-11) [   ] o.a.z.s.DataTree Ignoring NoNodeException for path /collections/techproducts/leader_elect/shard2/election/72057696939606018-core_node7-n_0000000009 while removing ephemeral for dead session 0x1000017f56b0002
+2021-03-26 06:39:09.607 WARN  (Thread-11) [   ] o.a.z.s.DataTree Ignoring NoNodeException for path /collections/localDocs/leader_elect/shard2/election/72057696939606018-core_node8-n_0000000005 while removing ephemeral for dead session 0x1000017f56b0002
+2021-03-26 06:39:09.608 WARN  (Thread-11) [   ] o.a.z.s.DataTree Ignoring NoNodeException for path /collections/techproducts/leaders/shard2/leader while removing ephemeral for dead session 0x1000017f56b0000
+2021-03-26 06:39:09.608 WARN  (Thread-11) [   ] o.a.z.s.DataTree Ignoring NoNodeException for path /collections/localDocs/leaders/shard1/leader while removing ephemeral for dead session 0x1000017f56b0000
+2021-03-26 06:39:09.608 WARN  (Thread-11) [   ] o.a.z.s.DataTree Ignoring NoNodeException for path /collections/localDocs/leaders/shard2/leader while removing ephemeral for dead session 0x1000017f56b0000
+2021-03-26 06:39:09.608 WARN  (Thread-11) [   ] o.a.z.s.DataTree Ignoring NoNodeException for path /collections/techproducts/leaders/shard1/leader while removing ephemeral for dead session 0x1000017f56b0000
+2021-03-26 06:39:09.608 WARN  (Thread-11) [   ] o.a.z.s.DataTree Ignoring NoNodeException for path /collections/localDocs/leader_elect/shard1/election/72057696939606016-core_node3-n_0000000004 while removing ephemeral for dead session 0x1000017f56b0000
+2021-03-26 06:39:09.608 WARN  (Thread-11) [   ] o.a.z.s.DataTree Ignoring NoNodeException for path /overseer_elect/leader while removing ephemeral for dead session 0x1000017f56b0000
+2021-03-26 06:39:09.608 WARN  (Thread-11) [   ] o.a.z.s.DataTree Ignoring NoNodeException for path /collections/localDocs/leader_elect/shard2/election/72057696939606016-core_node7-n_0000000004 while removing ephemeral for dead session 0x1000017f56b0000
+2021-03-26 06:39:09.608 WARN  (Thread-11) [   ] o.a.z.s.DataTree Ignoring NoNodeException for path /collections/localDOcs/leaders/shard2/leader while removing ephemeral for dead session 0x1000017f56b0000
+2021-03-26 06:39:09.608 WARN  (Thread-11) [   ] o.a.z.s.DataTree Ignoring NoNodeException for path /collections/localDOcs/leader_elect/shard2/election/72057696939606016-core_node8-n_0000000002 while removing ephemeral for dead session 0x1000017f56b0000
+2021-03-26 06:39:09.608 WARN  (Thread-11) [   ] o.a.z.s.DataTree Ignoring NoNodeException for path /collections/localDOcs/leaders/shard1/leader while removing ephemeral for dead session 0x1000017f56b0000
+2021-03-26 06:39:09.608 WARN  (Thread-11) [   ] o.a.z.s.DataTree Ignoring NoNodeException for path /overseer_elect/election/72057696939606016-127.0.1.1:8983_solr-n_0000000010 while removing ephemeral for dead session 0x1000017f56b0000
+2021-03-26 06:39:09.608 WARN  (Thread-11) [   ] o.a.z.s.DataTree Ignoring NoNodeException for path /collections/techproducts/leader_elect/shard1/election/72057696939606016-core_node5-n_0000000008 while removing ephemeral for dead session 0x1000017f56b0000
+2021-03-26 06:39:09.608 WARN  (Thread-11) [   ] o.a.z.s.DataTree Ignoring NoNodeException for path /collections/techproducts/leader_elect/shard2/election/72057696939606016-core_node8-n_0000000008 while removing ephemeral for dead session 0x1000017f56b0000
+2021-03-26 06:39:09.608 WARN  (Thread-11) [   ] o.a.z.s.DataTree Ignoring NoNodeException for path /live_nodes/127.0.1.1:8983_solr while removing ephemeral for dead session 0x1000017f56b0000
+2021-03-26 06:39:09.608 WARN  (Thread-11) [   ] o.a.z.s.DataTree Ignoring NoNodeException for path /collections/localDOcs/leader_elect/shard1/election/72057696939606016-core_node5-n_0000000002 while removing ephemeral for dead session 0x1000017f56b0000
+2021-03-26 06:39:09.611 WARN  (Thread-11) [   ] o.a.z.s.DataTree [35 times] Message: Digests are not matching. Value is Zxid. Last value:2867
+2021-03-26 06:39:09.949 INFO  (main) [   ] o.a.s.c.ZkContainer Zookeeper client=localhost:9983
+2021-03-26 06:39:09.995 INFO  (main) [   ] o.a.s.c.c.ConnectionManager Waiting for client to connect to ZooKeeper
+2021-03-26 06:39:10.018 INFO  (zkConnectionManagerCallback-11-thread-1) [   ] o.a.s.c.c.ConnectionManager zkClient has connected
+2021-03-26 06:39:10.021 INFO  (main) [   ] o.a.s.c.c.ConnectionManager Client is connected to ZooKeeper
+2021-03-26 06:39:10.091 INFO  (main) [   ] o.a.s.c.c.ZkStateReader Updated live nodes from ZooKeeper... (0) -> (1)
+2021-03-26 06:39:10.137 INFO  (main) [   ] o.a.s.c.ZkController Publish node=127.0.1.1:8983_solr as DOWN
+2021-03-26 06:39:10.149 INFO  (main) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
+2021-03-26 06:39:10.149 INFO  (main) [   ] o.a.s.c.ZkController Register node as live in ZooKeeper:/live_nodes/127.0.1.1:8983_solr
+2021-03-26 06:39:10.174 INFO  (zkCallback-10-thread-1) [   ] o.a.s.c.c.ZkStateReader Updated live nodes from ZooKeeper... (1) -> (2)
+2021-03-26 06:39:10.230 INFO  (main) [   ] o.a.s.p.PackageLoader /packages.json updated to version -1
+2021-03-26 06:39:10.245 WARN  (main) [   ] o.a.s.c.CoreContainer Not all security plugins configured!  authentication=disabled authorization=disabled.  Solr is only as secure as you make it. Consider configuring authentication/authorization before exposing Solr to users internal or external.  See https://s.apache.org/solrsecurity for more info
+2021-03-26 06:39:10.371 INFO  (main) [   ] o.a.s.h.a.MetricsHistoryHandler No .system collection, keeping metrics history in memory.
+2021-03-26 06:39:10.498 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.node' (registry 'solr.node') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@7d9d0818
+2021-03-26 06:39:10.499 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jvm' (registry 'solr.jvm') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@7d9d0818
+2021-03-26 06:39:10.504 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jetty' (registry 'solr.jetty') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@7d9d0818
+2021-03-26 06:39:10.544 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 8 core definitions underneath /home/tnguy107/Desktop/573/solr-8.8.1/example/cloud/node1/solr
+2021-03-26 06:39:10.544 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [techproducts_shard2_replica_n6, localDOcs_shard2_replica_n6, allData_shard1_replica_n1, localDOcs_shard1_replica_n2, localDocs_shard1_replica_n1, techproducts_shard1_replica_n2, allData_shard2_replica_n4, localDocs_shard2_replica_n4]
+2021-03-26 06:39:10.705 INFO  (coreLoadExecutor-19-thread-2-processing-n:127.0.1.1:8983_solr) [   ] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.8.1
+2021-03-26 06:39:10.705 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8983_solr) [   ] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.8.1
+2021-03-26 06:39:10.705 INFO  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8983_solr) [   ] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.8.1
+2021-03-26 06:39:10.740 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@4a335fa8{/solr,file:///home/tnguy107/Desktop/573/solr-8.8.1/server/solr-webapp/webapp/,AVAILABLE}{/home/tnguy107/Desktop/573/solr-8.8.1/server/solr-webapp/webapp}
+2021-03-26 06:39:10.763 INFO  (main) [   ] o.e.j.s.AbstractConnector Started ServerConnector@1817f1eb{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8983}
+2021-03-26 06:39:10.763 INFO  (main) [   ] o.e.j.s.Server Started @3874ms
+2021-03-26 06:39:10.974 INFO  (coreLoadExecutor-19-thread-2-processing-n:127.0.1.1:8983_solr) [   ] o.a.s.s.IndexSchema Schema name=default-config
+2021-03-26 06:39:10.980 INFO  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8983_solr) [   ] o.a.s.s.IndexSchema Schema name=default-config
+2021-03-26 06:39:10.981 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8983_solr) [   ] o.a.s.s.IndexSchema Schema name=default-config
+2021-03-26 06:39:11.572 INFO  (coreLoadExecutor-19-thread-2-processing-n:127.0.1.1:8983_solr) [   ] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2021-03-26 06:39:11.572 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8983_solr) [   ] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2021-03-26 06:39:11.572 INFO  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8983_solr) [   ] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2021-03-26 06:39:40.326 INFO  (zkCallback-10-thread-2) [   ] o.a.s.c.c.ZkStateReader Updated live nodes from ZooKeeper... (2) -> (1)
+2021-03-26 06:39:40.326 INFO  (zkCallback-10-thread-1) [   ] o.a.s.c.OverseerElectionContext I am going to be the leader 127.0.1.1:8983_solr
+2021-03-26 06:39:40.331 INFO  (zkCallback-10-thread-1) [   ] o.a.s.c.Overseer Overseer (id=72058090887053312-127.0.1.1:8983_solr-n_0000000014) starting
+2021-03-26 06:39:40.388 INFO  (OverseerStateUpdate-72058090887053312-127.0.1.1:8983_solr-n_0000000014) [   ] o.a.s.c.Overseer Starting to work on the main queue : 127.0.1.1:8983_solr
+2021-03-26 06:39:40.872 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8983_solr) [c:localDOcs s:shard1 r:core_node5 x:localDOcs_shard1_replica_n2] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.8.1
+2021-03-26 06:39:40.873 INFO  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8983_solr) [c:allData s:shard1 r:core_node3 x:allData_shard1_replica_n1] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.8.1
+2021-03-26 06:39:40.877 INFO  (coreLoadExecutor-19-thread-2-processing-n:127.0.1.1:8983_solr) [c:allData s:shard2 r:core_node7 x:allData_shard2_replica_n4] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.8.1
+2021-03-26 06:39:40.949 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8983_solr) [c:localDOcs s:shard1 r:core_node5 x:localDOcs_shard1_replica_n2] o.a.s.s.IndexSchema Schema name=default-config
+2021-03-26 06:39:40.949 INFO  (coreLoadExecutor-19-thread-2-processing-n:127.0.1.1:8983_solr) [c:allData s:shard2 r:core_node7 x:allData_shard2_replica_n4] o.a.s.s.IndexSchema Schema name=default-config
+2021-03-26 06:39:40.950 INFO  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8983_solr) [c:allData s:shard1 r:core_node3 x:allData_shard1_replica_n1] o.a.s.s.IndexSchema Schema name=default-config
+2021-03-26 06:39:41.098 INFO  (coreLoadExecutor-19-thread-2-processing-n:127.0.1.1:8983_solr) [c:allData s:shard2 r:core_node7 x:allData_shard2_replica_n4] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2021-03-26 06:39:41.109 INFO  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8983_solr) [c:allData s:shard1 r:core_node3 x:allData_shard1_replica_n1] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2021-03-26 06:39:41.109 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8983_solr) [c:localDOcs s:shard1 r:core_node5 x:localDOcs_shard1_replica_n2] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2021-03-26 06:39:41.211 INFO  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8983_solr) [c:allData s:shard1 r:core_node3 x:allData_shard1_replica_n1] o.a.s.c.CoreContainer Creating SolrCore 'allData_shard1_replica_n1' using configuration from configset allData, trusted=true
+2021-03-26 06:39:41.233 INFO  (coreLoadExecutor-19-thread-2-processing-n:127.0.1.1:8983_solr) [c:allData s:shard2 r:core_node7 x:allData_shard2_replica_n4] o.a.s.c.CoreContainer Creating SolrCore 'allData_shard2_replica_n4' using configuration from configset allData, trusted=true
+2021-03-26 06:39:41.243 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8983_solr) [c:localDOcs s:shard1 r:core_node5 x:localDOcs_shard1_replica_n2] o.a.s.c.CoreContainer Creating SolrCore 'localDOcs_shard1_replica_n2' using configuration from configset localDOcs, trusted=true
+2021-03-26 06:39:41.255 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8983_solr) [c:localDOcs s:shard1 r:core_node5 x:localDOcs_shard1_replica_n2] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.localDOcs.shard1.replica_n2' (registry 'solr.core.localDOcs.shard1.replica_n2') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@7d9d0818
+2021-03-26 06:39:41.257 INFO  (coreLoadExecutor-19-thread-2-processing-n:127.0.1.1:8983_solr) [c:allData s:shard2 r:core_node7 x:allData_shard2_replica_n4] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.allData.shard2.replica_n4' (registry 'solr.core.allData.shard2.replica_n4') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@7d9d0818
+2021-03-26 06:39:41.263 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8983_solr) [c:localDOcs s:shard1 r:core_node5 x:localDOcs_shard1_replica_n2] o.a.s.c.SolrCore [[localDOcs_shard1_replica_n2] ] Opening new SolrCore at [/home/tnguy107/Desktop/573/solr-8.8.1/example/cloud/node1/solr/localDOcs_shard1_replica_n2], dataDir=[/home/tnguy107/Desktop/573/solr-8.8.1/example/cloud/node1/solr/localDOcs_shard1_replica_n2/data/]
+2021-03-26 06:39:41.265 INFO  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8983_solr) [c:allData s:shard1 r:core_node3 x:allData_shard1_replica_n1] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.allData.shard1.replica_n1' (registry 'solr.core.allData.shard1.replica_n1') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@7d9d0818
+2021-03-26 06:39:41.265 INFO  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8983_solr) [c:allData s:shard1 r:core_node3 x:allData_shard1_replica_n1] o.a.s.c.SolrCore [[allData_shard1_replica_n1] ] Opening new SolrCore at [/home/tnguy107/Desktop/573/solr-8.8.1/example/cloud/node1/solr/allData_shard1_replica_n1], dataDir=[/home/tnguy107/Desktop/573/solr-8.8.1/example/cloud/node1/solr/allData_shard1_replica_n1/data/]
+2021-03-26 06:39:41.264 INFO  (coreLoadExecutor-19-thread-2-processing-n:127.0.1.1:8983_solr) [c:allData s:shard2 r:core_node7 x:allData_shard2_replica_n4] o.a.s.c.SolrCore [[allData_shard2_replica_n4] ] Opening new SolrCore at [/home/tnguy107/Desktop/573/solr-8.8.1/example/cloud/node1/solr/allData_shard2_replica_n4], dataDir=[/home/tnguy107/Desktop/573/solr-8.8.1/example/cloud/node1/solr/allData_shard2_replica_n4/data/]
+2021-03-26 06:39:42.286 INFO  (coreLoadExecutor-19-thread-2-processing-n:127.0.1.1:8983_solr) [c:allData s:shard2 r:core_node7 x:allData_shard2_replica_n4] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2021-03-26 06:39:42.286 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8983_solr) [c:localDOcs s:shard1 r:core_node5 x:localDOcs_shard1_replica_n2] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2021-03-26 06:39:42.286 INFO  (coreLoadExecutor-19-thread-2-processing-n:127.0.1.1:8983_solr) [c:allData s:shard2 r:core_node7 x:allData_shard2_replica_n4] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2021-03-26 06:39:42.287 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8983_solr) [c:localDOcs s:shard1 r:core_node5 x:localDOcs_shard1_replica_n2] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2021-03-26 06:39:42.287 INFO  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8983_solr) [c:allData s:shard1 r:core_node3 x:allData_shard1_replica_n1] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2021-03-26 06:39:42.287 INFO  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8983_solr) [c:allData s:shard1 r:core_node3 x:allData_shard1_replica_n1] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2021-03-26 06:39:42.300 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8983_solr) [c:localDOcs s:shard1 r:core_node5 x:localDOcs_shard1_replica_n2] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2021-03-26 06:39:42.300 INFO  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8983_solr) [c:allData s:shard1 r:core_node3 x:allData_shard1_replica_n1] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2021-03-26 06:39:42.300 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8983_solr) [c:localDOcs s:shard1 r:core_node5 x:localDOcs_shard1_replica_n2] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2021-03-26 06:39:42.300 INFO  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8983_solr) [c:allData s:shard1 r:core_node3 x:allData_shard1_replica_n1] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2021-03-26 06:39:42.301 INFO  (coreLoadExecutor-19-thread-2-processing-n:127.0.1.1:8983_solr) [c:allData s:shard2 r:core_node7 x:allData_shard2_replica_n4] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2021-03-26 06:39:42.301 INFO  (coreLoadExecutor-19-thread-2-processing-n:127.0.1.1:8983_solr) [c:allData s:shard2 r:core_node7 x:allData_shard2_replica_n4] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2021-03-26 06:39:42.464 INFO  (coreLoadExecutor-19-thread-2-processing-n:127.0.1.1:8983_solr) [c:allData s:shard2 r:core_node7 x:allData_shard2_replica_n4] o.a.s.r.ManagedResourceStorage Configured ZooKeeperStorageIO with znodeBase: /configs/allData
+2021-03-26 06:39:42.464 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8983_solr) [c:localDOcs s:shard1 r:core_node5 x:localDOcs_shard1_replica_n2] o.a.s.r.ManagedResourceStorage Configured ZooKeeperStorageIO with znodeBase: /configs/localDOcs
+2021-03-26 06:39:42.464 INFO  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8983_solr) [c:allData s:shard1 r:core_node3 x:allData_shard1_replica_n1] o.a.s.r.ManagedResourceStorage Configured ZooKeeperStorageIO with znodeBase: /configs/allData
+2021-03-26 06:39:42.472 INFO  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8983_solr) [c:allData s:shard1 r:core_node3 x:allData_shard1_replica_n1] o.a.s.r.ManagedResourceStorage Loaded null at path _rest_managed.json using ZooKeeperStorageIO:path=/configs/allData
+2021-03-26 06:39:42.474 INFO  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8983_solr) [c:allData s:shard1 r:core_node3 x:allData_shard1_replica_n1] o.a.s.s.ZkIndexSchemaReader Creating ZooKeeper watch for the managed schema at /configs/allData/managed-schema
+2021-03-26 06:39:42.477 INFO  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8983_solr) [c:allData s:shard1 r:core_node3 x:allData_shard1_replica_n1] o.a.s.s.ZkIndexSchemaReader Current schema version 0 is already the latest
+2021-03-26 06:39:42.477 INFO  (coreLoadExecutor-19-thread-2-processing-n:127.0.1.1:8983_solr) [c:allData s:shard2 r:core_node7 x:allData_shard2_replica_n4] o.a.s.r.ManagedResourceStorage Loaded null at path _rest_managed.json using ZooKeeperStorageIO:path=/configs/allData
+2021-03-26 06:39:42.477 INFO  (coreLoadExecutor-19-thread-2-processing-n:127.0.1.1:8983_solr) [c:allData s:shard2 r:core_node7 x:allData_shard2_replica_n4] o.a.s.s.ZkIndexSchemaReader Creating ZooKeeper watch for the managed schema at /configs/allData/managed-schema
+2021-03-26 06:39:42.478 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8983_solr) [c:localDOcs s:shard1 r:core_node5 x:localDOcs_shard1_replica_n2] o.a.s.r.ManagedResourceStorage Loaded null at path _rest_managed.json using ZooKeeperStorageIO:path=/configs/localDOcs
+2021-03-26 06:39:42.478 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8983_solr) [c:localDOcs s:shard1 r:core_node5 x:localDOcs_shard1_replica_n2] o.a.s.s.ZkIndexSchemaReader Creating ZooKeeper watch for the managed schema at /configs/localDOcs/managed-schema
+2021-03-26 06:39:42.480 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8983_solr) [c:localDOcs s:shard1 r:core_node5 x:localDOcs_shard1_replica_n2] o.a.s.s.ZkIndexSchemaReader Current schema version 0 is already the latest
+2021-03-26 06:39:42.482 INFO  (coreLoadExecutor-19-thread-2-processing-n:127.0.1.1:8983_solr) [c:allData s:shard2 r:core_node7 x:allData_shard2_replica_n4] o.a.s.s.ZkIndexSchemaReader Current schema version 0 is already the latest
+2021-03-26 06:39:42.492 INFO  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8983_solr) [c:allData s:shard1 r:core_node3 x:allData_shard1_replica_n1] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2021-03-26 06:39:42.492 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8983_solr) [c:localDOcs s:shard1 r:core_node5 x:localDOcs_shard1_replica_n2] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2021-03-26 06:39:42.492 INFO  (coreLoadExecutor-19-thread-2-processing-n:127.0.1.1:8983_solr) [c:allData s:shard2 r:core_node7 x:allData_shard2_replica_n4] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2021-03-26 06:39:42.499 INFO  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8983_solr) [c:allData s:shard1 r:core_node3 x:allData_shard1_replica_n1] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2021-03-26 06:39:42.499 INFO  (coreLoadExecutor-19-thread-2-processing-n:127.0.1.1:8983_solr) [c:allData s:shard2 r:core_node7 x:allData_shard2_replica_n4] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2021-03-26 06:39:42.502 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8983_solr) [c:localDOcs s:shard1 r:core_node5 x:localDOcs_shard1_replica_n2] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2021-03-26 06:39:42.515 INFO  (coreLoadExecutor-19-thread-2-processing-n:127.0.1.1:8983_solr) [c:allData s:shard2 r:core_node7 x:allData_shard2_replica_n4] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2021-03-26 06:39:42.515 INFO  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8983_solr) [c:allData s:shard1 r:core_node3 x:allData_shard1_replica_n1] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2021-03-26 06:39:42.516 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8983_solr) [c:localDOcs s:shard1 r:core_node5 x:localDOcs_shard1_replica_n2] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2021-03-26 06:39:42.524 INFO  (coreLoadExecutor-19-thread-2-processing-n:127.0.1.1:8983_solr) [c:allData s:shard2 r:core_node7 x:allData_shard2_replica_n4] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1695275582775885824
+2021-03-26 06:39:42.524 INFO  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8983_solr) [c:allData s:shard1 r:core_node3 x:allData_shard1_replica_n1] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1695275582775885824
+2021-03-26 06:39:42.529 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8983_solr) [c:localDOcs s:shard1 r:core_node5 x:localDOcs_shard1_replica_n2] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1695275582781128704
+2021-03-26 06:39:42.534 INFO  (searcherExecutor-26-thread-1-processing-n:127.0.1.1:8983_solr x:localDOcs_shard1_replica_n2 c:localDOcs s:shard1 r:core_node5) [c:localDOcs s:shard1 r:core_node5 x:localDOcs_shard1_replica_n2] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2021-03-26 06:39:42.534 INFO  (searcherExecutor-26-thread-1-processing-n:127.0.1.1:8983_solr x:localDOcs_shard1_replica_n2 c:localDOcs s:shard1 r:core_node5) [c:localDOcs s:shard1 r:core_node5 x:localDOcs_shard1_replica_n2] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2021-03-26 06:39:42.551 INFO  (searcherExecutor-26-thread-1-processing-n:127.0.1.1:8983_solr x:localDOcs_shard1_replica_n2 c:localDOcs s:shard1 r:core_node5) [c:localDOcs s:shard1 r:core_node5 x:localDOcs_shard1_replica_n2] o.a.s.c.SolrCore [localDOcs_shard1_replica_n2]  Registered new searcher autowarm time: 0 ms
+2021-03-26 06:39:42.551 INFO  (searcherExecutor-27-thread-1-processing-n:127.0.1.1:8983_solr x:allData_shard2_replica_n4 c:allData s:shard2 r:core_node7) [c:allData s:shard2 r:core_node7 x:allData_shard2_replica_n4] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2021-03-26 06:39:42.551 INFO  (searcherExecutor-27-thread-1-processing-n:127.0.1.1:8983_solr x:allData_shard2_replica_n4 c:allData s:shard2 r:core_node7) [c:allData s:shard2 r:core_node7 x:allData_shard2_replica_n4] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2021-03-26 06:39:42.555 INFO  (searcherExecutor-29-thread-1-processing-n:127.0.1.1:8983_solr x:allData_shard1_replica_n1 c:allData s:shard1 r:core_node3) [c:allData s:shard1 r:core_node3 x:allData_shard1_replica_n1] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2021-03-26 06:39:42.555 INFO  (searcherExecutor-29-thread-1-processing-n:127.0.1.1:8983_solr x:allData_shard1_replica_n1 c:allData s:shard1 r:core_node3) [c:allData s:shard1 r:core_node3 x:allData_shard1_replica_n1] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2021-03-26 06:39:42.581 INFO  (searcherExecutor-27-thread-1-processing-n:127.0.1.1:8983_solr x:allData_shard2_replica_n4 c:allData s:shard2 r:core_node7) [c:allData s:shard2 r:core_node7 x:allData_shard2_replica_n4] o.a.s.c.SolrCore [allData_shard2_replica_n4]  Registered new searcher autowarm time: 0 ms
+2021-03-26 06:39:42.581 INFO  (searcherExecutor-29-thread-1-processing-n:127.0.1.1:8983_solr x:allData_shard1_replica_n1 c:allData s:shard1 r:core_node3) [c:allData s:shard1 r:core_node3 x:allData_shard1_replica_n1] o.a.s.c.SolrCore [allData_shard1_replica_n1]  Registered new searcher autowarm time: 0 ms
+2021-03-26 06:39:42.601 INFO  (coreLoadExecutor-19-thread-2-processing-n:127.0.1.1:8983_solr) [   ] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.8.1
+2021-03-26 06:39:42.619 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8983_solr) [   ] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.8.1
+2021-03-26 06:39:42.674 INFO  (coreZkRegister-1-thread-1-processing-n:127.0.1.1:8983_solr) [c:localDOcs s:shard1 r:core_node5 x:localDOcs_shard1_replica_n2] o.a.s.c.ShardLeaderElectionContextBase make sure parent is created /collections/localDOcs/leaders/shard1
+2021-03-26 06:39:42.680 INFO  (coreZkRegister-1-thread-3-processing-n:127.0.1.1:8983_solr) [c:allData s:shard1 r:core_node3 x:allData_shard1_replica_n1] o.a.s.c.ShardLeaderElectionContextBase make sure parent is created /collections/allData/leaders/shard1
+2021-03-26 06:39:42.682 INFO  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8983_solr) [   ] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.8.1
+2021-03-26 06:39:42.708 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8983_solr) [   ] o.a.s.s.IndexSchema Schema name=default-config
+2021-03-26 06:39:42.708 INFO  (coreZkRegister-1-thread-2-processing-n:127.0.1.1:8983_solr) [c:allData s:shard2 r:core_node7 x:allData_shard2_replica_n4] o.a.s.c.ShardLeaderElectionContextBase make sure parent is created /collections/allData/leaders/shard2
+2021-03-26 06:39:42.732 INFO  (coreZkRegister-1-thread-1-processing-n:127.0.1.1:8983_solr) [c:localDOcs s:shard1 r:core_node5 x:localDOcs_shard1_replica_n2] o.a.s.c.ShardLeaderElectionContext Waiting until we see more replicas up for shard shard1: total=2 found=1 timeoute in=179997ms
+2021-03-26 06:39:42.733 INFO  (coreZkRegister-1-thread-3-processing-n:127.0.1.1:8983_solr) [c:allData s:shard1 r:core_node3 x:allData_shard1_replica_n1] o.a.s.c.ShardLeaderElectionContext Waiting until we see more replicas up for shard shard1: total=2 found=1 timeoute in=179996ms
+2021-03-26 06:39:42.739 INFO  (coreZkRegister-1-thread-2-processing-n:127.0.1.1:8983_solr) [c:allData s:shard2 r:core_node7 x:allData_shard2_replica_n4] o.a.s.c.ShardLeaderElectionContext Waiting until we see more replicas up for shard shard2: total=2 found=1 timeoute in=179995ms
+2021-03-26 06:39:42.745 INFO  (coreLoadExecutor-19-thread-2-processing-n:127.0.1.1:8983_solr) [   ] o.a.s.s.IndexSchema Schema name=default-config
+2021-03-26 06:39:42.748 INFO  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8983_solr) [   ] o.a.s.s.IndexSchema Schema name=default-config
+2021-03-26 06:39:42.780 WARN  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8983_solr) [   ] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitNorms to be specified in schema, hardcoded behavior is omitNorms=true
+2021-03-26 06:39:42.780 WARN  (coreLoadExecutor-19-thread-2-processing-n:127.0.1.1:8983_solr) [   ] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitNorms to be specified in schema, hardcoded behavior is omitNorms=true
+2021-03-26 06:39:42.780 WARN  (coreLoadExecutor-19-thread-2-processing-n:127.0.1.1:8983_solr) [   ] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitTermFreqAndPositions to be specified in schema, hardcoded behavior is omitTermFreqAndPositions=true
+2021-03-26 06:39:42.780 WARN  (coreLoadExecutor-19-thread-2-processing-n:127.0.1.1:8983_solr) [   ] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termOffsets to be specified in schema, hardcoded behavior is termOffsets=false
+2021-03-26 06:39:42.781 WARN  (coreLoadExecutor-19-thread-2-processing-n:127.0.1.1:8983_solr) [   ] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termPositions to be specified in schema, hardcoded behavior is termPositions=false
+2021-03-26 06:39:42.781 WARN  (coreLoadExecutor-19-thread-2-processing-n:127.0.1.1:8983_solr) [   ] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitPositions to be specified in schema, hardcoded behavior is omitPositions=true
+2021-03-26 06:39:42.781 WARN  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8983_solr) [   ] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitTermFreqAndPositions to be specified in schema, hardcoded behavior is omitTermFreqAndPositions=true
+2021-03-26 06:39:42.781 WARN  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8983_solr) [   ] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termOffsets to be specified in schema, hardcoded behavior is termOffsets=false
+2021-03-26 06:39:42.782 WARN  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8983_solr) [   ] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termPositions to be specified in schema, hardcoded behavior is termPositions=false
+2021-03-26 06:39:42.782 WARN  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8983_solr) [   ] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitPositions to be specified in schema, hardcoded behavior is omitPositions=true
+2021-03-26 06:39:42.807 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8983_solr) [   ] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2021-03-26 06:39:42.904 INFO  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8983_solr) [   ] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2021-03-26 06:39:42.921 INFO  (coreLoadExecutor-19-thread-2-processing-n:127.0.1.1:8983_solr) [   ] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2021-03-26 06:39:43.937 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8983_solr) [c:localDOcs s:shard2 r:core_node8 x:localDOcs_shard2_replica_n6] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.8.1
+2021-03-26 06:39:43.983 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8983_solr) [c:localDOcs s:shard2 r:core_node8 x:localDOcs_shard2_replica_n6] o.a.s.s.IndexSchema Schema name=default-config
+2021-03-26 06:39:44.029 INFO  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8983_solr) [c:localDocs s:shard2 r:core_node7 x:localDocs_shard2_replica_n4] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.8.1
+2021-03-26 06:39:44.047 INFO  (coreLoadExecutor-19-thread-2-processing-n:127.0.1.1:8983_solr) [c:localDocs s:shard1 r:core_node3 x:localDocs_shard1_replica_n1] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.8.1
+2021-03-26 06:39:44.055 INFO  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8983_solr) [c:localDocs s:shard2 r:core_node7 x:localDocs_shard2_replica_n4] o.a.s.s.IndexSchema Schema name=default-config
+2021-03-26 06:39:44.079 WARN  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8983_solr) [c:localDocs s:shard2 r:core_node7 x:localDocs_shard2_replica_n4] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitNorms to be specified in schema, hardcoded behavior is omitNorms=true
+2021-03-26 06:39:44.079 WARN  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8983_solr) [c:localDocs s:shard2 r:core_node7 x:localDocs_shard2_replica_n4] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitTermFreqAndPositions to be specified in schema, hardcoded behavior is omitTermFreqAndPositions=true
+2021-03-26 06:39:44.079 WARN  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8983_solr) [c:localDocs s:shard2 r:core_node7 x:localDocs_shard2_replica_n4] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termOffsets to be specified in schema, hardcoded behavior is termOffsets=false
+2021-03-26 06:39:44.080 WARN  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8983_solr) [c:localDocs s:shard2 r:core_node7 x:localDocs_shard2_replica_n4] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termPositions to be specified in schema, hardcoded behavior is termPositions=false
+2021-03-26 06:39:44.080 WARN  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8983_solr) [c:localDocs s:shard2 r:core_node7 x:localDocs_shard2_replica_n4] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitPositions to be specified in schema, hardcoded behavior is omitPositions=true
+2021-03-26 06:39:44.081 INFO  (coreLoadExecutor-19-thread-2-processing-n:127.0.1.1:8983_solr) [c:localDocs s:shard1 r:core_node3 x:localDocs_shard1_replica_n1] o.a.s.s.IndexSchema Schema name=default-config
+2021-03-26 06:39:44.089 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8983_solr) [c:localDOcs s:shard2 r:core_node8 x:localDOcs_shard2_replica_n6] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2021-03-26 06:39:44.090 WARN  (coreLoadExecutor-19-thread-2-processing-n:127.0.1.1:8983_solr) [c:localDocs s:shard1 r:core_node3 x:localDocs_shard1_replica_n1] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitNorms to be specified in schema, hardcoded behavior is omitNorms=true
+2021-03-26 06:39:44.090 WARN  (coreLoadExecutor-19-thread-2-processing-n:127.0.1.1:8983_solr) [c:localDocs s:shard1 r:core_node3 x:localDocs_shard1_replica_n1] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitTermFreqAndPositions to be specified in schema, hardcoded behavior is omitTermFreqAndPositions=true
+2021-03-26 06:39:44.091 WARN  (coreLoadExecutor-19-thread-2-processing-n:127.0.1.1:8983_solr) [c:localDocs s:shard1 r:core_node3 x:localDocs_shard1_replica_n1] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termOffsets to be specified in schema, hardcoded behavior is termOffsets=false
+2021-03-26 06:39:44.091 WARN  (coreLoadExecutor-19-thread-2-processing-n:127.0.1.1:8983_solr) [c:localDocs s:shard1 r:core_node3 x:localDocs_shard1_replica_n1] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termPositions to be specified in schema, hardcoded behavior is termPositions=false
+2021-03-26 06:39:44.091 WARN  (coreLoadExecutor-19-thread-2-processing-n:127.0.1.1:8983_solr) [c:localDocs s:shard1 r:core_node3 x:localDocs_shard1_replica_n1] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitPositions to be specified in schema, hardcoded behavior is omitPositions=true
+2021-03-26 06:39:44.200 INFO  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8983_solr) [c:localDocs s:shard2 r:core_node7 x:localDocs_shard2_replica_n4] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2021-03-26 06:39:44.210 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8983_solr) [c:localDOcs s:shard2 r:core_node8 x:localDOcs_shard2_replica_n6] o.a.s.c.CoreContainer Creating SolrCore 'localDOcs_shard2_replica_n6' using configuration from configset localDOcs, trusted=true
+2021-03-26 06:39:44.211 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8983_solr) [c:localDOcs s:shard2 r:core_node8 x:localDOcs_shard2_replica_n6] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.localDOcs.shard2.replica_n6' (registry 'solr.core.localDOcs.shard2.replica_n6') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@7d9d0818
+2021-03-26 06:39:44.211 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8983_solr) [c:localDOcs s:shard2 r:core_node8 x:localDOcs_shard2_replica_n6] o.a.s.c.SolrCore [[localDOcs_shard2_replica_n6] ] Opening new SolrCore at [/home/tnguy107/Desktop/573/solr-8.8.1/example/cloud/node1/solr/localDOcs_shard2_replica_n6], dataDir=[/home/tnguy107/Desktop/573/solr-8.8.1/example/cloud/node1/solr/localDOcs_shard2_replica_n6/data/]
+2021-03-26 06:39:44.223 INFO  (coreLoadExecutor-19-thread-2-processing-n:127.0.1.1:8983_solr) [c:localDocs s:shard1 r:core_node3 x:localDocs_shard1_replica_n1] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2021-03-26 06:39:44.270 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8983_solr) [c:localDOcs s:shard2 r:core_node8 x:localDOcs_shard2_replica_n6] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2021-03-26 06:39:44.270 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8983_solr) [c:localDOcs s:shard2 r:core_node8 x:localDOcs_shard2_replica_n6] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2021-03-26 06:39:44.272 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8983_solr) [c:localDOcs s:shard2 r:core_node8 x:localDOcs_shard2_replica_n6] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2021-03-26 06:39:44.272 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8983_solr) [c:localDOcs s:shard2 r:core_node8 x:localDOcs_shard2_replica_n6] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2021-03-26 06:39:44.282 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8983_solr) [c:localDOcs s:shard2 r:core_node8 x:localDOcs_shard2_replica_n6] o.a.s.r.ManagedResourceStorage Configured ZooKeeperStorageIO with znodeBase: /configs/localDOcs
+2021-03-26 06:39:44.285 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8983_solr) [c:localDOcs s:shard2 r:core_node8 x:localDOcs_shard2_replica_n6] o.a.s.r.ManagedResourceStorage Loaded null at path _rest_managed.json using ZooKeeperStorageIO:path=/configs/localDOcs
+2021-03-26 06:39:44.285 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8983_solr) [c:localDOcs s:shard2 r:core_node8 x:localDOcs_shard2_replica_n6] o.a.s.s.ZkIndexSchemaReader Creating ZooKeeper watch for the managed schema at /configs/localDOcs/managed-schema
+2021-03-26 06:39:44.287 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8983_solr) [c:localDOcs s:shard2 r:core_node8 x:localDOcs_shard2_replica_n6] o.a.s.s.ZkIndexSchemaReader Current schema version 0 is already the latest
+2021-03-26 06:39:44.289 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8983_solr) [c:localDOcs s:shard2 r:core_node8 x:localDOcs_shard2_replica_n6] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2021-03-26 06:39:44.289 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8983_solr) [c:localDOcs s:shard2 r:core_node8 x:localDOcs_shard2_replica_n6] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2021-03-26 06:39:44.290 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8983_solr) [c:localDOcs s:shard2 r:core_node8 x:localDOcs_shard2_replica_n6] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2021-03-26 06:39:44.291 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8983_solr) [c:localDOcs s:shard2 r:core_node8 x:localDOcs_shard2_replica_n6] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1695275584628719616
+2021-03-26 06:39:44.294 INFO  (searcherExecutor-43-thread-1-processing-n:127.0.1.1:8983_solr x:localDOcs_shard2_replica_n6 c:localDOcs s:shard2 r:core_node8) [c:localDOcs s:shard2 r:core_node8 x:localDOcs_shard2_replica_n6] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2021-03-26 06:39:44.294 INFO  (searcherExecutor-43-thread-1-processing-n:127.0.1.1:8983_solr x:localDOcs_shard2_replica_n6 c:localDOcs s:shard2 r:core_node8) [c:localDOcs s:shard2 r:core_node8 x:localDOcs_shard2_replica_n6] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2021-03-26 06:39:44.296 INFO  (searcherExecutor-43-thread-1-processing-n:127.0.1.1:8983_solr x:localDOcs_shard2_replica_n6 c:localDOcs s:shard2 r:core_node8) [c:localDOcs s:shard2 r:core_node8 x:localDOcs_shard2_replica_n6] o.a.s.c.SolrCore [localDOcs_shard2_replica_n6]  Registered new searcher autowarm time: 0 ms
+2021-03-26 06:39:44.301 INFO  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8983_solr) [c:localDocs s:shard2 r:core_node7 x:localDocs_shard2_replica_n4] o.a.s.c.CoreContainer Creating SolrCore 'localDocs_shard2_replica_n4' using configuration from configset localDocs, trusted=true
+2021-03-26 06:39:44.302 INFO  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8983_solr) [c:localDocs s:shard2 r:core_node7 x:localDocs_shard2_replica_n4] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.localDocs.shard2.replica_n4' (registry 'solr.core.localDocs.shard2.replica_n4') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@7d9d0818
+2021-03-26 06:39:44.302 INFO  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8983_solr) [c:localDocs s:shard2 r:core_node7 x:localDocs_shard2_replica_n4] o.a.s.c.SolrCore [[localDocs_shard2_replica_n4] ] Opening new SolrCore at [/home/tnguy107/Desktop/573/solr-8.8.1/example/cloud/node1/solr/localDocs_shard2_replica_n4], dataDir=[/home/tnguy107/Desktop/573/solr-8.8.1/example/cloud/node1/solr/localDocs_shard2_replica_n4/data/]
+2021-03-26 06:39:44.323 INFO  (coreLoadExecutor-19-thread-2-processing-n:127.0.1.1:8983_solr) [c:localDocs s:shard1 r:core_node3 x:localDocs_shard1_replica_n1] o.a.s.c.CoreContainer Creating SolrCore 'localDocs_shard1_replica_n1' using configuration from configset localDocs, trusted=true
+2021-03-26 06:39:44.324 INFO  (coreLoadExecutor-19-thread-2-processing-n:127.0.1.1:8983_solr) [c:localDocs s:shard1 r:core_node3 x:localDocs_shard1_replica_n1] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.localDocs.shard1.replica_n1' (registry 'solr.core.localDocs.shard1.replica_n1') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@7d9d0818
+2021-03-26 06:39:44.324 INFO  (coreLoadExecutor-19-thread-2-processing-n:127.0.1.1:8983_solr) [c:localDocs s:shard1 r:core_node3 x:localDocs_shard1_replica_n1] o.a.s.c.SolrCore [[localDocs_shard1_replica_n1] ] Opening new SolrCore at [/home/tnguy107/Desktop/573/solr-8.8.1/example/cloud/node1/solr/localDocs_shard1_replica_n1], dataDir=[/home/tnguy107/Desktop/573/solr-8.8.1/example/cloud/node1/solr/localDocs_shard1_replica_n1/data/]
+2021-03-26 06:39:44.341 INFO  (coreZkRegister-1-thread-4-processing-n:127.0.1.1:8983_solr) [c:localDOcs s:shard2 r:core_node8 x:localDOcs_shard2_replica_n6] o.a.s.c.ShardLeaderElectionContextBase make sure parent is created /collections/localDOcs/leaders/shard2
+2021-03-26 06:39:44.357 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8983_solr) [   ] o.a.s.c.RequestParams conf resource params.json loaded . version : 0 
+2021-03-26 06:39:44.358 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8983_solr) [   ] o.a.s.c.RequestParams request params refreshed to version 0
+2021-03-26 06:39:44.362 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8983_solr) [   ] o.a.s.c.SolrResourceLoader Added 57 libs to classloader, from paths: [/home/tnguy107/Desktop/573/solr-8.8.1/contrib/extraction/lib, /home/tnguy107/Desktop/573/solr-8.8.1/contrib/langid/lib, /home/tnguy107/Desktop/573/solr-8.8.1/contrib/velocity/lib, /home/tnguy107/Desktop/573/solr-8.8.1/dist]
+2021-03-26 06:39:44.374 INFO  (coreZkRegister-1-thread-4-processing-n:127.0.1.1:8983_solr) [c:localDOcs s:shard2 r:core_node8 x:localDOcs_shard2_replica_n6] o.a.s.c.ShardLeaderElectionContext Waiting until we see more replicas up for shard shard2: total=2 found=1 timeoute in=179997ms
+2021-03-26 06:39:44.438 INFO  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8983_solr) [c:localDocs s:shard2 r:core_node7 x:localDocs_shard2_replica_n4] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2021-03-26 06:39:44.438 INFO  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8983_solr) [c:localDocs s:shard2 r:core_node7 x:localDocs_shard2_replica_n4] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2021-03-26 06:39:44.444 INFO  (coreLoadExecutor-19-thread-2-processing-n:127.0.1.1:8983_solr) [c:localDocs s:shard1 r:core_node3 x:localDocs_shard1_replica_n1] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2021-03-26 06:39:44.444 INFO  (coreLoadExecutor-19-thread-2-processing-n:127.0.1.1:8983_solr) [c:localDocs s:shard1 r:core_node3 x:localDocs_shard1_replica_n1] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2021-03-26 06:39:44.456 INFO  (coreLoadExecutor-19-thread-2-processing-n:127.0.1.1:8983_solr) [c:localDocs s:shard1 r:core_node3 x:localDocs_shard1_replica_n1] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2021-03-26 06:39:44.456 INFO  (coreLoadExecutor-19-thread-2-processing-n:127.0.1.1:8983_solr) [c:localDocs s:shard1 r:core_node3 x:localDocs_shard1_replica_n1] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2021-03-26 06:39:44.460 INFO  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8983_solr) [c:localDocs s:shard2 r:core_node7 x:localDocs_shard2_replica_n4] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2021-03-26 06:39:44.461 INFO  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8983_solr) [c:localDocs s:shard2 r:core_node7 x:localDocs_shard2_replica_n4] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2021-03-26 06:39:44.464 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8983_solr) [   ] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.8.1
+2021-03-26 06:39:44.471 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8983_solr) [   ] o.a.s.u.SolrIndexConfig IndexWriter infoStream solr logging is enabled
+2021-03-26 06:39:44.504 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8983_solr) [   ] o.a.s.s.IndexSchema Schema name=example
+2021-03-26 06:39:44.541 INFO  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8983_solr) [c:localDocs s:shard2 r:core_node7 x:localDocs_shard2_replica_n4] o.a.s.r.ManagedResourceStorage Configured ZooKeeperStorageIO with znodeBase: /configs/localDocs
+2021-03-26 06:39:44.542 INFO  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8983_solr) [c:localDocs s:shard2 r:core_node7 x:localDocs_shard2_replica_n4] o.a.s.r.ManagedResourceStorage Loaded null at path _rest_managed.json using ZooKeeperStorageIO:path=/configs/localDocs
+2021-03-26 06:39:44.542 INFO  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8983_solr) [c:localDocs s:shard2 r:core_node7 x:localDocs_shard2_replica_n4] o.a.s.s.ZkIndexSchemaReader Creating ZooKeeper watch for the managed schema at /configs/localDocs/managed-schema
+2021-03-26 06:39:44.544 INFO  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8983_solr) [c:localDocs s:shard2 r:core_node7 x:localDocs_shard2_replica_n4] o.a.s.s.ZkIndexSchemaReader Current schema version 6 is already the latest
+2021-03-26 06:39:44.544 INFO  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8983_solr) [c:localDocs s:shard2 r:core_node7 x:localDocs_shard2_replica_n4] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2021-03-26 06:39:44.544 INFO  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8983_solr) [c:localDocs s:shard2 r:core_node7 x:localDocs_shard2_replica_n4] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2021-03-26 06:39:44.545 INFO  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8983_solr) [c:localDocs s:shard2 r:core_node7 x:localDocs_shard2_replica_n4] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2021-03-26 06:39:44.549 INFO  (coreLoadExecutor-19-thread-2-processing-n:127.0.1.1:8983_solr) [c:localDocs s:shard1 r:core_node3 x:localDocs_shard1_replica_n1] o.a.s.r.ManagedResourceStorage Configured ZooKeeperStorageIO with znodeBase: /configs/localDocs
+2021-03-26 06:39:44.550 INFO  (coreLoadExecutor-19-thread-2-processing-n:127.0.1.1:8983_solr) [c:localDocs s:shard1 r:core_node3 x:localDocs_shard1_replica_n1] o.a.s.r.ManagedResourceStorage Loaded null at path _rest_managed.json using ZooKeeperStorageIO:path=/configs/localDocs
+2021-03-26 06:39:44.550 INFO  (coreLoadExecutor-19-thread-2-processing-n:127.0.1.1:8983_solr) [c:localDocs s:shard1 r:core_node3 x:localDocs_shard1_replica_n1] o.a.s.s.ZkIndexSchemaReader Creating ZooKeeper watch for the managed schema at /configs/localDocs/managed-schema
+2021-03-26 06:39:44.557 INFO  (coreLoadExecutor-19-thread-2-processing-n:127.0.1.1:8983_solr) [c:localDocs s:shard1 r:core_node3 x:localDocs_shard1_replica_n1] o.a.s.s.ZkIndexSchemaReader Current schema version 6 is already the latest
+2021-03-26 06:39:44.558 INFO  (coreLoadExecutor-19-thread-2-processing-n:127.0.1.1:8983_solr) [c:localDocs s:shard1 r:core_node3 x:localDocs_shard1_replica_n1] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2021-03-26 06:39:44.558 INFO  (coreLoadExecutor-19-thread-2-processing-n:127.0.1.1:8983_solr) [c:localDocs s:shard1 r:core_node3 x:localDocs_shard1_replica_n1] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2021-03-26 06:39:44.560 INFO  (coreLoadExecutor-19-thread-2-processing-n:127.0.1.1:8983_solr) [c:localDocs s:shard1 r:core_node3 x:localDocs_shard1_replica_n1] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2021-03-26 06:39:44.582 INFO  (searcherExecutor-49-thread-1-processing-n:127.0.1.1:8983_solr x:localDocs_shard2_replica_n4 c:localDocs s:shard2 r:core_node7) [c:localDocs s:shard2 r:core_node7 x:localDocs_shard2_replica_n4] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2021-03-26 06:39:44.582 INFO  (searcherExecutor-49-thread-1-processing-n:127.0.1.1:8983_solr x:localDocs_shard2_replica_n4 c:localDocs s:shard2 r:core_node7) [c:localDocs s:shard2 r:core_node7 x:localDocs_shard2_replica_n4] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2021-03-26 06:39:44.587 INFO  (searcherExecutor-49-thread-1-processing-n:127.0.1.1:8983_solr x:localDocs_shard2_replica_n4 c:localDocs s:shard2 r:core_node7) [c:localDocs s:shard2 r:core_node7 x:localDocs_shard2_replica_n4] o.a.s.c.SolrCore [localDocs_shard2_replica_n4]  Registered new searcher autowarm time: 0 ms
+2021-03-26 06:39:44.591 INFO  (searcherExecutor-51-thread-1-processing-n:127.0.1.1:8983_solr x:localDocs_shard1_replica_n1 c:localDocs s:shard1 r:core_node3) [c:localDocs s:shard1 r:core_node3 x:localDocs_shard1_replica_n1] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2021-03-26 06:39:44.591 INFO  (searcherExecutor-51-thread-1-processing-n:127.0.1.1:8983_solr x:localDocs_shard1_replica_n1 c:localDocs s:shard1 r:core_node3) [c:localDocs s:shard1 r:core_node3 x:localDocs_shard1_replica_n1] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2021-03-26 06:39:44.598 INFO  (searcherExecutor-51-thread-1-processing-n:127.0.1.1:8983_solr x:localDocs_shard1_replica_n1 c:localDocs s:shard1 r:core_node3) [c:localDocs s:shard1 r:core_node3 x:localDocs_shard1_replica_n1] o.a.s.c.SolrCore [localDocs_shard1_replica_n1]  Registered new searcher autowarm time: 0 ms
+2021-03-26 06:39:44.612 INFO  (coreZkRegister-1-thread-5-processing-n:127.0.1.1:8983_solr) [c:localDocs s:shard2 r:core_node7 x:localDocs_shard2_replica_n4] o.a.s.c.ShardLeaderElectionContextBase make sure parent is created /collections/localDocs/leaders/shard2
+2021-03-26 06:39:44.623 INFO  (coreZkRegister-1-thread-6-processing-n:127.0.1.1:8983_solr) [c:localDocs s:shard1 r:core_node3 x:localDocs_shard1_replica_n1] o.a.s.c.ShardLeaderElectionContextBase make sure parent is created /collections/localDocs/leaders/shard1
+2021-03-26 06:39:44.624 INFO  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8983_solr) [   ] o.a.s.c.RequestParams conf resource params.json loaded . version : 0 
+2021-03-26 06:39:44.624 INFO  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8983_solr) [   ] o.a.s.c.RequestParams request params refreshed to version 0
+2021-03-26 06:39:44.626 INFO  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8983_solr) [   ] o.a.s.c.SolrResourceLoader Added 57 libs to classloader, from paths: [/home/tnguy107/Desktop/573/solr-8.8.1/contrib/extraction/lib, /home/tnguy107/Desktop/573/solr-8.8.1/contrib/langid/lib, /home/tnguy107/Desktop/573/solr-8.8.1/contrib/velocity/lib, /home/tnguy107/Desktop/573/solr-8.8.1/dist]
+2021-03-26 06:39:44.637 INFO  (coreZkRegister-1-thread-5-processing-n:127.0.1.1:8983_solr) [c:localDocs s:shard2 r:core_node7 x:localDocs_shard2_replica_n4] o.a.s.c.ShardLeaderElectionContext Waiting until we see more replicas up for shard shard2: total=2 found=1 timeoute in=179990ms
+2021-03-26 06:39:44.649 INFO  (coreZkRegister-1-thread-6-processing-n:127.0.1.1:8983_solr) [c:localDocs s:shard1 r:core_node3 x:localDocs_shard1_replica_n1] o.a.s.c.ShardLeaderElectionContext Waiting until we see more replicas up for shard shard1: total=2 found=1 timeoute in=179997ms
+2021-03-26 06:39:44.686 INFO  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8983_solr) [   ] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.8.1
+2021-03-26 06:39:44.694 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8983_solr) [   ] o.a.s.r.RestManager Registered ManagedResource impl org.apache.solr.rest.schema.analysis.ManagedWordSetResource for path /schema/analysis/stopwords/english
+2021-03-26 06:39:44.694 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8983_solr) [   ] o.a.s.r.RestManager Registered ManagedResource impl org.apache.solr.rest.schema.analysis.ManagedSynonymGraphFilterFactory$SynonymManager for path /schema/analysis/synonyms/english
+2021-03-26 06:39:44.694 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8983_solr) [   ] o.a.s.r.RestManager Added observer of type org.apache.solr.rest.schema.analysis.ManagedStopFilterFactory to existing ManagedResource /schema/analysis/stopwords/english
+2021-03-26 06:39:44.694 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8983_solr) [   ] o.a.s.r.RestManager Added observer of type org.apache.solr.rest.schema.analysis.ManagedSynonymGraphFilterFactory to existing ManagedResource /schema/analysis/synonyms/english
+2021-03-26 06:39:44.695 INFO  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8983_solr) [   ] o.a.s.u.SolrIndexConfig IndexWriter infoStream solr logging is enabled
+2021-03-26 06:39:44.699 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8983_solr) [   ] o.a.s.s.IndexSchema Loaded schema example/1.6 with uniqueid field id
+2021-03-26 06:39:44.700 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8983_solr) [   ] o.a.s.r.RestManager Added observer of type org.apache.solr.rest.schema.analysis.ManagedStopFilterFactory to existing ManagedResource /schema/analysis/stopwords/english
+2021-03-26 06:39:44.700 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8983_solr) [   ] o.a.s.r.RestManager Added observer of type org.apache.solr.rest.schema.analysis.ManagedSynonymGraphFilterFactory to existing ManagedResource /schema/analysis/synonyms/english
+2021-03-26 06:39:44.700 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8983_solr) [   ] o.a.s.r.RestManager Added observer of type org.apache.solr.rest.schema.analysis.ManagedStopFilterFactory to existing ManagedResource /schema/analysis/stopwords/english
+2021-03-26 06:39:44.700 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8983_solr) [   ] o.a.s.r.RestManager Added observer of type org.apache.solr.rest.schema.analysis.ManagedSynonymGraphFilterFactory to existing ManagedResource /schema/analysis/synonyms/english
+2021-03-26 06:39:44.759 INFO  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8983_solr) [   ] o.a.s.s.IndexSchema Schema name=example
+2021-03-26 06:39:44.843 INFO  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8983_solr) [   ] o.a.s.r.RestManager Registered ManagedResource impl org.apache.solr.rest.schema.analysis.ManagedWordSetResource for path /schema/analysis/stopwords/english
+2021-03-26 06:39:44.844 INFO  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8983_solr) [   ] o.a.s.r.RestManager Registered ManagedResource impl org.apache.solr.rest.schema.analysis.ManagedSynonymGraphFilterFactory$SynonymManager for path /schema/analysis/synonyms/english
+2021-03-26 06:39:44.844 INFO  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8983_solr) [   ] o.a.s.r.RestManager Added observer of type org.apache.solr.rest.schema.analysis.ManagedStopFilterFactory to existing ManagedResource /schema/analysis/stopwords/english
+2021-03-26 06:39:44.844 INFO  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8983_solr) [   ] o.a.s.r.RestManager Added observer of type org.apache.solr.rest.schema.analysis.ManagedSynonymGraphFilterFactory to existing ManagedResource /schema/analysis/synonyms/english
+2021-03-26 06:39:44.849 INFO  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8983_solr) [   ] o.a.s.s.IndexSchema Loaded schema example/1.6 with uniqueid field id
+2021-03-26 06:39:44.849 INFO  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8983_solr) [   ] o.a.s.r.RestManager Added observer of type org.apache.solr.rest.schema.analysis.ManagedStopFilterFactory to existing ManagedResource /schema/analysis/stopwords/english
+2021-03-26 06:39:44.849 INFO  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8983_solr) [   ] o.a.s.r.RestManager Added observer of type org.apache.solr.rest.schema.analysis.ManagedSynonymGraphFilterFactory to existing ManagedResource /schema/analysis/synonyms/english
+2021-03-26 06:39:44.849 INFO  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8983_solr) [   ] o.a.s.r.RestManager Added observer of type org.apache.solr.rest.schema.analysis.ManagedStopFilterFactory to existing ManagedResource /schema/analysis/stopwords/english
+2021-03-26 06:39:44.849 INFO  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8983_solr) [   ] o.a.s.r.RestManager Added observer of type org.apache.solr.rest.schema.analysis.ManagedSynonymGraphFilterFactory to existing ManagedResource /schema/analysis/synonyms/english
+2021-03-26 06:39:44.942 INFO  (zkCallback-10-thread-1) [   ] o.a.s.c.c.ZkStateReader A cluster state change: [WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/techproducts/state.json] for collection [techproducts] has occurred - updating... (live nodes size: [1])
+2021-03-26 06:39:45.845 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8983_solr) [c:techproducts s:shard1 r:core_node5 x:techproducts_shard1_replica_n2] o.a.s.c.RequestParams conf resource params.json loaded . version : 0 
+2021-03-26 06:39:45.845 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8983_solr) [c:techproducts s:shard1 r:core_node5 x:techproducts_shard1_replica_n2] o.a.s.c.RequestParams request params refreshed to version 0
+2021-03-26 06:39:45.847 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8983_solr) [c:techproducts s:shard1 r:core_node5 x:techproducts_shard1_replica_n2] o.a.s.c.SolrResourceLoader Added 57 libs to classloader, from paths: [/home/tnguy107/Desktop/573/solr-8.8.1/contrib/extraction/lib, /home/tnguy107/Desktop/573/solr-8.8.1/contrib/langid/lib, /home/tnguy107/Desktop/573/solr-8.8.1/contrib/velocity/lib, /home/tnguy107/Desktop/573/solr-8.8.1/dist]
+2021-03-26 06:39:45.869 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8983_solr) [c:techproducts s:shard1 r:core_node5 x:techproducts_shard1_replica_n2] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.8.1
+2021-03-26 06:39:45.878 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8983_solr) [c:techproducts s:shard1 r:core_node5 x:techproducts_shard1_replica_n2] o.a.s.u.SolrIndexConfig IndexWriter infoStream solr logging is enabled
+2021-03-26 06:39:45.913 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8983_solr) [c:techproducts s:shard1 r:core_node5 x:techproducts_shard1_replica_n2] o.a.s.s.IndexSchema Schema name=example
+2021-03-26 06:39:45.983 INFO  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8983_solr) [c:techproducts s:shard2 r:core_node8 x:techproducts_shard2_replica_n6] o.a.s.c.RequestParams conf resource params.json loaded . version : 0 
+2021-03-26 06:39:45.984 INFO  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8983_solr) [c:techproducts s:shard2 r:core_node8 x:techproducts_shard2_replica_n6] o.a.s.c.RequestParams request params refreshed to version 0
+2021-03-26 06:39:45.987 INFO  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8983_solr) [c:techproducts s:shard2 r:core_node8 x:techproducts_shard2_replica_n6] o.a.s.c.SolrResourceLoader Added 57 libs to classloader, from paths: [/home/tnguy107/Desktop/573/solr-8.8.1/contrib/extraction/lib, /home/tnguy107/Desktop/573/solr-8.8.1/contrib/langid/lib, /home/tnguy107/Desktop/573/solr-8.8.1/contrib/velocity/lib, /home/tnguy107/Desktop/573/solr-8.8.1/dist]
+2021-03-26 06:39:46.008 INFO  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8983_solr) [c:techproducts s:shard2 r:core_node8 x:techproducts_shard2_replica_n6] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.8.1
+2021-03-26 06:39:46.020 INFO  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8983_solr) [c:techproducts s:shard2 r:core_node8 x:techproducts_shard2_replica_n6] o.a.s.u.SolrIndexConfig IndexWriter infoStream solr logging is enabled
+2021-03-26 06:39:46.023 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8983_solr) [c:techproducts s:shard1 r:core_node5 x:techproducts_shard1_replica_n2] o.a.s.r.RestManager Registered ManagedResource impl org.apache.solr.rest.schema.analysis.ManagedWordSetResource for path /schema/analysis/stopwords/english
+2021-03-26 06:39:46.023 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8983_solr) [c:techproducts s:shard1 r:core_node5 x:techproducts_shard1_replica_n2] o.a.s.r.RestManager Registered ManagedResource impl org.apache.solr.rest.schema.analysis.ManagedSynonymGraphFilterFactory$SynonymManager for path /schema/analysis/synonyms/english
+2021-03-26 06:39:46.023 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8983_solr) [c:techproducts s:shard1 r:core_node5 x:techproducts_shard1_replica_n2] o.a.s.r.RestManager Added observer of type org.apache.solr.rest.schema.analysis.ManagedStopFilterFactory to existing ManagedResource /schema/analysis/stopwords/english
+2021-03-26 06:39:46.023 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8983_solr) [c:techproducts s:shard1 r:core_node5 x:techproducts_shard1_replica_n2] o.a.s.r.RestManager Added observer of type org.apache.solr.rest.schema.analysis.ManagedSynonymGraphFilterFactory to existing ManagedResource /schema/analysis/synonyms/english
+2021-03-26 06:39:46.028 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8983_solr) [c:techproducts s:shard1 r:core_node5 x:techproducts_shard1_replica_n2] o.a.s.s.IndexSchema Loaded schema example/1.6 with uniqueid field id
+2021-03-26 06:39:46.028 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8983_solr) [c:techproducts s:shard1 r:core_node5 x:techproducts_shard1_replica_n2] o.a.s.r.RestManager Added observer of type org.apache.solr.rest.schema.analysis.ManagedStopFilterFactory to existing ManagedResource /schema/analysis/stopwords/english
+2021-03-26 06:39:46.028 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8983_solr) [c:techproducts s:shard1 r:core_node5 x:techproducts_shard1_replica_n2] o.a.s.r.RestManager Added observer of type org.apache.solr.rest.schema.analysis.ManagedSynonymGraphFilterFactory to existing ManagedResource /schema/analysis/synonyms/english
+2021-03-26 06:39:46.028 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8983_solr) [c:techproducts s:shard1 r:core_node5 x:techproducts_shard1_replica_n2] o.a.s.r.RestManager Added observer of type org.apache.solr.rest.schema.analysis.ManagedStopFilterFactory to existing ManagedResource /schema/analysis/stopwords/english
+2021-03-26 06:39:46.028 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8983_solr) [c:techproducts s:shard1 r:core_node5 x:techproducts_shard1_replica_n2] o.a.s.r.RestManager Added observer of type org.apache.solr.rest.schema.analysis.ManagedSynonymGraphFilterFactory to existing ManagedResource /schema/analysis/synonyms/english
+2021-03-26 06:39:46.050 INFO  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8983_solr) [c:techproducts s:shard2 r:core_node8 x:techproducts_shard2_replica_n6] o.a.s.s.IndexSchema Schema name=example
+2021-03-26 06:39:46.107 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8983_solr) [c:techproducts s:shard1 r:core_node5 x:techproducts_shard1_replica_n2] o.a.s.c.CoreContainer Creating SolrCore 'techproducts_shard1_replica_n2' using configuration from configset techproducts, trusted=true
+2021-03-26 06:39:46.109 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8983_solr) [c:techproducts s:shard1 r:core_node5 x:techproducts_shard1_replica_n2] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.techproducts.shard1.replica_n2' (registry 'solr.core.techproducts.shard1.replica_n2') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@7d9d0818
+2021-03-26 06:39:46.109 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8983_solr) [c:techproducts s:shard1 r:core_node5 x:techproducts_shard1_replica_n2] o.a.s.c.SolrCore [[techproducts_shard1_replica_n2] ] Opening new SolrCore at [/home/tnguy107/Desktop/573/solr-8.8.1/example/cloud/node1/solr/techproducts_shard1_replica_n2], dataDir=[/home/tnguy107/Desktop/573/solr-8.8.1/example/cloud/node1/solr/techproducts_shard1_replica_n2/data/]
+2021-03-26 06:39:46.130 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8983_solr) [c:techproducts s:shard1 r:core_node5 x:techproducts_shard1_replica_n2] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2021-03-26 06:39:46.151 INFO  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8983_solr) [c:techproducts s:shard2 r:core_node8 x:techproducts_shard2_replica_n6] o.a.s.r.RestManager Registered ManagedResource impl org.apache.solr.rest.schema.analysis.ManagedWordSetResource for path /schema/analysis/stopwords/english
+2021-03-26 06:39:46.152 INFO  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8983_solr) [c:techproducts s:shard2 r:core_node8 x:techproducts_shard2_replica_n6] o.a.s.r.RestManager Registered ManagedResource impl org.apache.solr.rest.schema.analysis.ManagedSynonymGraphFilterFactory$SynonymManager for path /schema/analysis/synonyms/english
+2021-03-26 06:39:46.152 INFO  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8983_solr) [c:techproducts s:shard2 r:core_node8 x:techproducts_shard2_replica_n6] o.a.s.r.RestManager Added observer of type org.apache.solr.rest.schema.analysis.ManagedStopFilterFactory to existing ManagedResource /schema/analysis/stopwords/english
+2021-03-26 06:39:46.152 INFO  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8983_solr) [c:techproducts s:shard2 r:core_node8 x:techproducts_shard2_replica_n6] o.a.s.r.RestManager Added observer of type org.apache.solr.rest.schema.analysis.ManagedSynonymGraphFilterFactory to existing ManagedResource /schema/analysis/synonyms/english
+2021-03-26 06:39:46.156 INFO  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8983_solr) [c:techproducts s:shard2 r:core_node8 x:techproducts_shard2_replica_n6] o.a.s.s.IndexSchema Loaded schema example/1.6 with uniqueid field id
+2021-03-26 06:39:46.156 INFO  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8983_solr) [c:techproducts s:shard2 r:core_node8 x:techproducts_shard2_replica_n6] o.a.s.r.RestManager Added observer of type org.apache.solr.rest.schema.analysis.ManagedStopFilterFactory to existing ManagedResource /schema/analysis/stopwords/english
+2021-03-26 06:39:46.156 INFO  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8983_solr) [c:techproducts s:shard2 r:core_node8 x:techproducts_shard2_replica_n6] o.a.s.r.RestManager Added observer of type org.apache.solr.rest.schema.analysis.ManagedSynonymGraphFilterFactory to existing ManagedResource /schema/analysis/synonyms/english
+2021-03-26 06:39:46.156 INFO  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8983_solr) [c:techproducts s:shard2 r:core_node8 x:techproducts_shard2_replica_n6] o.a.s.r.RestManager Added observer of type org.apache.solr.rest.schema.analysis.ManagedStopFilterFactory to existing ManagedResource /schema/analysis/stopwords/english
+2021-03-26 06:39:46.156 INFO  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8983_solr) [c:techproducts s:shard2 r:core_node8 x:techproducts_shard2_replica_n6] o.a.s.r.RestManager Added observer of type org.apache.solr.rest.schema.analysis.ManagedSynonymGraphFilterFactory to existing ManagedResource /schema/analysis/synonyms/english
+2021-03-26 06:39:46.228 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8983_solr) [c:techproducts s:shard1 r:core_node5 x:techproducts_shard1_replica_n2] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2021-03-26 06:39:46.228 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8983_solr) [c:techproducts s:shard1 r:core_node5 x:techproducts_shard1_replica_n2] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2021-03-26 06:39:46.230 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8983_solr) [c:techproducts s:shard1 r:core_node5 x:techproducts_shard1_replica_n2] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2021-03-26 06:39:46.231 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8983_solr) [c:techproducts s:shard1 r:core_node5 x:techproducts_shard1_replica_n2] o.a.s.u.CommitTracker Soft AutoCommit: if uncommitted for 3000ms; 
+2021-03-26 06:39:46.245 INFO  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8983_solr) [c:techproducts s:shard2 r:core_node8 x:techproducts_shard2_replica_n6] o.a.s.c.CoreContainer Creating SolrCore 'techproducts_shard2_replica_n6' using configuration from configset techproducts, trusted=true
+2021-03-26 06:39:46.246 INFO  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8983_solr) [c:techproducts s:shard2 r:core_node8 x:techproducts_shard2_replica_n6] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.techproducts.shard2.replica_n6' (registry 'solr.core.techproducts.shard2.replica_n6') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@7d9d0818
+2021-03-26 06:39:46.247 INFO  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8983_solr) [c:techproducts s:shard2 r:core_node8 x:techproducts_shard2_replica_n6] o.a.s.c.SolrCore [[techproducts_shard2_replica_n6] ] Opening new SolrCore at [/home/tnguy107/Desktop/573/solr-8.8.1/example/cloud/node1/solr/techproducts_shard2_replica_n6], dataDir=[/home/tnguy107/Desktop/573/solr-8.8.1/example/cloud/node1/solr/techproducts_shard2_replica_n6/data/]
+2021-03-26 06:39:46.254 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8983_solr) [c:techproducts s:shard1 r:core_node5 x:techproducts_shard1_replica_n2] o.a.s.r.ManagedResourceStorage Configured ZooKeeperStorageIO with znodeBase: /configs/techproducts
+2021-03-26 06:39:46.256 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8983_solr) [c:techproducts s:shard1 r:core_node5 x:techproducts_shard1_replica_n2] o.a.s.r.ManagedResourceStorage Loaded LinkedHashMap at path _rest_managed.json using ZooKeeperStorageIO:path=/configs/techproducts
+2021-03-26 06:39:46.256 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8983_solr) [c:techproducts s:shard1 r:core_node5 x:techproducts_shard1_replica_n2] o.a.s.r.ManagedResource Loaded initArgs {} for /rest/managed
+2021-03-26 06:39:46.257 INFO  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8983_solr) [c:techproducts s:shard2 r:core_node8 x:techproducts_shard2_replica_n6] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2021-03-26 06:39:46.258 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8983_solr) [c:techproducts s:shard1 r:core_node5 x:techproducts_shard1_replica_n2] o.a.s.r.ManagedResourceStorage Loaded LinkedHashMap at path _schema_analysis_stopwords_english.json using ZooKeeperStorageIO:path=/configs/techproducts
+2021-03-26 06:39:46.258 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8983_solr) [c:techproducts s:shard1 r:core_node5 x:techproducts_shard1_replica_n2] o.a.s.r.ManagedResource Loaded initArgs {ignoreCase=true} for /schema/analysis/stopwords/english
+2021-03-26 06:39:46.258 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8983_solr) [c:techproducts s:shard1 r:core_node5 x:techproducts_shard1_replica_n2] o.a.s.r.s.a.ManagedWordSetResource Loaded 35 words for /schema/analysis/stopwords/english
+2021-03-26 06:39:46.258 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8983_solr) [c:techproducts s:shard1 r:core_node5 x:techproducts_shard1_replica_n2] o.a.s.r.ManagedResource Notified 2 observers of /schema/analysis/stopwords/english
+2021-03-26 06:39:46.260 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8983_solr) [c:techproducts s:shard1 r:core_node5 x:techproducts_shard1_replica_n2] o.a.s.r.ManagedResourceStorage Loaded LinkedHashMap at path _schema_analysis_synonyms_english.json using ZooKeeperStorageIO:path=/configs/techproducts
+2021-03-26 06:39:46.260 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8983_solr) [c:techproducts s:shard1 r:core_node5 x:techproducts_shard1_replica_n2] o.a.s.r.ManagedResource Loaded initArgs {ignoreCase=true,format=solr} for /schema/analysis/synonyms/english
+2021-03-26 06:39:46.261 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8983_solr) [c:techproducts s:shard1 r:core_node5 x:techproducts_shard1_replica_n2] o.a.s.r.s.a.ManagedSynonymGraphFilterFactory Loaded 3 synonym mappings for /schema/analysis/synonyms/english
+2021-03-26 06:39:46.262 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8983_solr) [c:techproducts s:shard1 r:core_node5 x:techproducts_shard1_replica_n2] o.a.s.r.ManagedResource Notified 2 observers of /schema/analysis/synonyms/english
+2021-03-26 06:39:46.262 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8983_solr) [c:techproducts s:shard1 r:core_node5 x:techproducts_shard1_replica_n2] o.a.s.s.ZkIndexSchemaReader Creating ZooKeeper watch for the managed schema at /configs/techproducts/managed-schema
+2021-03-26 06:39:46.263 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8983_solr) [c:techproducts s:shard1 r:core_node5 x:techproducts_shard1_replica_n2] o.a.s.s.ZkIndexSchemaReader Current schema version 0 is already the latest
+2021-03-26 06:39:46.263 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8983_solr) [c:techproducts s:shard1 r:core_node5 x:techproducts_shard1_replica_n2] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2021-03-26 06:39:46.264 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8983_solr) [c:techproducts s:shard1 r:core_node5 x:techproducts_shard1_replica_n2] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=text,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2021-03-26 06:39:46.271 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8983_solr) [c:techproducts s:shard1 r:core_node5 x:techproducts_shard1_replica_n2] o.a.s.h.c.SuggestComponent Initializing SuggestComponent
+2021-03-26 06:39:46.279 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8983_solr) [c:techproducts s:shard1 r:core_node5 x:techproducts_shard1_replica_n2] o.a.s.s.s.SolrSuggester init: {name=mySuggester,lookupImpl=FuzzyLookupFactory,dictionaryImpl=DocumentDictionaryFactory,field=cat,weightField=price,suggestAnalyzerFieldType=string,buildOnStartup=false}
+2021-03-26 06:39:46.295 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8983_solr) [c:techproducts s:shard1 r:core_node5 x:techproducts_shard1_replica_n2] o.a.s.s.s.SolrSuggester Dictionary loaded with params: {name=mySuggester,lookupImpl=FuzzyLookupFactory,dictionaryImpl=DocumentDictionaryFactory,field=cat,weightField=price,suggestAnalyzerFieldType=string,buildOnStartup=false}
+2021-03-26 06:39:46.298 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8983_solr) [c:techproducts s:shard1 r:core_node5 x:techproducts_shard1_replica_n2] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2021-03-26 06:39:46.315 INFO  (coreZkRegister-1-thread-7-processing-n:127.0.1.1:8983_solr) [c:techproducts s:shard1 r:core_node5 x:techproducts_shard1_replica_n2] o.a.s.c.ShardLeaderElectionContextBase make sure parent is created /collections/techproducts/leaders/shard1
+2021-03-26 06:39:46.335 INFO  (coreZkRegister-1-thread-7-processing-n:127.0.1.1:8983_solr) [c:techproducts s:shard1 r:core_node5 x:techproducts_shard1_replica_n2] o.a.s.c.ShardLeaderElectionContext Waiting until we see more replicas up for shard shard1: total=2 found=1 timeoute in=179998ms
+2021-03-26 06:39:46.338 INFO  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8983_solr) [c:techproducts s:shard2 r:core_node8 x:techproducts_shard2_replica_n6] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2021-03-26 06:39:46.339 INFO  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8983_solr) [c:techproducts s:shard2 r:core_node8 x:techproducts_shard2_replica_n6] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2021-03-26 06:39:46.341 INFO  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8983_solr) [c:techproducts s:shard2 r:core_node8 x:techproducts_shard2_replica_n6] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2021-03-26 06:39:46.341 INFO  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8983_solr) [c:techproducts s:shard2 r:core_node8 x:techproducts_shard2_replica_n6] o.a.s.u.CommitTracker Soft AutoCommit: if uncommitted for 3000ms; 
+2021-03-26 06:39:46.351 INFO  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8983_solr) [c:techproducts s:shard2 r:core_node8 x:techproducts_shard2_replica_n6] o.a.s.r.ManagedResourceStorage Configured ZooKeeperStorageIO with znodeBase: /configs/techproducts
+2021-03-26 06:39:46.353 INFO  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8983_solr) [c:techproducts s:shard2 r:core_node8 x:techproducts_shard2_replica_n6] o.a.s.r.ManagedResourceStorage Loaded LinkedHashMap at path _rest_managed.json using ZooKeeperStorageIO:path=/configs/techproducts
+2021-03-26 06:39:46.353 INFO  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8983_solr) [c:techproducts s:shard2 r:core_node8 x:techproducts_shard2_replica_n6] o.a.s.r.ManagedResource Loaded initArgs {} for /rest/managed
+2021-03-26 06:39:46.354 INFO  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8983_solr) [c:techproducts s:shard2 r:core_node8 x:techproducts_shard2_replica_n6] o.a.s.r.ManagedResourceStorage Loaded LinkedHashMap at path _schema_analysis_stopwords_english.json using ZooKeeperStorageIO:path=/configs/techproducts
+2021-03-26 06:39:46.354 INFO  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8983_solr) [c:techproducts s:shard2 r:core_node8 x:techproducts_shard2_replica_n6] o.a.s.r.ManagedResource Loaded initArgs {ignoreCase=true} for /schema/analysis/stopwords/english
+2021-03-26 06:39:46.354 INFO  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8983_solr) [c:techproducts s:shard2 r:core_node8 x:techproducts_shard2_replica_n6] o.a.s.r.s.a.ManagedWordSetResource Loaded 35 words for /schema/analysis/stopwords/english
+2021-03-26 06:39:46.355 INFO  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8983_solr) [c:techproducts s:shard2 r:core_node8 x:techproducts_shard2_replica_n6] o.a.s.r.ManagedResource Notified 2 observers of /schema/analysis/stopwords/english
+2021-03-26 06:39:46.356 INFO  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8983_solr) [c:techproducts s:shard2 r:core_node8 x:techproducts_shard2_replica_n6] o.a.s.r.ManagedResourceStorage Loaded LinkedHashMap at path _schema_analysis_synonyms_english.json using ZooKeeperStorageIO:path=/configs/techproducts
+2021-03-26 06:39:46.356 INFO  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8983_solr) [c:techproducts s:shard2 r:core_node8 x:techproducts_shard2_replica_n6] o.a.s.r.ManagedResource Loaded initArgs {ignoreCase=true,format=solr} for /schema/analysis/synonyms/english
+2021-03-26 06:39:46.356 INFO  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8983_solr) [c:techproducts s:shard2 r:core_node8 x:techproducts_shard2_replica_n6] o.a.s.r.s.a.ManagedSynonymGraphFilterFactory Loaded 3 synonym mappings for /schema/analysis/synonyms/english
+2021-03-26 06:39:46.357 INFO  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8983_solr) [c:techproducts s:shard2 r:core_node8 x:techproducts_shard2_replica_n6] o.a.s.r.ManagedResource Notified 2 observers of /schema/analysis/synonyms/english
+2021-03-26 06:39:46.357 INFO  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8983_solr) [c:techproducts s:shard2 r:core_node8 x:techproducts_shard2_replica_n6] o.a.s.s.ZkIndexSchemaReader Creating ZooKeeper watch for the managed schema at /configs/techproducts/managed-schema
+2021-03-26 06:39:46.358 INFO  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8983_solr) [c:techproducts s:shard2 r:core_node8 x:techproducts_shard2_replica_n6] o.a.s.s.ZkIndexSchemaReader Current schema version 0 is already the latest
+2021-03-26 06:39:46.359 INFO  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8983_solr) [c:techproducts s:shard2 r:core_node8 x:techproducts_shard2_replica_n6] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2021-03-26 06:39:46.359 INFO  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8983_solr) [c:techproducts s:shard2 r:core_node8 x:techproducts_shard2_replica_n6] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=text,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2021-03-26 06:39:46.360 INFO  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8983_solr) [c:techproducts s:shard2 r:core_node8 x:techproducts_shard2_replica_n6] o.a.s.h.c.SuggestComponent Initializing SuggestComponent
+2021-03-26 06:39:46.360 INFO  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8983_solr) [c:techproducts s:shard2 r:core_node8 x:techproducts_shard2_replica_n6] o.a.s.s.s.SolrSuggester init: {name=mySuggester,lookupImpl=FuzzyLookupFactory,dictionaryImpl=DocumentDictionaryFactory,field=cat,weightField=price,suggestAnalyzerFieldType=string,buildOnStartup=false}
+2021-03-26 06:39:46.360 INFO  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8983_solr) [c:techproducts s:shard2 r:core_node8 x:techproducts_shard2_replica_n6] o.a.s.s.s.SolrSuggester Dictionary loaded with params: {name=mySuggester,lookupImpl=FuzzyLookupFactory,dictionaryImpl=DocumentDictionaryFactory,field=cat,weightField=price,suggestAnalyzerFieldType=string,buildOnStartup=false}
+2021-03-26 06:39:46.362 INFO  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8983_solr) [c:techproducts s:shard2 r:core_node8 x:techproducts_shard2_replica_n6] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2021-03-26 06:39:46.402 INFO  (coreZkRegister-1-thread-8-processing-n:127.0.1.1:8983_solr) [c:techproducts s:shard2 r:core_node8 x:techproducts_shard2_replica_n6] o.a.s.c.ShardLeaderElectionContextBase make sure parent is created /collections/techproducts/leaders/shard2
+2021-03-26 06:39:46.414 INFO  (coreZkRegister-1-thread-8-processing-n:127.0.1.1:8983_solr) [c:techproducts s:shard2 r:core_node8 x:techproducts_shard2_replica_n6] o.a.s.c.ShardLeaderElectionContext Waiting until we see more replicas up for shard shard2: total=2 found=1 timeoute in=179996ms
+2021-03-26 06:39:46.425 INFO  (searcherExecutor-61-thread-1-processing-n:127.0.1.1:8983_solr x:techproducts_shard1_replica_n2 c:techproducts s:shard1 r:core_node5) [c:techproducts s:shard1 r:core_node5 x:techproducts_shard1_replica_n2] o.a.s.c.S.Request [techproducts_shard1_replica_n2]  webapp=null path=null params={q=static+firstSearcher+warming+in+solrconfig.xml&distrib=false&event=firstSearcher} hits=2 status=0 QTime=120
+2021-03-26 06:39:46.427 INFO  (searcherExecutor-67-thread-1-processing-n:127.0.1.1:8983_solr x:techproducts_shard2_replica_n6 c:techproducts s:shard2 r:core_node8) [c:techproducts s:shard2 r:core_node8 x:techproducts_shard2_replica_n6] o.a.s.c.S.Request [techproducts_shard2_replica_n6]  webapp=null path=null params={q=static+firstSearcher+warming+in+solrconfig.xml&distrib=false&event=firstSearcher} hits=7 status=0 QTime=58
+2021-03-26 06:39:46.439 INFO  (searcherExecutor-61-thread-1-processing-n:127.0.1.1:8983_solr x:techproducts_shard1_replica_n2 c:techproducts s:shard1 r:core_node5) [c:techproducts s:shard1 r:core_node5 x:techproducts_shard1_replica_n2] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2021-03-26 06:39:46.439 INFO  (searcherExecutor-61-thread-1-processing-n:127.0.1.1:8983_solr x:techproducts_shard1_replica_n2 c:techproducts s:shard1 r:core_node5) [c:techproducts s:shard1 r:core_node5 x:techproducts_shard1_replica_n2] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2021-03-26 06:39:46.439 INFO  (searcherExecutor-61-thread-1-processing-n:127.0.1.1:8983_solr x:techproducts_shard1_replica_n2 c:techproducts s:shard1 r:core_node5) [c:techproducts s:shard1 r:core_node5 x:techproducts_shard1_replica_n2] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: wordbreak
+2021-03-26 06:39:46.442 INFO  (searcherExecutor-67-thread-1-processing-n:127.0.1.1:8983_solr x:techproducts_shard2_replica_n6 c:techproducts s:shard2 r:core_node8) [c:techproducts s:shard2 r:core_node8 x:techproducts_shard2_replica_n6] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2021-03-26 06:39:46.442 INFO  (searcherExecutor-67-thread-1-processing-n:127.0.1.1:8983_solr x:techproducts_shard2_replica_n6 c:techproducts s:shard2 r:core_node8) [c:techproducts s:shard2 r:core_node8 x:techproducts_shard2_replica_n6] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2021-03-26 06:39:46.442 INFO  (searcherExecutor-67-thread-1-processing-n:127.0.1.1:8983_solr x:techproducts_shard2_replica_n6 c:techproducts s:shard2 r:core_node8) [c:techproducts s:shard2 r:core_node8 x:techproducts_shard2_replica_n6] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: wordbreak
+2021-03-26 06:39:46.444 INFO  (searcherExecutor-67-thread-1-processing-n:127.0.1.1:8983_solr x:techproducts_shard2_replica_n6 c:techproducts s:shard2 r:core_node8) [c:techproducts s:shard2 r:core_node8 x:techproducts_shard2_replica_n6] o.a.s.c.SolrCore [techproducts_shard2_replica_n6]  Registered new searcher autowarm time: 0 ms
+2021-03-26 06:39:46.444 INFO  (searcherExecutor-61-thread-1-processing-n:127.0.1.1:8983_solr x:techproducts_shard1_replica_n2 c:techproducts s:shard1 r:core_node5) [c:techproducts s:shard1 r:core_node5 x:techproducts_shard1_replica_n2] o.a.s.c.SolrCore [techproducts_shard1_replica_n2]  Registered new searcher autowarm time: 0 ms
+2021-03-26 06:40:02.919 INFO  (coreZkRegister-1-thread-2-processing-n:127.0.1.1:8983_solr) [c:allData s:shard2 r:core_node7 x:allData_shard2_replica_n4] o.a.s.c.ShardLeaderElectionContext Waiting until we see more replicas up for shard shard2: total=2 found=1 timeoute in=159815ms
+2021-03-26 06:40:02.919 INFO  (coreZkRegister-1-thread-1-processing-n:127.0.1.1:8983_solr) [c:localDOcs s:shard1 r:core_node5 x:localDOcs_shard1_replica_n2] o.a.s.c.ShardLeaderElectionContext Waiting until we see more replicas up for shard shard1: total=2 found=1 timeoute in=159810ms
+2021-03-26 06:40:02.920 INFO  (coreZkRegister-1-thread-3-processing-n:127.0.1.1:8983_solr) [c:allData s:shard1 r:core_node3 x:allData_shard1_replica_n1] o.a.s.c.ShardLeaderElectionContext Waiting until we see more replicas up for shard shard1: total=2 found=1 timeoute in=159809ms
+2021-03-26 06:40:04.513 INFO  (coreZkRegister-1-thread-4-processing-n:127.0.1.1:8983_solr) [c:localDOcs s:shard2 r:core_node8 x:localDOcs_shard2_replica_n6] o.a.s.c.ShardLeaderElectionContext Waiting until we see more replicas up for shard shard2: total=2 found=1 timeoute in=159859ms
+2021-03-26 06:40:04.784 INFO  (coreZkRegister-1-thread-5-processing-n:127.0.1.1:8983_solr) [c:localDocs s:shard2 r:core_node7 x:localDocs_shard2_replica_n4] o.a.s.c.ShardLeaderElectionContext Waiting until we see more replicas up for shard shard2: total=2 found=1 timeoute in=159843ms
+2021-03-26 06:40:04.787 INFO  (coreZkRegister-1-thread-6-processing-n:127.0.1.1:8983_solr) [c:localDocs s:shard1 r:core_node3 x:localDocs_shard1_replica_n1] o.a.s.c.ShardLeaderElectionContext Waiting until we see more replicas up for shard shard1: total=2 found=1 timeoute in=159859ms
+2021-03-26 06:40:06.486 INFO  (coreZkRegister-1-thread-7-processing-n:127.0.1.1:8983_solr) [c:techproducts s:shard1 r:core_node5 x:techproducts_shard1_replica_n2] o.a.s.c.ShardLeaderElectionContext Waiting until we see more replicas up for shard shard1: total=2 found=1 timeoute in=159847ms
+2021-03-26 06:40:06.589 INFO  (coreZkRegister-1-thread-8-processing-n:127.0.1.1:8983_solr) [c:techproducts s:shard2 r:core_node8 x:techproducts_shard2_replica_n6] o.a.s.c.ShardLeaderElectionContext Waiting until we see more replicas up for shard shard2: total=2 found=1 timeoute in=159820ms
+2021-03-26 06:40:23.052 INFO  (coreZkRegister-1-thread-3-processing-n:127.0.1.1:8983_solr) [c:allData s:shard1 r:core_node3 x:allData_shard1_replica_n1] o.a.s.c.ShardLeaderElectionContext Waiting until we see more replicas up for shard shard1: total=2 found=1 timeoute in=139677ms
+2021-03-26 06:40:23.052 INFO  (coreZkRegister-1-thread-1-processing-n:127.0.1.1:8983_solr) [c:localDOcs s:shard1 r:core_node5 x:localDOcs_shard1_replica_n2] o.a.s.c.ShardLeaderElectionContext Waiting until we see more replicas up for shard shard1: total=2 found=1 timeoute in=139677ms
+2021-03-26 06:40:23.053 INFO  (coreZkRegister-1-thread-2-processing-n:127.0.1.1:8983_solr) [c:allData s:shard2 r:core_node7 x:allData_shard2_replica_n4] o.a.s.c.ShardLeaderElectionContext Waiting until we see more replicas up for shard shard2: total=2 found=1 timeoute in=139681ms
+2021-03-26 06:40:24.696 INFO  (coreZkRegister-1-thread-4-processing-n:127.0.1.1:8983_solr) [c:localDOcs s:shard2 r:core_node8 x:localDOcs_shard2_replica_n6] o.a.s.c.ShardLeaderElectionContext Waiting until we see more replicas up for shard shard2: total=2 found=1 timeoute in=139675ms
+2021-03-26 06:40:24.934 INFO  (coreZkRegister-1-thread-5-processing-n:127.0.1.1:8983_solr) [c:localDocs s:shard2 r:core_node7 x:localDocs_shard2_replica_n4] o.a.s.c.ShardLeaderElectionContext Waiting until we see more replicas up for shard shard2: total=2 found=1 timeoute in=139693ms
+2021-03-26 06:40:24.935 INFO  (coreZkRegister-1-thread-6-processing-n:127.0.1.1:8983_solr) [c:localDocs s:shard1 r:core_node3 x:localDocs_shard1_replica_n1] o.a.s.c.ShardLeaderElectionContext Waiting until we see more replicas up for shard shard1: total=2 found=1 timeoute in=139711ms
+2021-03-26 06:40:26.626 INFO  (coreZkRegister-1-thread-7-processing-n:127.0.1.1:8983_solr) [c:techproducts s:shard1 r:core_node5 x:techproducts_shard1_replica_n2] o.a.s.c.ShardLeaderElectionContext Waiting until we see more replicas up for shard shard1: total=2 found=1 timeoute in=139706ms
+2021-03-26 06:40:26.730 INFO  (coreZkRegister-1-thread-8-processing-n:127.0.1.1:8983_solr) [c:techproducts s:shard2 r:core_node8 x:techproducts_shard2_replica_n6] o.a.s.c.ShardLeaderElectionContext Waiting until we see more replicas up for shard shard2: total=2 found=1 timeoute in=139679ms
+2021-03-26 06:40:43.196 INFO  (coreZkRegister-1-thread-1-processing-n:127.0.1.1:8983_solr) [c:localDOcs s:shard1 r:core_node5 x:localDOcs_shard1_replica_n2] o.a.s.c.ShardLeaderElectionContext Waiting until we see more replicas up for shard shard1: total=2 found=1 timeoute in=119533ms
+2021-03-26 06:40:43.196 INFO  (coreZkRegister-1-thread-2-processing-n:127.0.1.1:8983_solr) [c:allData s:shard2 r:core_node7 x:allData_shard2_replica_n4] o.a.s.c.ShardLeaderElectionContext Waiting until we see more replicas up for shard shard2: total=2 found=1 timeoute in=119538ms
+2021-03-26 06:40:43.197 INFO  (coreZkRegister-1-thread-3-processing-n:127.0.1.1:8983_solr) [c:allData s:shard1 r:core_node3 x:allData_shard1_replica_n1] o.a.s.c.ShardLeaderElectionContext Waiting until we see more replicas up for shard shard1: total=2 found=1 timeoute in=119532ms
+2021-03-26 06:40:44.836 INFO  (coreZkRegister-1-thread-4-processing-n:127.0.1.1:8983_solr) [c:localDOcs s:shard2 r:core_node8 x:localDOcs_shard2_replica_n6] o.a.s.c.ShardLeaderElectionContext Waiting until we see more replicas up for shard shard2: total=2 found=1 timeoute in=119535ms
+2021-03-26 06:40:45.088 INFO  (coreZkRegister-1-thread-5-processing-n:127.0.1.1:8983_solr) [c:localDocs s:shard2 r:core_node7 x:localDocs_shard2_replica_n4] o.a.s.c.ShardLeaderElectionContext Waiting until we see more replicas up for shard shard2: total=2 found=1 timeoute in=119539ms
+2021-03-26 06:40:45.089 INFO  (coreZkRegister-1-thread-6-processing-n:127.0.1.1:8983_solr) [c:localDocs s:shard1 r:core_node3 x:localDocs_shard1_replica_n1] o.a.s.c.ShardLeaderElectionContext Waiting until we see more replicas up for shard shard1: total=2 found=1 timeoute in=119557ms
+2021-03-26 06:40:46.759 INFO  (coreZkRegister-1-thread-7-processing-n:127.0.1.1:8983_solr) [c:techproducts s:shard1 r:core_node5 x:techproducts_shard1_replica_n2] o.a.s.c.ShardLeaderElectionContext Waiting until we see more replicas up for shard shard1: total=2 found=1 timeoute in=119574ms
+2021-03-26 06:40:46.892 INFO  (coreZkRegister-1-thread-8-processing-n:127.0.1.1:8983_solr) [c:techproducts s:shard2 r:core_node8 x:techproducts_shard2_replica_n6] o.a.s.c.ShardLeaderElectionContext Waiting until we see more replicas up for shard shard2: total=2 found=1 timeoute in=119517ms
+2021-03-26 06:41:03.338 INFO  (coreZkRegister-1-thread-3-processing-n:127.0.1.1:8983_solr) [c:allData s:shard1 r:core_node3 x:allData_shard1_replica_n1] o.a.s.c.ShardLeaderElectionContext Waiting until we see more replicas up for shard shard1: total=2 found=1 timeoute in=99390ms
+2021-03-26 06:41:03.338 INFO  (coreZkRegister-1-thread-1-processing-n:127.0.1.1:8983_solr) [c:localDOcs s:shard1 r:core_node5 x:localDOcs_shard1_replica_n2] o.a.s.c.ShardLeaderElectionContext Waiting until we see more replicas up for shard shard1: total=2 found=1 timeoute in=99391ms
+2021-03-26 06:41:03.339 INFO  (coreZkRegister-1-thread-2-processing-n:127.0.1.1:8983_solr) [c:allData s:shard2 r:core_node7 x:allData_shard2_replica_n4] o.a.s.c.ShardLeaderElectionContext Waiting until we see more replicas up for shard shard2: total=2 found=1 timeoute in=99395ms
+2021-03-26 06:41:04.956 INFO  (coreZkRegister-1-thread-4-processing-n:127.0.1.1:8983_solr) [c:localDOcs s:shard2 r:core_node8 x:localDOcs_shard2_replica_n6] o.a.s.c.ShardLeaderElectionContext Waiting until we see more replicas up for shard shard2: total=2 found=1 timeoute in=99416ms
+2021-03-26 06:41:05.248 INFO  (coreZkRegister-1-thread-6-processing-n:127.0.1.1:8983_solr) [c:localDocs s:shard1 r:core_node3 x:localDocs_shard1_replica_n1] o.a.s.c.ShardLeaderElectionContext Waiting until we see more replicas up for shard shard1: total=2 found=1 timeoute in=99398ms
+2021-03-26 06:41:05.248 INFO  (coreZkRegister-1-thread-5-processing-n:127.0.1.1:8983_solr) [c:localDocs s:shard2 r:core_node7 x:localDocs_shard2_replica_n4] o.a.s.c.ShardLeaderElectionContext Waiting until we see more replicas up for shard shard2: total=2 found=1 timeoute in=99379ms
+2021-03-26 06:41:06.913 INFO  (coreZkRegister-1-thread-7-processing-n:127.0.1.1:8983_solr) [c:techproducts s:shard1 r:core_node5 x:techproducts_shard1_replica_n2] o.a.s.c.ShardLeaderElectionContext Waiting until we see more replicas up for shard shard1: total=2 found=1 timeoute in=99420ms
+2021-03-26 06:41:07.047 INFO  (coreZkRegister-1-thread-8-processing-n:127.0.1.1:8983_solr) [c:techproducts s:shard2 r:core_node8 x:techproducts_shard2_replica_n6] o.a.s.c.ShardLeaderElectionContext Waiting until we see more replicas up for shard shard2: total=2 found=1 timeoute in=99362ms
+2021-03-26 06:41:23.464 INFO  (coreZkRegister-1-thread-3-processing-n:127.0.1.1:8983_solr) [c:allData s:shard1 r:core_node3 x:allData_shard1_replica_n1] o.a.s.c.ShardLeaderElectionContext Waiting until we see more replicas up for shard shard1: total=2 found=1 timeoute in=79265ms
+2021-03-26 06:41:23.464 INFO  (coreZkRegister-1-thread-1-processing-n:127.0.1.1:8983_solr) [c:localDOcs s:shard1 r:core_node5 x:localDOcs_shard1_replica_n2] o.a.s.c.ShardLeaderElectionContext Waiting until we see more replicas up for shard shard1: total=2 found=1 timeoute in=79265ms
+2021-03-26 06:41:23.465 INFO  (coreZkRegister-1-thread-2-processing-n:127.0.1.1:8983_solr) [c:allData s:shard2 r:core_node7 x:allData_shard2_replica_n4] o.a.s.c.ShardLeaderElectionContext Waiting until we see more replicas up for shard shard2: total=2 found=1 timeoute in=79269ms
+2021-03-26 06:41:25.120 INFO  (coreZkRegister-1-thread-4-processing-n:127.0.1.1:8983_solr) [c:localDOcs s:shard2 r:core_node8 x:localDOcs_shard2_replica_n6] o.a.s.c.ShardLeaderElectionContext Waiting until we see more replicas up for shard shard2: total=2 found=1 timeoute in=79251ms
+2021-03-26 06:41:25.388 INFO  (coreZkRegister-1-thread-6-processing-n:127.0.1.1:8983_solr) [c:localDocs s:shard1 r:core_node3 x:localDocs_shard1_replica_n1] o.a.s.c.ShardLeaderElectionContext Waiting until we see more replicas up for shard shard1: total=2 found=1 timeoute in=79257ms
+2021-03-26 06:41:25.389 INFO  (coreZkRegister-1-thread-5-processing-n:127.0.1.1:8983_solr) [c:localDocs s:shard2 r:core_node7 x:localDocs_shard2_replica_n4] o.a.s.c.ShardLeaderElectionContext Waiting until we see more replicas up for shard shard2: total=2 found=1 timeoute in=79238ms
+2021-03-26 06:41:26.193 INFO  (ShutdownMonitor) [   ] o.e.j.s.AbstractConnector Stopped ServerConnector@1817f1eb{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8983}
+2021-03-26 06:41:26.193 INFO  (ShutdownMonitor) [   ] o.e.j.s.session node0 Stopped scavenging
+2021-03-26 06:41:26.200 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=1980194149
+2021-03-26 06:41:26.200 INFO  (ShutdownMonitor) [   ] o.a.s.c.ZkController Remove node as live in ZooKeeper:/live_nodes/127.0.1.1:8983_solr
+2021-03-26 06:41:26.204 INFO  (ShutdownMonitor) [   ] o.a.s.c.ZkController Publish this node as DOWN...
+2021-03-26 06:41:26.204 INFO  (ShutdownMonitor) [   ] o.a.s.c.ZkController Publish node=127.0.1.1:8983_solr as DOWN
+2021-03-26 06:41:26.231 INFO  (coreCloseExecutor-74-thread-1) [   ] o.a.s.c.SolrCore [localDOcs_shard1_replica_n2]  CLOSING SolrCore org.apache.solr.core.SolrCore@32778f2d
+2021-03-26 06:41:26.232 INFO  (coreCloseExecutor-74-thread-1) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.localDOcs.shard1.replica_n2 tag=SolrCore@32778f2d
+2021-03-26 06:41:26.232 INFO  (coreCloseExecutor-74-thread-1) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@25b93d02: rootName = null, domain = solr.core.localDOcs.shard1.replica_n2, service url = null, agent id = null] for registry solr.core.localDOcs.shard1.replica_n2/com.codahale.metrics.MetricRegistry@4d2f4cb9
+2021-03-26 06:41:26.239 INFO  (coreCloseExecutor-74-thread-2) [   ] o.a.s.c.SolrCore [allData_shard2_replica_n4]  CLOSING SolrCore org.apache.solr.core.SolrCore@5a4a1dc0
+2021-03-26 06:41:26.245 INFO  (coreCloseExecutor-74-thread-1) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.collection.localDOcs.shard1.leader tag=SolrCore@32778f2d
+2021-03-26 06:41:26.245 INFO  (coreCloseExecutor-74-thread-2) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.allData.shard2.replica_n4 tag=SolrCore@5a4a1dc0
+2021-03-26 06:41:26.247 INFO  (coreCloseExecutor-74-thread-2) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@2a8839d7: rootName = null, domain = solr.core.allData.shard2.replica_n4, service url = null, agent id = null] for registry solr.core.allData.shard2.replica_n4/com.codahale.metrics.MetricRegistry@7887b897
+2021-03-26 06:41:26.250 INFO  (coreCloseExecutor-74-thread-3) [   ] o.a.s.c.SolrCore [allData_shard1_replica_n1]  CLOSING SolrCore org.apache.solr.core.SolrCore@291b6f7e
+2021-03-26 06:41:26.250 INFO  (coreCloseExecutor-74-thread-4) [   ] o.a.s.c.SolrCore [localDOcs_shard2_replica_n6]  CLOSING SolrCore org.apache.solr.core.SolrCore@6d3e1f98
+2021-03-26 06:41:26.251 INFO  (coreCloseExecutor-74-thread-5) [   ] o.a.s.c.SolrCore [localDocs_shard2_replica_n4]  CLOSING SolrCore org.apache.solr.core.SolrCore@5aff98b3
+2021-03-26 06:41:26.251 INFO  (coreCloseExecutor-74-thread-6) [   ] o.a.s.c.SolrCore [localDocs_shard1_replica_n1]  CLOSING SolrCore org.apache.solr.core.SolrCore@507c959
+2021-03-26 06:41:26.258 INFO  (coreCloseExecutor-74-thread-2) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.collection.allData.shard2.leader tag=SolrCore@5a4a1dc0
+2021-03-26 06:41:26.258 INFO  (coreCloseExecutor-74-thread-3) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.allData.shard1.replica_n1 tag=SolrCore@291b6f7e
+2021-03-26 06:41:26.258 INFO  (coreCloseExecutor-74-thread-3) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@31ea6d7c: rootName = null, domain = solr.core.allData.shard1.replica_n1, service url = null, agent id = null] for registry solr.core.allData.shard1.replica_n1/com.codahale.metrics.MetricRegistry@34a755f2
+2021-03-26 06:41:26.267 INFO  (coreCloseExecutor-74-thread-2) [   ] o.a.s.u.DirectUpdateHandler2 Committing on IndexWriter.close()  ... SKIPPED (unnecessary).
+2021-03-26 06:41:26.270 INFO  (coreCloseExecutor-74-thread-1) [   ] o.a.s.u.DirectUpdateHandler2 Committing on IndexWriter.close()  ... SKIPPED (unnecessary).
+2021-03-26 06:41:26.270 INFO  (coreCloseExecutor-74-thread-7) [   ] o.a.s.c.SolrCore [techproducts_shard1_replica_n2]  CLOSING SolrCore org.apache.solr.core.SolrCore@756295b5
+2021-03-26 06:41:26.270 INFO  (coreCloseExecutor-74-thread-8) [   ] o.a.s.c.SolrCore [techproducts_shard2_replica_n6]  CLOSING SolrCore org.apache.solr.core.SolrCore@697c34cf
+2021-03-26 06:41:26.273 INFO  (coreCloseExecutor-74-thread-3) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.collection.allData.shard1.leader tag=SolrCore@291b6f7e
+2021-03-26 06:41:26.274 INFO  (coreCloseExecutor-74-thread-4) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.localDOcs.shard2.replica_n6 tag=SolrCore@6d3e1f98
+2021-03-26 06:41:26.274 INFO  (coreCloseExecutor-74-thread-4) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@362d028c: rootName = null, domain = solr.core.localDOcs.shard2.replica_n6, service url = null, agent id = null] for registry solr.core.localDOcs.shard2.replica_n6/com.codahale.metrics.MetricRegistry@4472c394
+2021-03-26 06:41:26.290 INFO  (coreCloseExecutor-74-thread-3) [   ] o.a.s.u.DirectUpdateHandler2 Committing on IndexWriter.close()  ... SKIPPED (unnecessary).
+2021-03-26 06:41:26.291 INFO  (coreCloseExecutor-74-thread-4) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.collection.localDOcs.shard2.leader tag=SolrCore@6d3e1f98
+2021-03-26 06:41:26.291 INFO  (coreCloseExecutor-74-thread-5) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.localDocs.shard2.replica_n4 tag=SolrCore@5aff98b3
+2021-03-26 06:41:26.291 INFO  (coreCloseExecutor-74-thread-5) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@472c6ece: rootName = null, domain = solr.core.localDocs.shard2.replica_n4, service url = null, agent id = null] for registry solr.core.localDocs.shard2.replica_n4/com.codahale.metrics.MetricRegistry@1c7d1dcf
+2021-03-26 06:41:26.297 INFO  (coreCloseExecutor-74-thread-5) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.collection.localDocs.shard2.leader tag=SolrCore@5aff98b3
+2021-03-26 06:41:26.297 INFO  (coreCloseExecutor-74-thread-6) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.localDocs.shard1.replica_n1 tag=SolrCore@507c959
+2021-03-26 06:41:26.297 INFO  (coreCloseExecutor-74-thread-6) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@1ca70dbb: rootName = null, domain = solr.core.localDocs.shard1.replica_n1, service url = null, agent id = null] for registry solr.core.localDocs.shard1.replica_n1/com.codahale.metrics.MetricRegistry@209f83ce
+2021-03-26 06:41:26.298 INFO  (coreCloseExecutor-74-thread-4) [   ] o.a.s.u.DirectUpdateHandler2 Committing on IndexWriter.close()  ... SKIPPED (unnecessary).
+2021-03-26 06:41:26.304 INFO  (coreCloseExecutor-74-thread-7) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.techproducts.shard1.replica_n2 tag=SolrCore@756295b5
+2021-03-26 06:41:26.304 INFO  (coreCloseExecutor-74-thread-7) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@4a04aeae: rootName = null, domain = solr.core.techproducts.shard1.replica_n2, service url = null, agent id = null] for registry solr.core.techproducts.shard1.replica_n2/com.codahale.metrics.MetricRegistry@6b2dd77c
+2021-03-26 06:41:26.309 INFO  (coreCloseExecutor-74-thread-7) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.collection.techproducts.shard1.leader tag=SolrCore@756295b5
+2021-03-26 06:41:26.309 INFO  (coreCloseExecutor-74-thread-8) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.techproducts.shard2.replica_n6 tag=SolrCore@697c34cf
+2021-03-26 06:41:26.309 INFO  (coreCloseExecutor-74-thread-8) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@3be99773: rootName = null, domain = solr.core.techproducts.shard2.replica_n6, service url = null, agent id = null] for registry solr.core.techproducts.shard2.replica_n6/com.codahale.metrics.MetricRegistry@5aaa737b
+2021-03-26 06:41:26.311 INFO  (coreCloseExecutor-74-thread-5) [   ] o.a.s.u.DirectUpdateHandler2 Committing on IndexWriter.close()  ... SKIPPED (unnecessary).
+2021-03-26 06:41:26.313 INFO  (coreCloseExecutor-74-thread-8) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.collection.techproducts.shard2.leader tag=SolrCore@697c34cf
+2021-03-26 06:41:26.313 INFO  (coreCloseExecutor-74-thread-6) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.collection.localDocs.shard1.leader tag=SolrCore@507c959
+2021-03-26 06:41:26.318 INFO  (coreCloseExecutor-74-thread-7) [   ] o.a.s.u.DirectUpdateHandler2 Committing on IndexWriter.close()  ... SKIPPED (unnecessary).
+2021-03-26 06:41:26.319 INFO  (coreCloseExecutor-74-thread-6) [   ] o.a.s.u.DirectUpdateHandler2 Committing on IndexWriter.close()  ... SKIPPED (unnecessary).
+2021-03-26 06:41:26.320 INFO  (coreCloseExecutor-74-thread-8) [   ] o.a.s.u.DirectUpdateHandler2 Committing on IndexWriter.close()  ... SKIPPED (unnecessary).
+2021-03-26 06:41:26.364 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node tag=null
+2021-03-26 06:41:26.364 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@63a28987: rootName = null, domain = solr.node, service url = null, agent id = null] for registry solr.node/com.codahale.metrics.MetricRegistry@68f6e0f1
+2021-03-26 06:41:26.366 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm tag=null
+2021-03-26 06:41:26.366 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@330c1f61: rootName = null, domain = solr.jvm, service url = null, agent id = null] for registry solr.jvm/com.codahale.metrics.MetricRegistry@580f7aa1
+2021-03-26 06:41:26.367 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty tag=null
+2021-03-26 06:41:26.367 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@37d28f02: rootName = null, domain = solr.jetty, service url = null, agent id = null] for registry solr.jetty/com.codahale.metrics.MetricRegistry@1fba9a36
+2021-03-26 06:41:26.367 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.cluster tag=null
+2021-03-26 06:41:26.382 INFO  (closeThreadPool-76-thread-1) [   ] o.a.s.c.Overseer Overseer (id=72058090887053312-127.0.1.1:8983_solr-n_0000000014) closing
+2021-03-26 06:41:26.382 INFO  (OverseerStateUpdate-72058090887053312-127.0.1.1:8983_solr-n_0000000014) [   ] o.a.s.c.Overseer Overseer Loop exiting : 127.0.1.1:8983_solr
+2021-03-26 06:41:26.383 INFO  (OverseerAutoScalingTriggerThread-72058090887053312-127.0.1.1:8983_solr-n_0000000014) [   ] o.a.s.c.a.OverseerTriggerThread OverseerTriggerThread woken up but we are closed, exiting.
+2021-03-26 06:41:26.395 INFO  (closeThreadPool-76-thread-2) [   ] o.a.s.c.Overseer Overseer (id=72058090887053312-127.0.1.1:8983_solr-n_0000000014) closing
+2021-03-26 06:41:26.502 ERROR (coreZkRegister-1-thread-2-processing-n:127.0.1.1:8983_solr) [c:allData s:shard2 r:core_node7 x:allData_shard2_replica_n4] o.a.s.c.ZkContainer :org.apache.solr.common.SolrException: Could not load collection from ZK: allData
+	at org.apache.solr.common.cloud.ZkStateReader.getCollectionLive(ZkStateReader.java:1610)
+	at org.apache.solr.common.cloud.ZkStateReader$LazyCollectionRef.get(ZkStateReader.java:802)
+	at org.apache.solr.common.cloud.ClusterState.getCollectionOrNull(ClusterState.java:152)
+	at org.apache.solr.common.cloud.ClusterState.getCollectionOrNull(ClusterState.java:136)
+	at org.apache.solr.cloud.ShardLeaderElectionContext.waitForReplicasToComeUp(ShardLeaderElectionContext.java:434)
+	at org.apache.solr.cloud.ShardLeaderElectionContext.runLeaderProcess(ShardLeaderElectionContext.java:123)
+	at org.apache.solr.cloud.LeaderElector.runIamLeaderProcess(LeaderElector.java:172)
+	at org.apache.solr.cloud.LeaderElector.checkIfIamLeader(LeaderElector.java:138)
+	at org.apache.solr.cloud.LeaderElector.joinElection(LeaderElector.java:309)
+	at org.apache.solr.cloud.ZkController.joinElection(ZkController.java:1478)
+	at org.apache.solr.cloud.ZkController.register(ZkController.java:1218)
+	at org.apache.solr.cloud.ZkController.register(ZkController.java:1171)
+	at org.apache.solr.core.ZkContainer.lambda$registerInZk$0(ZkContainer.java:216)
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:218)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.apache.zookeeper.KeeperException$SessionExpiredException: KeeperErrorCode = Session expired for /collections/allData/state.json
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:134)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:54)
+	at org.apache.zookeeper.ZooKeeper.getData(ZooKeeper.java:2358)
+	at org.apache.solr.common.cloud.SolrZkClient.lambda$getData$6(SolrZkClient.java:351)
+	at org.apache.solr.common.cloud.ZkCmdExecutor.retryOperation(ZkCmdExecutor.java:71)
+	at org.apache.solr.common.cloud.SolrZkClient.getData(SolrZkClient.java:351)
+	at org.apache.solr.common.cloud.ZkStateReader.fetchCollectionState(ZkStateReader.java:1631)
+	at org.apache.solr.common.cloud.ZkStateReader.getCollectionLive(ZkStateReader.java:1608)
+	... 16 more
+
+2021-03-26 06:41:26.502 ERROR (coreZkRegister-1-thread-1-processing-n:127.0.1.1:8983_solr) [c:localDOcs s:shard1 r:core_node5 x:localDOcs_shard1_replica_n2] o.a.s.c.ZkContainer :org.apache.solr.common.SolrException: Could not load collection from ZK: localDOcs
+	at org.apache.solr.common.cloud.ZkStateReader.getCollectionLive(ZkStateReader.java:1610)
+	at org.apache.solr.common.cloud.ZkStateReader$LazyCollectionRef.get(ZkStateReader.java:802)
+	at org.apache.solr.common.cloud.ClusterState.getCollectionOrNull(ClusterState.java:152)
+	at org.apache.solr.common.cloud.ClusterState.getCollectionOrNull(ClusterState.java:136)
+	at org.apache.solr.cloud.ShardLeaderElectionContext.waitForReplicasToComeUp(ShardLeaderElectionContext.java:434)
+	at org.apache.solr.cloud.ShardLeaderElectionContext.runLeaderProcess(ShardLeaderElectionContext.java:123)
+	at org.apache.solr.cloud.LeaderElector.runIamLeaderProcess(LeaderElector.java:172)
+	at org.apache.solr.cloud.LeaderElector.checkIfIamLeader(LeaderElector.java:138)
+	at org.apache.solr.cloud.LeaderElector.joinElection(LeaderElector.java:309)
+	at org.apache.solr.cloud.ZkController.joinElection(ZkController.java:1478)
+	at org.apache.solr.cloud.ZkController.register(ZkController.java:1218)
+	at org.apache.solr.cloud.ZkController.register(ZkController.java:1171)
+	at org.apache.solr.core.ZkContainer.lambda$registerInZk$0(ZkContainer.java:216)
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:218)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.apache.zookeeper.KeeperException$SessionExpiredException: KeeperErrorCode = Session expired for /collections/localDOcs/state.json
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:134)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:54)
+	at org.apache.zookeeper.ZooKeeper.getData(ZooKeeper.java:2358)
+	at org.apache.solr.common.cloud.SolrZkClient.lambda$getData$6(SolrZkClient.java:351)
+	at org.apache.solr.common.cloud.ZkCmdExecutor.retryOperation(ZkCmdExecutor.java:71)
+	at org.apache.solr.common.cloud.SolrZkClient.getData(SolrZkClient.java:351)
+	at org.apache.solr.common.cloud.ZkStateReader.fetchCollectionState(ZkStateReader.java:1631)
+	at org.apache.solr.common.cloud.ZkStateReader.getCollectionLive(ZkStateReader.java:1608)
+	... 16 more
+
+2021-03-26 06:41:26.503 ERROR (coreZkRegister-1-thread-3-processing-n:127.0.1.1:8983_solr) [c:allData s:shard1 r:core_node3 x:allData_shard1_replica_n1] o.a.s.c.ZkContainer :org.apache.solr.common.SolrException: Could not load collection from ZK: allData
+	at org.apache.solr.common.cloud.ZkStateReader.getCollectionLive(ZkStateReader.java:1610)
+	at org.apache.solr.common.cloud.ZkStateReader$LazyCollectionRef.get(ZkStateReader.java:802)
+	at org.apache.solr.common.cloud.ClusterState.getCollectionOrNull(ClusterState.java:152)
+	at org.apache.solr.common.cloud.ClusterState.getCollectionOrNull(ClusterState.java:136)
+	at org.apache.solr.cloud.ShardLeaderElectionContext.waitForReplicasToComeUp(ShardLeaderElectionContext.java:434)
+	at org.apache.solr.cloud.ShardLeaderElectionContext.runLeaderProcess(ShardLeaderElectionContext.java:123)
+	at org.apache.solr.cloud.LeaderElector.runIamLeaderProcess(LeaderElector.java:172)
+	at org.apache.solr.cloud.LeaderElector.checkIfIamLeader(LeaderElector.java:138)
+	at org.apache.solr.cloud.LeaderElector.joinElection(LeaderElector.java:309)
+	at org.apache.solr.cloud.ZkController.joinElection(ZkController.java:1478)
+	at org.apache.solr.cloud.ZkController.register(ZkController.java:1218)
+	at org.apache.solr.cloud.ZkController.register(ZkController.java:1171)
+	at org.apache.solr.core.ZkContainer.lambda$registerInZk$0(ZkContainer.java:216)
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:218)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.apache.zookeeper.KeeperException$SessionExpiredException: KeeperErrorCode = Session expired for /collections/allData/state.json
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:134)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:54)
+	at org.apache.zookeeper.ZooKeeper.getData(ZooKeeper.java:2358)
+	at org.apache.solr.common.cloud.SolrZkClient.lambda$getData$6(SolrZkClient.java:351)
+	at org.apache.solr.common.cloud.ZkCmdExecutor.retryOperation(ZkCmdExecutor.java:71)
+	at org.apache.solr.common.cloud.SolrZkClient.getData(SolrZkClient.java:351)
+	at org.apache.solr.common.cloud.ZkStateReader.fetchCollectionState(ZkStateReader.java:1631)
+	at org.apache.solr.common.cloud.ZkStateReader.getCollectionLive(ZkStateReader.java:1608)
+	... 16 more
+
+2021-03-26 06:41:26.503 INFO  (ShutdownMonitor) [   ] o.a.s.c.Overseer Overseer (id=72058090887053312-127.0.1.1:8983_solr-n_0000000014) closing
+2021-03-26 06:41:26.503 WARN  (Thread-11) [   ] o.a.z.s.ZooKeeperServerMain Server interrupted => java.lang.InterruptedException
+	at java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer.doAcquireSharedInterruptibly(AbstractQueuedSynchronizer.java:1040)
+java.lang.InterruptedException: null
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.doAcquireSharedInterruptibly(AbstractQueuedSynchronizer.java:1040) ~[?:?]
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireSharedInterruptibly(AbstractQueuedSynchronizer.java:1345) ~[?:?]
+	at java.util.concurrent.CountDownLatch.await(CountDownLatch.java:232) ~[?:?]
+	at org.apache.zookeeper.server.ZooKeeperServerMain.runFromConfig(ZooKeeperServerMain.java:181) ~[?:?]
+	at org.apache.solr.cloud.SolrZkServer$1.run(SolrZkServer.java:121) ~[?:?]
+2021-03-26 06:41:26.510 INFO  (Thread-11) [   ] o.a.s.c.SolrZkServer ZooKeeper Server exited.
+2021-03-26 06:41:26.608 ERROR (coreZkRegister-1-thread-7-processing-n:127.0.1.1:8983_solr) [c:techproducts s:shard1 r:core_node5 x:techproducts_shard1_replica_n2] o.a.s.c.ZkContainer :org.apache.solr.common.SolrException: Could not load collection from ZK: techproducts
+	at org.apache.solr.common.cloud.ZkStateReader.getCollectionLive(ZkStateReader.java:1610)
+	at org.apache.solr.common.cloud.ZkStateReader$LazyCollectionRef.get(ZkStateReader.java:802)
+	at org.apache.solr.common.cloud.ClusterState.getCollectionOrNull(ClusterState.java:152)
+	at org.apache.solr.common.cloud.ClusterState.getCollectionOrNull(ClusterState.java:136)
+	at org.apache.solr.cloud.ShardLeaderElectionContext.waitForReplicasToComeUp(ShardLeaderElectionContext.java:434)
+	at org.apache.solr.cloud.ShardLeaderElectionContext.runLeaderProcess(ShardLeaderElectionContext.java:123)
+	at org.apache.solr.cloud.LeaderElector.runIamLeaderProcess(LeaderElector.java:172)
+	at org.apache.solr.cloud.LeaderElector.checkIfIamLeader(LeaderElector.java:138)
+	at org.apache.solr.cloud.LeaderElector.joinElection(LeaderElector.java:309)
+	at org.apache.solr.cloud.ZkController.joinElection(ZkController.java:1478)
+	at org.apache.solr.cloud.ZkController.register(ZkController.java:1218)
+	at org.apache.solr.cloud.ZkController.register(ZkController.java:1171)
+	at org.apache.solr.core.ZkContainer.lambda$registerInZk$0(ZkContainer.java:216)
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:218)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.apache.zookeeper.KeeperException$SessionExpiredException: KeeperErrorCode = Session expired for /collections/techproducts/state.json
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:134)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:54)
+	at org.apache.zookeeper.ZooKeeper.getData(ZooKeeper.java:2358)
+	at org.apache.solr.common.cloud.SolrZkClient.lambda$getData$6(SolrZkClient.java:351)
+	at org.apache.solr.common.cloud.ZkCmdExecutor.retryOperation(ZkCmdExecutor.java:71)
+	at org.apache.solr.common.cloud.SolrZkClient.getData(SolrZkClient.java:351)
+	at org.apache.solr.common.cloud.ZkStateReader.fetchCollectionState(ZkStateReader.java:1631)
+	at org.apache.solr.common.cloud.ZkStateReader.getCollectionLive(ZkStateReader.java:1608)
+	... 16 more
+
+2021-03-26 06:41:26.629 ERROR (coreZkRegister-1-thread-4-processing-n:127.0.1.1:8983_solr) [c:localDOcs s:shard2 r:core_node8 x:localDOcs_shard2_replica_n6] o.a.s.c.ZkContainer :org.apache.solr.common.SolrException: Could not load collection from ZK: localDOcs
+	at org.apache.solr.common.cloud.ZkStateReader.getCollectionLive(ZkStateReader.java:1610)
+	at org.apache.solr.common.cloud.ZkStateReader$LazyCollectionRef.get(ZkStateReader.java:802)
+	at org.apache.solr.common.cloud.ClusterState.getCollectionOrNull(ClusterState.java:152)
+	at org.apache.solr.common.cloud.ClusterState.getCollectionOrNull(ClusterState.java:136)
+	at org.apache.solr.cloud.ShardLeaderElectionContext.waitForReplicasToComeUp(ShardLeaderElectionContext.java:434)
+	at org.apache.solr.cloud.ShardLeaderElectionContext.runLeaderProcess(ShardLeaderElectionContext.java:123)
+	at org.apache.solr.cloud.LeaderElector.runIamLeaderProcess(LeaderElector.java:172)
+	at org.apache.solr.cloud.LeaderElector.checkIfIamLeader(LeaderElector.java:138)
+	at org.apache.solr.cloud.LeaderElector.joinElection(LeaderElector.java:309)
+	at org.apache.solr.cloud.ZkController.joinElection(ZkController.java:1478)
+	at org.apache.solr.cloud.ZkController.register(ZkController.java:1218)
+	at org.apache.solr.cloud.ZkController.register(ZkController.java:1171)
+	at org.apache.solr.core.ZkContainer.lambda$registerInZk$0(ZkContainer.java:216)
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:218)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.apache.zookeeper.KeeperException$SessionExpiredException: KeeperErrorCode = Session expired for /collections/localDOcs/state.json
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:134)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:54)
+	at org.apache.zookeeper.ZooKeeper.getData(ZooKeeper.java:2358)
+	at org.apache.solr.common.cloud.SolrZkClient.lambda$getData$6(SolrZkClient.java:351)
+	at org.apache.solr.common.cloud.ZkCmdExecutor.retryOperation(ZkCmdExecutor.java:71)
+	at org.apache.solr.common.cloud.SolrZkClient.getData(SolrZkClient.java:351)
+	at org.apache.solr.common.cloud.ZkStateReader.fetchCollectionState(ZkStateReader.java:1631)
+	at org.apache.solr.common.cloud.ZkStateReader.getCollectionLive(ZkStateReader.java:1608)
+	... 16 more
+
+2021-03-26 06:41:26.690 ERROR (coreZkRegister-1-thread-8-processing-n:127.0.1.1:8983_solr) [c:techproducts s:shard2 r:core_node8 x:techproducts_shard2_replica_n6] o.a.s.c.ZkContainer :org.apache.solr.common.SolrException: Could not load collection from ZK: techproducts
+	at org.apache.solr.common.cloud.ZkStateReader.getCollectionLive(ZkStateReader.java:1610)
+	at org.apache.solr.common.cloud.ZkStateReader$LazyCollectionRef.get(ZkStateReader.java:802)
+	at org.apache.solr.common.cloud.ClusterState.getCollectionOrNull(ClusterState.java:152)
+	at org.apache.solr.common.cloud.ClusterState.getCollectionOrNull(ClusterState.java:136)
+	at org.apache.solr.cloud.ShardLeaderElectionContext.waitForReplicasToComeUp(ShardLeaderElectionContext.java:434)
+	at org.apache.solr.cloud.ShardLeaderElectionContext.runLeaderProcess(ShardLeaderElectionContext.java:123)
+	at org.apache.solr.cloud.LeaderElector.runIamLeaderProcess(LeaderElector.java:172)
+	at org.apache.solr.cloud.LeaderElector.checkIfIamLeader(LeaderElector.java:138)
+	at org.apache.solr.cloud.LeaderElector.joinElection(LeaderElector.java:309)
+	at org.apache.solr.cloud.ZkController.joinElection(ZkController.java:1478)
+	at org.apache.solr.cloud.ZkController.register(ZkController.java:1218)
+	at org.apache.solr.cloud.ZkController.register(ZkController.java:1171)
+	at org.apache.solr.core.ZkContainer.lambda$registerInZk$0(ZkContainer.java:216)
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:218)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.apache.zookeeper.KeeperException$SessionExpiredException: KeeperErrorCode = Session expired for /collections/techproducts/state.json
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:134)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:54)
+	at org.apache.zookeeper.ZooKeeper.getData(ZooKeeper.java:2358)
+	at org.apache.solr.common.cloud.SolrZkClient.lambda$getData$6(SolrZkClient.java:351)
+	at org.apache.solr.common.cloud.ZkCmdExecutor.retryOperation(ZkCmdExecutor.java:71)
+	at org.apache.solr.common.cloud.SolrZkClient.getData(SolrZkClient.java:351)
+	at org.apache.solr.common.cloud.ZkStateReader.fetchCollectionState(ZkStateReader.java:1631)
+	at org.apache.solr.common.cloud.ZkStateReader.getCollectionLive(ZkStateReader.java:1608)
+	... 16 more
+
+2021-03-26 06:41:27.898 ERROR (coreZkRegister-1-thread-6-processing-n:127.0.1.1:8983_solr) [c:localDocs s:shard1 r:core_node3 x:localDocs_shard1_replica_n1] o.a.s.c.ZkContainer :org.apache.solr.common.SolrException: Could not load collection from ZK: localDocs
+	at org.apache.solr.common.cloud.ZkStateReader.getCollectionLive(ZkStateReader.java:1610)
+	at org.apache.solr.common.cloud.ZkStateReader$LazyCollectionRef.get(ZkStateReader.java:802)
+	at org.apache.solr.common.cloud.ClusterState.getCollectionOrNull(ClusterState.java:152)
+	at org.apache.solr.common.cloud.ClusterState.getCollectionOrNull(ClusterState.java:136)
+	at org.apache.solr.cloud.ShardLeaderElectionContext.waitForReplicasToComeUp(ShardLeaderElectionContext.java:434)
+	at org.apache.solr.cloud.ShardLeaderElectionContext.runLeaderProcess(ShardLeaderElectionContext.java:123)
+	at org.apache.solr.cloud.LeaderElector.runIamLeaderProcess(LeaderElector.java:172)
+	at org.apache.solr.cloud.LeaderElector.checkIfIamLeader(LeaderElector.java:138)
+	at org.apache.solr.cloud.LeaderElector.joinElection(LeaderElector.java:309)
+	at org.apache.solr.cloud.ZkController.joinElection(ZkController.java:1478)
+	at org.apache.solr.cloud.ZkController.register(ZkController.java:1218)
+	at org.apache.solr.cloud.ZkController.register(ZkController.java:1171)
+	at org.apache.solr.core.ZkContainer.lambda$registerInZk$0(ZkContainer.java:216)
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:218)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.apache.zookeeper.KeeperException$SessionExpiredException: KeeperErrorCode = Session expired for /collections/localDocs/state.json
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:134)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:54)
+	at org.apache.zookeeper.ZooKeeper.getData(ZooKeeper.java:2358)
+	at org.apache.solr.common.cloud.SolrZkClient.lambda$getData$6(SolrZkClient.java:351)
+	at org.apache.solr.common.cloud.ZkCmdExecutor.retryOperation(ZkCmdExecutor.java:71)
+	at org.apache.solr.common.cloud.SolrZkClient.getData(SolrZkClient.java:351)
+	at org.apache.solr.common.cloud.ZkStateReader.fetchCollectionState(ZkStateReader.java:1631)
+	at org.apache.solr.common.cloud.ZkStateReader.getCollectionLive(ZkStateReader.java:1608)
+	... 16 more
+
+2021-03-26 06:41:27.902 INFO  (ShutdownMonitor) [   ] o.e.j.s.h.ContextHandler Stopped o.e.j.w.WebAppContext@4a335fa8{/solr,null,STOPPED}{/home/tnguy107/Desktop/573/solr-8.8.1/server/solr-webapp/webapp}

@@ -1,0 +1,59 @@
+------------Solr--------------------
+System used: Virtual Box Ubuntu 18, 10gb ram, 4 cpu cores
+Port used: 8983, 7574, 9983
+Collection: "metamapData" is the ontology given and "allData" is the scrapping data (converted to .csv)
+Run: "solr_setup.sh" script to start solr and "solr_stop.sh" script to stop solr. Solr needs to be running for the code to work
+
+More Detail about Solr:
+# With this setup, each indexing take under 10 secs. 
+# If want to increase nodes/shard for better performance. run "solr_stop.sh" script and use "bin/solr start -e cloud" and ignore the first 2 setup session
+
+# creating solr cloud on port 8983 and 7574 using example/cloud/node.. setup
+    bin/solr start -c -p 8983 -s example/cloud/node1/solr
+    bin/solr start -c -p 7574 -s example/cloud/node2/solr -z localhost:9983
+    
+# creating 2 collection: metamapData, metamapData with 2 solr node with 2 shards
+    bin/solr create -c metamapData -s 2 -rf 2
+    bin/solr create -c allData -s 2 -rf 2
+
+# add whole text search field, not recommend for very very large data
+# by default, search format is category:keyword  (e.g. symptom:cough)
+# adding this will allow full text searching without category (e.g. cough)
+    curl -X POST -H 'Content-type:application/json' --data-binary '{"add-copy-field" : {"source":"*","dest":"_text_"}}' http://localhost:8983/solr/metamapData/schema
+    curl -X POST -H 'Content-type:application/json' --data-binary '{"add-copy-field" : {"source":"*","dest":"_text_"}}' http://localhost:8983/solr/allData/schema
+
+# indexing the data and store them in collection
+# my data is in solr-8.8.1/example/MetamapResult.csv and solr-8.8.1/example/stage1_scrapping.csv
+    bin/post -c metamapData example/MetamapResult.csv
+    bin/post -c allData example/stage1_scrapping.csv
+
+# solr comes with a Gui, you can view your collection in your web browser with these links:
+# you can find the new query link pattern by using the GUI. Use the "q" session right under common (e.g *:* is search for all data)
+    http://localhost:8983/solr/#/allData/query
+    http://localhost:8983/solr/#/metamapData/query
+
+
+# Deleting collection
+    bin/solr delete -c allData 
+    bin/solr delete -c metamapData
+    bin/solr stop -all
+
+# Resources:
+https://solr.apache.org/guide/8_8/solr-tutorial.html
+https://www.tutorialspoint.com/apache_solr/apache_solr_basic_commands.htm
+https://factorpad.com/tech/solr/reference/solr-start.html
+
+
+
+
+----------------Coding--------------------------
+
+The search_request script consists of three queries involving Solr.
+    Query 1: Given a search term, return posts in order of relevance
+    Query 2: Given a post number, return related symptoms/treatments/drugs/body parts
+    Query 3: Given a post URL, return the original post, replies, and subreplies
+
+Below are the steps in which the user interface would use these queries:
+    1. The user inputs a search term and clicks a button to submit
+    2. The results of query 2 are presented to the user as optional filters
+    3. The results of query 3 are presented as the final search results

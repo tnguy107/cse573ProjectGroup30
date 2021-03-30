@@ -1,0 +1,525 @@
+2021-03-26 06:39:13.989 INFO  (main) [   ] o.e.j.u.log Logging initialized @954ms to org.eclipse.jetty.util.log.Slf4jLog
+2021-03-26 06:39:14.168 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.34.v20201102; built: 2020-11-02T14:15:39.302Z; git: e46af88704a893fc12cb0e3bf46e2c7b48a009e7; jvm 11.0.10+9-Ubuntu-0ubuntu1.18.04
+2021-03-26 06:39:14.200 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///home/tnguy107/Desktop/573/solr-8.8.1/server/contexts/] at interval 0
+2021-03-26 06:39:14.442 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+2021-03-26 06:39:14.453 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
+2021-03-26 06:39:14.453 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
+2021-03-26 06:39:14.455 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 660000ms
+2021-03-26 06:39:14.516 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2021-03-26 06:39:14.520 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 8.8.1
+2021-03-26 06:39:14.520 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in cloud mode on port 8984
+2021-03-26 06:39:14.520 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /home/tnguy107/Desktop/573/solr-8.8.1
+2021-03-26 06:39:14.520 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2021-03-26T06:39:14.520773Z
+2021-03-26 06:39:14.551 INFO  (main) [   ] o.a.s.c.SolrPaths Using system property solr.solr.home: /home/tnguy107/Desktop/573/solr-8.8.1/example/cloud/node2/solr
+2021-03-26 06:39:14.616 INFO  (main) [   ] o.a.s.c.c.ConnectionManager Waiting for client to connect to ZooKeeper
+2021-03-26 06:39:14.638 WARN  (main-SendThread(localhost:8985)) [   ] o.a.z.ClientCnxn Session 0x0 for sever localhost/127.0.0.1:8985, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1275) ~[?:?]
+2021-03-26 06:39:15.743 WARN  (main-SendThread(localhost:8985)) [   ] o.a.z.ClientCnxn Session 0x0 for sever localhost/127.0.0.1:8985, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1275) ~[?:?]
+2021-03-26 06:39:16.845 WARN  (main-SendThread(localhost:8985)) [   ] o.a.z.ClientCnxn Session 0x0 for sever localhost/127.0.0.1:8985, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1275) ~[?:?]
+2021-03-26 06:39:17.953 WARN  (main-SendThread(localhost:8985)) [   ] o.a.z.ClientCnxn Session 0x0 for sever localhost/127.0.0.1:8985, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1275) ~[?:?]
+2021-03-26 06:39:19.056 WARN  (main-SendThread(localhost:8985)) [   ] o.a.z.ClientCnxn Session 0x0 for sever localhost/127.0.0.1:8985, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1275) ~[?:?]
+2021-03-26 06:39:20.160 WARN  (main-SendThread(localhost:8985)) [   ] o.a.z.ClientCnxn Session 0x0 for sever localhost/127.0.0.1:8985, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1275) ~[?:?]
+2021-03-26 06:39:21.261 WARN  (main-SendThread(localhost:8985)) [   ] o.a.z.ClientCnxn Session 0x0 for sever localhost/127.0.0.1:8985, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1275) ~[?:?]
+2021-03-26 06:39:22.363 WARN  (main-SendThread(localhost:8985)) [   ] o.a.z.ClientCnxn Session 0x0 for sever localhost/127.0.0.1:8985, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1275) ~[?:?]
+2021-03-26 06:39:23.465 WARN  (main-SendThread(localhost:8985)) [   ] o.a.z.ClientCnxn Session 0x0 for sever localhost/127.0.0.1:8985, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1275) ~[?:?]
+2021-03-26 06:39:24.568 WARN  (main-SendThread(localhost:8985)) [   ] o.a.z.ClientCnxn Session 0x0 for sever localhost/127.0.0.1:8985, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1275) ~[?:?]
+2021-03-26 06:39:25.671 WARN  (main-SendThread(localhost:8985)) [   ] o.a.z.ClientCnxn Session 0x0 for sever localhost/127.0.0.1:8985, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1275) ~[?:?]
+2021-03-26 06:39:26.779 WARN  (main-SendThread(localhost:8985)) [   ] o.a.z.ClientCnxn Session 0x0 for sever localhost/127.0.0.1:8985, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1275) ~[?:?]
+2021-03-26 06:39:27.881 WARN  (main-SendThread(localhost:8985)) [   ] o.a.z.ClientCnxn Session 0x0 for sever localhost/127.0.0.1:8985, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1275) ~[?:?]
+2021-03-26 06:39:28.985 WARN  (main-SendThread(localhost:8985)) [   ] o.a.z.ClientCnxn Session 0x0 for sever localhost/127.0.0.1:8985, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1275) ~[?:?]
+2021-03-26 06:39:30.087 WARN  (main-SendThread(localhost:8985)) [   ] o.a.z.ClientCnxn Session 0x0 for sever localhost/127.0.0.1:8985, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1275) ~[?:?]
+2021-03-26 06:39:31.189 WARN  (main-SendThread(localhost:8985)) [   ] o.a.z.ClientCnxn Session 0x0 for sever localhost/127.0.0.1:8985, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1275) ~[?:?]
+2021-03-26 06:39:32.291 WARN  (main-SendThread(localhost:8985)) [   ] o.a.z.ClientCnxn Session 0x0 for sever localhost/127.0.0.1:8985, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1275) ~[?:?]
+2021-03-26 06:39:33.392 WARN  (main-SendThread(localhost:8985)) [   ] o.a.z.ClientCnxn Session 0x0 for sever localhost/127.0.0.1:8985, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1275) ~[?:?]
+2021-03-26 06:39:34.496 WARN  (main-SendThread(localhost:8985)) [   ] o.a.z.ClientCnxn Session 0x0 for sever localhost/127.0.0.1:8985, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1275) ~[?:?]
+2021-03-26 06:39:35.598 WARN  (main-SendThread(localhost:8985)) [   ] o.a.z.ClientCnxn Session 0x0 for sever localhost/127.0.0.1:8985, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1275) ~[?:?]
+2021-03-26 06:39:36.702 WARN  (main-SendThread(localhost:8985)) [   ] o.a.z.ClientCnxn Session 0x0 for sever localhost/127.0.0.1:8985, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1275) ~[?:?]
+2021-03-26 06:39:37.804 WARN  (main-SendThread(localhost:8985)) [   ] o.a.z.ClientCnxn Session 0x0 for sever localhost/127.0.0.1:8985, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1275) ~[?:?]
+2021-03-26 06:39:38.908 WARN  (main-SendThread(localhost:8985)) [   ] o.a.z.ClientCnxn Session 0x0 for sever localhost/127.0.0.1:8985, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1275) ~[?:?]
+2021-03-26 06:39:40.013 WARN  (main-SendThread(localhost:8985)) [   ] o.a.z.ClientCnxn Session 0x0 for sever localhost/127.0.0.1:8985, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1275) ~[?:?]
+2021-03-26 06:39:41.118 WARN  (main-SendThread(localhost:8985)) [   ] o.a.z.ClientCnxn Session 0x0 for sever localhost/127.0.0.1:8985, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1275) ~[?:?]
+2021-03-26 06:39:42.220 WARN  (main-SendThread(localhost:8985)) [   ] o.a.z.ClientCnxn Session 0x0 for sever localhost/127.0.0.1:8985, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1275) ~[?:?]
+2021-03-26 06:39:43.327 WARN  (main-SendThread(localhost:8985)) [   ] o.a.z.ClientCnxn Session 0x0 for sever localhost/127.0.0.1:8985, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1275) ~[?:?]
+2021-03-26 06:39:44.431 WARN  (main-SendThread(localhost:8985)) [   ] o.a.z.ClientCnxn Session 0x0 for sever localhost/127.0.0.1:8985, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1275) ~[?:?]
+2021-03-26 06:39:45.535 WARN  (main-SendThread(localhost:8985)) [   ] o.a.z.ClientCnxn An exception was thrown while closing send thread for session 0x0. => java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1275) ~[?:?]
+2021-03-26 06:39:45.642 ERROR (main) [   ] o.a.s.s.SolrDispatchFilter Could not start Solr. Check solr/home property and the logs
+2021-03-26 06:39:45.643 ERROR (main-EventThread) [   ] o.a.z.ClientCnxn Error while calling watcher  => java.util.concurrent.RejectedExecutionException: Task org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor$$Lambda$190/0x0000000840271040@1ac88fe9 rejected from org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor@180b0d9[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2055)
+java.util.concurrent.RejectedExecutionException: Task org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor$$Lambda$190/0x0000000840271040@1ac88fe9 rejected from org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor@180b0d9[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
+	at java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2055) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:825) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1355) ~[?:?]
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.execute(ExecutorUtil.java:203) ~[?:?]
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:118) ~[?:?]
+	at org.apache.solr.common.cloud.SolrZkClient$ProcessWatchWithExecutor.process(SolrZkClient.java:890) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$EventThread.processEvent(ClientCnxn.java:587) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$EventThread.run(ClientCnxn.java:562) ~[?:?]
+2021-03-26 06:39:45.688 ERROR (main) [   ] o.a.s.c.SolrCore null:org.apache.solr.common.SolrException: Error occurred while loading solr.xml from zookeeper
+	at org.apache.solr.servlet.SolrDispatchFilter.loadNodeConfig(SolrDispatchFilter.java:312)
+	at org.apache.solr.servlet.SolrDispatchFilter.createCoreContainer(SolrDispatchFilter.java:285)
+	at org.apache.solr.servlet.SolrDispatchFilter.init(SolrDispatchFilter.java:184)
+	at org.eclipse.jetty.servlet.FilterHolder.initialize(FilterHolder.java:140)
+	at org.eclipse.jetty.servlet.ServletHandler.lambda$initialize$0(ServletHandler.java:731)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:734)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:658)
+	at org.eclipse.jetty.servlet.ServletHandler.initialize(ServletHandler.java:755)
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:379)
+	at org.eclipse.jetty.webapp.WebAppContext.startWebapp(WebAppContext.java:1457)
+	at org.eclipse.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1422)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:911)
+	at org.eclipse.jetty.servlet.ServletContextHandler.doStart(ServletContextHandler.java:288)
+	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:524)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:73)
+	at org.eclipse.jetty.deploy.bindings.StandardStarter.processBinding(StandardStarter.java:46)
+	at org.eclipse.jetty.deploy.AppLifeCycle.runBindings(AppLifeCycle.java:188)
+	at org.eclipse.jetty.deploy.DeploymentManager.requestAppGoal(DeploymentManager.java:517)
+	at org.eclipse.jetty.deploy.DeploymentManager.addApp(DeploymentManager.java:157)
+	at org.eclipse.jetty.deploy.providers.ScanningAppProvider.fileAdded(ScanningAppProvider.java:173)
+	at org.eclipse.jetty.deploy.providers.WebAppProvider.fileAdded(WebAppProvider.java:447)
+	at org.eclipse.jetty.deploy.providers.ScanningAppProvider$1.fileAdded(ScanningAppProvider.java:66)
+	at org.eclipse.jetty.util.Scanner.reportAddition(Scanner.java:784)
+	at org.eclipse.jetty.util.Scanner.reportDifferences(Scanner.java:753)
+	at org.eclipse.jetty.util.Scanner.scan(Scanner.java:641)
+	at org.eclipse.jetty.util.Scanner.doStart(Scanner.java:540)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:73)
+	at org.eclipse.jetty.deploy.providers.ScanningAppProvider.doStart(ScanningAppProvider.java:146)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:73)
+	at org.eclipse.jetty.deploy.DeploymentManager.startAppProvider(DeploymentManager.java:605)
+	at org.eclipse.jetty.deploy.DeploymentManager.doStart(DeploymentManager.java:252)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:73)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:169)
+	at org.eclipse.jetty.server.Server.start(Server.java:423)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:117)
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:97)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:387)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:73)
+	at org.eclipse.jetty.xml.XmlConfiguration.lambda$main$2(XmlConfiguration.java:1908)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.jetty.xml.XmlConfiguration.main(XmlConfiguration.java:1857)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.jetty.start.Main.invokeMain(Main.java:218)
+	at org.eclipse.jetty.start.Main.start(Main.java:491)
+	at org.eclipse.jetty.start.Main.main(Main.java:77)
+Caused by: org.apache.solr.common.SolrException: java.util.concurrent.TimeoutException: Could not connect to ZooKeeper localhost:8985 within 30000 ms
+	at org.apache.solr.common.cloud.SolrZkClient.<init>(SolrZkClient.java:203)
+	at org.apache.solr.common.cloud.SolrZkClient.<init>(SolrZkClient.java:127)
+	at org.apache.solr.common.cloud.SolrZkClient.<init>(SolrZkClient.java:113)
+	at org.apache.solr.servlet.SolrDispatchFilter.loadNodeConfig(SolrDispatchFilter.java:305)
+	... 48 more
+Caused by: java.util.concurrent.TimeoutException: Could not connect to ZooKeeper localhost:8985 within 30000 ms
+	at org.apache.solr.common.cloud.ConnectionManager.waitForConnected(ConnectionManager.java:251)
+	at org.apache.solr.common.cloud.SolrZkClient.<init>(SolrZkClient.java:194)
+	... 51 more
+
+2021-03-26 06:39:45.708 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@4a335fa8{/solr,file:///home/tnguy107/Desktop/573/solr-8.8.1/server/solr-webapp/webapp/,AVAILABLE}{/home/tnguy107/Desktop/573/solr-8.8.1/server/solr-webapp/webapp}
+2021-03-26 06:39:45.717 INFO  (main) [   ] o.e.j.s.AbstractConnector Started ServerConnector@1817f1eb{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8984}
+2021-03-26 06:39:45.718 INFO  (main) [   ] o.e.j.s.Server Started @32684ms
+2021-03-26 06:39:55.371 ERROR (qtp261748192-20) [   ] o.a.s.s.SolrDispatchFilter Error processing the request. CoreContainer is either not initialized or shutting down.
+2021-03-26 06:39:55.433 WARN  (qtp261748192-20) [   ] o.e.j.s.HttpChannel /solr/admin/info/system => javax.servlet.ServletException: javax.servlet.UnavailableException: Error processing the request. CoreContainer is either not initialized or shutting down.
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:162)
+javax.servlet.ServletException: javax.servlet.UnavailableException: Error processing the request. CoreContainer is either not initialized or shutting down.
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:162) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322) ~[jetty-rewrite-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.Server.handle(Server.java:516) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:556) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:273) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) ~[jetty-io-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105) ~[jetty-io-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104) ~[jetty-io-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:773) ~[jetty-util-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:905) ~[jetty-util-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+Caused by: javax.servlet.UnavailableException: Error processing the request. CoreContainer is either not initialized or shutting down.
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:376) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:357) ~[?:?]
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:201) ~[jetty-servlet-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601) ~[jetty-servlet-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:548) ~[jetty-servlet-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:602) ~[jetty-security-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1612) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1434) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501) ~[jetty-servlet-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1582) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1349) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	... 14 more
+2021-03-26 06:40:15.426 ERROR (qtp261748192-15) [   ] o.a.s.s.SolrDispatchFilter Error processing the request. CoreContainer is either not initialized or shutting down.
+2021-03-26 06:40:15.426 WARN  (qtp261748192-15) [   ] o.e.j.s.HttpChannel /solr/admin/info/system => javax.servlet.ServletException: javax.servlet.UnavailableException: Error processing the request. CoreContainer is either not initialized or shutting down.
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:162)
+javax.servlet.ServletException: javax.servlet.UnavailableException: Error processing the request. CoreContainer is either not initialized or shutting down.
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:162) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322) ~[jetty-rewrite-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.Server.handle(Server.java:516) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:556) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:273) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) ~[jetty-io-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105) ~[jetty-io-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104) ~[jetty-io-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336) ~[jetty-util-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313) ~[jetty-util-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171) ~[jetty-util-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.produce(EatWhatYouKill.java:135) ~[jetty-util-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:773) ~[jetty-util-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:905) ~[jetty-util-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+Caused by: javax.servlet.UnavailableException: Error processing the request. CoreContainer is either not initialized or shutting down.
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:376) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:357) ~[?:?]
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:201) ~[jetty-servlet-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601) ~[jetty-servlet-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:548) ~[jetty-servlet-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:602) ~[jetty-security-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1612) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1434) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501) ~[jetty-servlet-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1582) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1349) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	... 18 more
+2021-03-26 06:40:27.911 ERROR (qtp261748192-19) [   ] o.a.s.s.SolrDispatchFilter Error processing the request. CoreContainer is either not initialized or shutting down.
+2021-03-26 06:40:27.912 WARN  (qtp261748192-19) [   ] o.e.j.s.HttpChannel /solr/admin/info/system => javax.servlet.ServletException: javax.servlet.UnavailableException: Error processing the request. CoreContainer is either not initialized or shutting down.
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:162)
+javax.servlet.ServletException: javax.servlet.UnavailableException: Error processing the request. CoreContainer is either not initialized or shutting down.
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:162) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322) ~[jetty-rewrite-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.Server.handle(Server.java:516) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:556) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:273) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) ~[jetty-io-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105) ~[jetty-io-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104) ~[jetty-io-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336) ~[jetty-util-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313) ~[jetty-util-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171) ~[jetty-util-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129) ~[jetty-util-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:375) ~[jetty-util-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:773) ~[jetty-util-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:905) ~[jetty-util-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+Caused by: javax.servlet.UnavailableException: Error processing the request. CoreContainer is either not initialized or shutting down.
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:376) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:357) ~[?:?]
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:201) ~[jetty-servlet-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601) ~[jetty-servlet-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:548) ~[jetty-servlet-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:602) ~[jetty-security-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1612) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1434) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501) ~[jetty-servlet-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1582) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1349) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	... 19 more
+2021-03-26 06:40:30.712 ERROR (qtp261748192-24) [   ] o.a.s.s.SolrDispatchFilter Error processing the request. CoreContainer is either not initialized or shutting down.
+2021-03-26 06:40:30.713 WARN  (qtp261748192-24) [   ] o.e.j.s.HttpChannel /solr/admin/info/system => javax.servlet.ServletException: javax.servlet.UnavailableException: Error processing the request. CoreContainer is either not initialized or shutting down.
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:162)
+javax.servlet.ServletException: javax.servlet.UnavailableException: Error processing the request. CoreContainer is either not initialized or shutting down.
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:162) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322) ~[jetty-rewrite-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.Server.handle(Server.java:516) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:556) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:273) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) ~[jetty-io-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105) ~[jetty-io-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104) ~[jetty-io-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336) ~[jetty-util-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313) ~[jetty-util-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171) ~[jetty-util-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129) ~[jetty-util-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:375) ~[jetty-util-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:773) ~[jetty-util-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:905) ~[jetty-util-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+Caused by: javax.servlet.UnavailableException: Error processing the request. CoreContainer is either not initialized or shutting down.
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:376) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:357) ~[?:?]
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:201) ~[jetty-servlet-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601) ~[jetty-servlet-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:548) ~[jetty-servlet-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:602) ~[jetty-security-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1612) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1434) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501) ~[jetty-servlet-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1582) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1349) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	... 19 more
+2021-03-26 06:41:04.738 ERROR (qtp261748192-19) [   ] o.a.s.s.SolrDispatchFilter Error processing the request. CoreContainer is either not initialized or shutting down.
+2021-03-26 06:41:04.738 WARN  (qtp261748192-19) [   ] o.e.j.s.HttpChannel /solr/admin/info/system => javax.servlet.ServletException: javax.servlet.UnavailableException: Error processing the request. CoreContainer is either not initialized or shutting down.
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:162)
+javax.servlet.ServletException: javax.servlet.UnavailableException: Error processing the request. CoreContainer is either not initialized or shutting down.
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:162) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322) ~[jetty-rewrite-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.Server.handle(Server.java:516) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:556) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:273) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) ~[jetty-io-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105) ~[jetty-io-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104) ~[jetty-io-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336) ~[jetty-util-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313) ~[jetty-util-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171) ~[jetty-util-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129) ~[jetty-util-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:375) ~[jetty-util-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:773) ~[jetty-util-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:905) ~[jetty-util-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+Caused by: javax.servlet.UnavailableException: Error processing the request. CoreContainer is either not initialized or shutting down.
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:376) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:357) ~[?:?]
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:201) ~[jetty-servlet-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601) ~[jetty-servlet-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:548) ~[jetty-servlet-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:602) ~[jetty-security-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1612) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1434) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501) ~[jetty-servlet-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1582) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1349) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146) ~[jetty-server-9.4.34.v20201102.jar:9.4.34.v20201102]
+	... 19 more
+2021-03-26 06:41:23.885 INFO  (ShutdownMonitor) [   ] o.e.j.s.AbstractConnector Stopped ServerConnector@1817f1eb{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8984}
+2021-03-26 06:41:23.885 INFO  (ShutdownMonitor) [   ] o.e.j.s.session node0 Stopped scavenging
+2021-03-26 06:41:23.895 INFO  (ShutdownMonitor) [   ] o.e.j.s.h.ContextHandler Stopped o.e.j.w.WebAppContext@4a335fa8{/solr,null,STOPPED}{/home/tnguy107/Desktop/573/solr-8.8.1/server/solr-webapp/webapp}

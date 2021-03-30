@@ -1,0 +1,582 @@
+2021-03-26 06:18:50.928 INFO  (main) [   ] o.e.j.u.log Logging initialized @912ms to org.eclipse.jetty.util.log.Slf4jLog
+2021-03-26 06:18:51.117 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.34.v20201102; built: 2020-11-02T14:15:39.302Z; git: e46af88704a893fc12cb0e3bf46e2c7b48a009e7; jvm 11.0.10+9-Ubuntu-0ubuntu1.18.04
+2021-03-26 06:18:51.156 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///home/tnguy107/Desktop/573/solr-8.8.1/server/contexts/] at interval 0
+2021-03-26 06:18:51.404 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+2021-03-26 06:18:51.415 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
+2021-03-26 06:18:51.415 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
+2021-03-26 06:18:51.417 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 600000ms
+2021-03-26 06:18:51.479 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2021-03-26 06:18:51.484 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 8.8.1
+2021-03-26 06:18:51.484 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in cloud mode on port 8984
+2021-03-26 06:18:51.484 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /home/tnguy107/Desktop/573/solr-8.8.1
+2021-03-26 06:18:51.484 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2021-03-26T06:18:51.484727Z
+2021-03-26 06:18:51.514 INFO  (main) [   ] o.a.s.c.SolrPaths Using system property solr.solr.home: /home/tnguy107/Desktop/573/solr-8.8.1/example/cloud/node1/solr
+2021-03-26 06:18:51.515 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /home/tnguy107/Desktop/573/solr-8.8.1/example/cloud/node1/solr/solr.xml
+2021-03-26 06:18:51.597 INFO  (main) [   ] o.a.s.c.SolrXmlConfig MBean server found: com.sun.jmx.mbeanserver.JmxMBeanServer@7d9d0818, but no JMX reporters were configured - adding default JMX reporter.
+2021-03-26 06:18:52.173 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory Host whitelist initialized: WhitelistHostChecker [whitelistHosts=null, whitelistHostCheckingEnabled=true]
+2021-03-26 06:18:52.360 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@1cb7936c[provider=null,keyStore=null,trustStore=null]
+2021-03-26 06:18:52.360 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@1cb7936c[provider=null,keyStore=null,trustStore=null]
+2021-03-26 06:18:52.507 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@2184b4f4[provider=null,keyStore=null,trustStore=null]
+2021-03-26 06:18:52.507 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@2184b4f4[provider=null,keyStore=null,trustStore=null]
+2021-03-26 06:18:52.554 INFO  (main) [   ] o.a.s.c.SolrZkServerProps Reading configuration from: /home/tnguy107/Desktop/573/solr-8.8.1/example/cloud/node1/solr/zoo.cfg
+2021-03-26 06:18:52.556 INFO  (main) [   ] o.a.s.c.SolrZkServer STARTING EMBEDDED STANDALONE ZOOKEEPER SERVER at port 9984
+2021-03-26 06:18:52.556 WARN  (main) [   ] o.a.s.c.SolrZkServer Embedded Zookeeper is not recommended in production environments. See Reference Guide for details.
+2021-03-26 06:18:52.614 WARN  (Thread-11) [   ] o.a.z.s.ServerCnxnFactory maxCnxns is not configured, using default value 0.
+2021-03-26 06:18:53.062 INFO  (main) [   ] o.a.s.c.ZkContainer Zookeeper client=localhost:9984
+2021-03-26 06:18:53.106 INFO  (main) [   ] o.a.s.c.c.ConnectionManager Waiting for client to connect to ZooKeeper
+2021-03-26 06:18:53.132 INFO  (zkConnectionManagerCallback-11-thread-1) [   ] o.a.s.c.c.ConnectionManager zkClient has connected
+2021-03-26 06:18:53.132 INFO  (main) [   ] o.a.s.c.c.ConnectionManager Client is connected to ZooKeeper
+2021-03-26 06:18:53.193 INFO  (main) [   ] o.a.s.c.c.ZkStateReader Updated live nodes from ZooKeeper... (0) -> (2)
+2021-03-26 06:18:53.239 INFO  (main) [   ] o.a.s.c.ZkController Publish node=127.0.1.1:8984_solr as DOWN
+2021-03-26 06:18:53.251 INFO  (main) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
+2021-03-26 06:18:53.251 INFO  (main) [   ] o.a.s.c.ZkController Register node as live in ZooKeeper:/live_nodes/127.0.1.1:8984_solr
+2021-03-26 06:18:53.268 INFO  (zkCallback-10-thread-1) [   ] o.a.s.c.c.ZkStateReader Updated live nodes from ZooKeeper... (2) -> (3)
+2021-03-26 06:18:53.319 INFO  (main) [   ] o.a.s.p.PackageLoader /packages.json updated to version -1
+2021-03-26 06:18:53.332 WARN  (main) [   ] o.a.s.c.CoreContainer Not all security plugins configured!  authentication=disabled authorization=disabled.  Solr is only as secure as you make it. Consider configuring authentication/authorization before exposing Solr to users internal or external.  See https://s.apache.org/solrsecurity for more info
+2021-03-26 06:18:53.465 INFO  (main) [   ] o.a.s.h.a.MetricsHistoryHandler No .system collection, keeping metrics history in memory.
+2021-03-26 06:18:53.582 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.node' (registry 'solr.node') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@7d9d0818
+2021-03-26 06:18:53.583 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jvm' (registry 'solr.jvm') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@7d9d0818
+2021-03-26 06:18:53.589 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jetty' (registry 'solr.jetty') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@7d9d0818
+2021-03-26 06:18:53.634 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 6 core definitions underneath /home/tnguy107/Desktop/573/solr-8.8.1/example/cloud/node1/solr
+2021-03-26 06:18:53.635 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [techproducts_shard2_replica_n6, localDOcs_shard2_replica_n6, localDOcs_shard1_replica_n2, localDocs_shard1_replica_n1, techproducts_shard1_replica_n2, localDocs_shard2_replica_n4]
+2021-03-26 06:18:53.782 INFO  (coreLoadExecutor-19-thread-2-processing-n:127.0.1.1:8984_solr) [   ] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.8.1
+2021-03-26 06:18:53.783 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8984_solr) [   ] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.8.1
+2021-03-26 06:18:53.793 INFO  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8984_solr) [   ] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.8.1
+2021-03-26 06:18:53.834 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@4a335fa8{/solr,file:///home/tnguy107/Desktop/573/solr-8.8.1/server/solr-webapp/webapp/,AVAILABLE}{/home/tnguy107/Desktop/573/solr-8.8.1/server/solr-webapp/webapp}
+2021-03-26 06:18:53.873 INFO  (main) [   ] o.e.j.s.AbstractConnector Started ServerConnector@1817f1eb{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8984}
+2021-03-26 06:18:53.873 INFO  (main) [   ] o.e.j.s.Server Started @3859ms
+2021-03-26 06:18:54.046 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8984_solr) [   ] o.a.s.s.IndexSchema Schema name=default-config
+2021-03-26 06:18:54.054 INFO  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8984_solr) [   ] o.a.s.s.IndexSchema Schema name=default-config
+2021-03-26 06:18:54.056 INFO  (coreLoadExecutor-19-thread-2-processing-n:127.0.1.1:8984_solr) [   ] o.a.s.s.IndexSchema Schema name=default-config
+2021-03-26 06:18:54.431 WARN  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8984_solr) [   ] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitNorms to be specified in schema, hardcoded behavior is omitNorms=true
+2021-03-26 06:18:54.431 WARN  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8984_solr) [   ] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitTermFreqAndPositions to be specified in schema, hardcoded behavior is omitTermFreqAndPositions=true
+2021-03-26 06:18:54.431 WARN  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8984_solr) [   ] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termOffsets to be specified in schema, hardcoded behavior is termOffsets=false
+2021-03-26 06:18:54.431 WARN  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8984_solr) [   ] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termPositions to be specified in schema, hardcoded behavior is termPositions=false
+2021-03-26 06:18:54.431 WARN  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8984_solr) [   ] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitPositions to be specified in schema, hardcoded behavior is omitPositions=true
+2021-03-26 06:18:54.706 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8984_solr) [   ] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2021-03-26 06:18:54.707 INFO  (coreLoadExecutor-19-thread-2-processing-n:127.0.1.1:8984_solr) [   ] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2021-03-26 06:18:54.712 INFO  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8984_solr) [   ] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2021-03-26 06:19:18.477 INFO  (zkCallback-10-thread-1) [   ] o.a.s.c.c.ZkStateReader Updated live nodes from ZooKeeper... (3) -> (4)
+2021-03-26 06:19:24.337 INFO  (zkCallback-10-thread-1) [   ] o.a.s.c.OverseerElectionContext I am going to be the leader 127.0.1.1:8984_solr
+2021-03-26 06:19:24.337 INFO  (zkCallback-10-thread-2) [   ] o.a.s.c.c.ZkStateReader Updated live nodes from ZooKeeper... (4) -> (2)
+2021-03-26 06:19:24.341 INFO  (zkCallback-10-thread-1) [   ] o.a.s.c.Overseer Overseer (id=72058011135770624-127.0.1.1:8984_solr-n_0000000012) starting
+2021-03-26 06:19:24.397 INFO  (OverseerStateUpdate-72058011135770624-127.0.1.1:8984_solr-n_0000000012) [   ] o.a.s.c.Overseer Starting to work on the main queue : 127.0.1.1:8984_solr
+2021-03-26 06:19:25.037 INFO  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8984_solr) [c:localDOcs s:shard1 r:core_node5 x:localDOcs_shard1_replica_n2] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.8.1
+2021-03-26 06:19:25.038 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8984_solr) [c:localDocs s:shard1 r:core_node3 x:localDocs_shard1_replica_n1] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.8.1
+2021-03-26 06:19:25.042 INFO  (coreLoadExecutor-19-thread-2-processing-n:127.0.1.1:8984_solr) [c:localDOcs s:shard2 r:core_node8 x:localDOcs_shard2_replica_n6] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.8.1
+2021-03-26 06:19:25.102 INFO  (coreLoadExecutor-19-thread-2-processing-n:127.0.1.1:8984_solr) [c:localDOcs s:shard2 r:core_node8 x:localDOcs_shard2_replica_n6] o.a.s.s.IndexSchema Schema name=default-config
+2021-03-26 06:19:25.166 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8984_solr) [c:localDocs s:shard1 r:core_node3 x:localDocs_shard1_replica_n1] o.a.s.s.IndexSchema Schema name=default-config
+2021-03-26 06:19:25.177 INFO  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8984_solr) [c:localDOcs s:shard1 r:core_node5 x:localDOcs_shard1_replica_n2] o.a.s.s.IndexSchema Schema name=default-config
+2021-03-26 06:19:25.209 WARN  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8984_solr) [c:localDocs s:shard1 r:core_node3 x:localDocs_shard1_replica_n1] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitNorms to be specified in schema, hardcoded behavior is omitNorms=true
+2021-03-26 06:19:25.209 WARN  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8984_solr) [c:localDocs s:shard1 r:core_node3 x:localDocs_shard1_replica_n1] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitTermFreqAndPositions to be specified in schema, hardcoded behavior is omitTermFreqAndPositions=true
+2021-03-26 06:19:25.209 WARN  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8984_solr) [c:localDocs s:shard1 r:core_node3 x:localDocs_shard1_replica_n1] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termOffsets to be specified in schema, hardcoded behavior is termOffsets=false
+2021-03-26 06:19:25.209 WARN  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8984_solr) [c:localDocs s:shard1 r:core_node3 x:localDocs_shard1_replica_n1] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termPositions to be specified in schema, hardcoded behavior is termPositions=false
+2021-03-26 06:19:25.209 WARN  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8984_solr) [c:localDocs s:shard1 r:core_node3 x:localDocs_shard1_replica_n1] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitPositions to be specified in schema, hardcoded behavior is omitPositions=true
+2021-03-26 06:19:25.681 INFO  (coreLoadExecutor-19-thread-2-processing-n:127.0.1.1:8984_solr) [c:localDOcs s:shard2 r:core_node8 x:localDOcs_shard2_replica_n6] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2021-03-26 06:19:25.682 INFO  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8984_solr) [c:localDOcs s:shard1 r:core_node5 x:localDOcs_shard1_replica_n2] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2021-03-26 06:19:25.697 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8984_solr) [c:localDocs s:shard1 r:core_node3 x:localDocs_shard1_replica_n1] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2021-03-26 06:19:25.901 INFO  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8984_solr) [c:localDOcs s:shard1 r:core_node5 x:localDOcs_shard1_replica_n2] o.a.s.c.CoreContainer Creating SolrCore 'localDOcs_shard1_replica_n2' using configuration from configset localDOcs, trusted=true
+2021-03-26 06:19:25.910 INFO  (coreLoadExecutor-19-thread-2-processing-n:127.0.1.1:8984_solr) [c:localDOcs s:shard2 r:core_node8 x:localDOcs_shard2_replica_n6] o.a.s.c.CoreContainer Creating SolrCore 'localDOcs_shard2_replica_n6' using configuration from configset localDOcs, trusted=true
+2021-03-26 06:19:25.928 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8984_solr) [c:localDocs s:shard1 r:core_node3 x:localDocs_shard1_replica_n1] o.a.s.c.CoreContainer Creating SolrCore 'localDocs_shard1_replica_n1' using configuration from configset localDocs, trusted=true
+2021-03-26 06:19:25.979 INFO  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8984_solr) [c:localDOcs s:shard1 r:core_node5 x:localDOcs_shard1_replica_n2] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.localDOcs.shard1.replica_n2' (registry 'solr.core.localDOcs.shard1.replica_n2') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@7d9d0818
+2021-03-26 06:19:25.979 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8984_solr) [c:localDocs s:shard1 r:core_node3 x:localDocs_shard1_replica_n1] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.localDocs.shard1.replica_n1' (registry 'solr.core.localDocs.shard1.replica_n1') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@7d9d0818
+2021-03-26 06:19:25.986 INFO  (coreLoadExecutor-19-thread-2-processing-n:127.0.1.1:8984_solr) [c:localDOcs s:shard2 r:core_node8 x:localDOcs_shard2_replica_n6] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.localDOcs.shard2.replica_n6' (registry 'solr.core.localDOcs.shard2.replica_n6') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@7d9d0818
+2021-03-26 06:19:25.992 INFO  (coreLoadExecutor-19-thread-2-processing-n:127.0.1.1:8984_solr) [c:localDOcs s:shard2 r:core_node8 x:localDOcs_shard2_replica_n6] o.a.s.c.SolrCore [[localDOcs_shard2_replica_n6] ] Opening new SolrCore at [/home/tnguy107/Desktop/573/solr-8.8.1/example/cloud/node1/solr/localDOcs_shard2_replica_n6], dataDir=[/home/tnguy107/Desktop/573/solr-8.8.1/example/cloud/node1/solr/localDOcs_shard2_replica_n6/data/]
+2021-03-26 06:19:26.000 INFO  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8984_solr) [c:localDOcs s:shard1 r:core_node5 x:localDOcs_shard1_replica_n2] o.a.s.c.SolrCore [[localDOcs_shard1_replica_n2] ] Opening new SolrCore at [/home/tnguy107/Desktop/573/solr-8.8.1/example/cloud/node1/solr/localDOcs_shard1_replica_n2], dataDir=[/home/tnguy107/Desktop/573/solr-8.8.1/example/cloud/node1/solr/localDOcs_shard1_replica_n2/data/]
+2021-03-26 06:19:26.005 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8984_solr) [c:localDocs s:shard1 r:core_node3 x:localDocs_shard1_replica_n1] o.a.s.c.SolrCore [[localDocs_shard1_replica_n1] ] Opening new SolrCore at [/home/tnguy107/Desktop/573/solr-8.8.1/example/cloud/node1/solr/localDocs_shard1_replica_n1], dataDir=[/home/tnguy107/Desktop/573/solr-8.8.1/example/cloud/node1/solr/localDocs_shard1_replica_n1/data/]
+2021-03-26 06:19:26.102 ERROR (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8984_solr) [c:localDocs s:shard1 r:core_node3 x:localDocs_shard1_replica_n1] o.a.s.c.SolrCore [localDocs_shard1_replica_n1] Solr index directory '/home/tnguy107/Desktop/573/solr-8.8.1/example/cloud/node1/solr/localDocs_shard1_replica_n1/data/index/' is locked (lockType=native).  Throwing exception.
+2021-03-26 06:19:26.102 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8984_solr) [   ] o.a.s.c.SolrCore [localDocs_shard1_replica_n1]  CLOSING SolrCore org.apache.solr.core.SolrCore@6d63fbe2
+2021-03-26 06:19:26.102 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8984_solr) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.localDocs.shard1.replica_n1 tag=SolrCore@6d63fbe2
+2021-03-26 06:19:26.103 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8984_solr) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@2844e9b2: rootName = null, domain = solr.core.localDocs.shard1.replica_n1, service url = null, agent id = null] for registry solr.core.localDocs.shard1.replica_n1/com.codahale.metrics.MetricRegistry@33918615
+2021-03-26 06:19:26.105 ERROR (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8984_solr) [c:localDOcs s:shard1 r:core_node5 x:localDOcs_shard1_replica_n2] o.a.s.c.SolrCore [localDOcs_shard1_replica_n2] Solr index directory '/home/tnguy107/Desktop/573/solr-8.8.1/example/cloud/node1/solr/localDOcs_shard1_replica_n2/data/index/' is locked (lockType=native).  Throwing exception.
+2021-03-26 06:19:26.105 INFO  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8984_solr) [   ] o.a.s.c.SolrCore [localDOcs_shard1_replica_n2]  CLOSING SolrCore org.apache.solr.core.SolrCore@112f9043
+2021-03-26 06:19:26.106 ERROR (coreLoadExecutor-19-thread-2-processing-n:127.0.1.1:8984_solr) [c:localDOcs s:shard2 r:core_node8 x:localDOcs_shard2_replica_n6] o.a.s.c.SolrCore [localDOcs_shard2_replica_n6] Solr index directory '/home/tnguy107/Desktop/573/solr-8.8.1/example/cloud/node1/solr/localDOcs_shard2_replica_n6/data/index/' is locked (lockType=native).  Throwing exception.
+2021-03-26 06:19:26.106 INFO  (coreLoadExecutor-19-thread-2-processing-n:127.0.1.1:8984_solr) [   ] o.a.s.c.SolrCore [localDOcs_shard2_replica_n6]  CLOSING SolrCore org.apache.solr.core.SolrCore@3f363537
+2021-03-26 06:19:26.109 INFO  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8984_solr) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.localDOcs.shard1.replica_n2 tag=SolrCore@112f9043
+2021-03-26 06:19:26.109 INFO  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8984_solr) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@73b63c47: rootName = null, domain = solr.core.localDOcs.shard1.replica_n2, service url = null, agent id = null] for registry solr.core.localDOcs.shard1.replica_n2/com.codahale.metrics.MetricRegistry@40108752
+2021-03-26 06:19:26.110 INFO  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8984_solr) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.collection.localDOcs.shard1.leader tag=SolrCore@112f9043
+2021-03-26 06:19:26.120 INFO  (coreLoadExecutor-19-thread-2-processing-n:127.0.1.1:8984_solr) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.localDOcs.shard2.replica_n6 tag=SolrCore@3f363537
+2021-03-26 06:19:26.120 INFO  (coreLoadExecutor-19-thread-2-processing-n:127.0.1.1:8984_solr) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@c0493b2: rootName = null, domain = solr.core.localDOcs.shard2.replica_n6, service url = null, agent id = null] for registry solr.core.localDOcs.shard2.replica_n6/com.codahale.metrics.MetricRegistry@1faa3100
+2021-03-26 06:19:26.122 INFO  (coreLoadExecutor-19-thread-2-processing-n:127.0.1.1:8984_solr) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.collection.localDOcs.shard2.leader tag=SolrCore@3f363537
+2021-03-26 06:19:26.123 ERROR (coreContainerWorkExecutor-2-thread-1-processing-n:127.0.1.1:8984_solr) [   ] o.a.s.c.CoreContainer Error waiting for SolrCore to be loaded on startup => java.util.concurrent.ExecutionException: org.apache.solr.common.SolrException: Unable to create core [localDOcs_shard1_replica_n2]
+	at java.base/java.util.concurrent.FutureTask.report(FutureTask.java:122)
+java.util.concurrent.ExecutionException: org.apache.solr.common.SolrException: Unable to create core [localDOcs_shard1_replica_n2]
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:?]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:191) ~[?:?]
+	at org.apache.solr.core.CoreContainer.lambda$load$12(CoreContainer.java:882) ~[?:?]
+	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedRunnable.run(InstrumentedExecutorService.java:180) ~[metrics-core-4.1.5.jar:4.1.5]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:218) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[?:?]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+Caused by: org.apache.solr.common.SolrException: Unable to create core [localDOcs_shard1_replica_n2]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1459) ~[?:?]
+	at org.apache.solr.core.CoreContainer.lambda$load$11(CoreContainer.java:853) ~[?:?]
+	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedCallable.call(InstrumentedExecutorService.java:202) ~[metrics-core-4.1.5.jar:4.1.5]
+	... 5 more
+Caused by: org.apache.solr.common.SolrException: Index dir '/home/tnguy107/Desktop/573/solr-8.8.1/example/cloud/node1/solr/localDOcs_shard1_replica_n2/data/index/' of core 'localDOcs_shard1_replica_n2' is already locked. The most likely cause is another Solr server (or another solr core in this server) also configured to use this directory; other possible causes may be specific to lockType: native
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:1087) ~[?:?]
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:922) ~[?:?]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1438) ~[?:?]
+	at org.apache.solr.core.CoreContainer.lambda$load$11(CoreContainer.java:853) ~[?:?]
+	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedCallable.call(InstrumentedExecutorService.java:202) ~[metrics-core-4.1.5.jar:4.1.5]
+	... 5 more
+Caused by: org.apache.lucene.store.LockObtainFailedException: Index dir '/home/tnguy107/Desktop/573/solr-8.8.1/example/cloud/node1/solr/localDOcs_shard1_replica_n2/data/index/' of core 'localDOcs_shard1_replica_n2' is already locked. The most likely cause is another Solr server (or another solr core in this server) also configured to use this directory; other possible causes may be specific to lockType: native
+	at org.apache.solr.core.SolrCore.initIndex(SolrCore.java:798) ~[?:?]
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:1004) ~[?:?]
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:922) ~[?:?]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1438) ~[?:?]
+	at org.apache.solr.core.CoreContainer.lambda$load$11(CoreContainer.java:853) ~[?:?]
+	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedCallable.call(InstrumentedExecutorService.java:202) ~[metrics-core-4.1.5.jar:4.1.5]
+	... 5 more
+2021-03-26 06:19:26.157 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8984_solr) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.collection.localDocs.shard1.leader tag=SolrCore@6d63fbe2
+2021-03-26 06:19:26.168 ERROR (coreContainerWorkExecutor-2-thread-1-processing-n:127.0.1.1:8984_solr) [   ] o.a.s.c.CoreContainer Error waiting for SolrCore to be loaded on startup => java.util.concurrent.ExecutionException: org.apache.solr.common.SolrException: Unable to create core [localDOcs_shard2_replica_n6]
+	at java.base/java.util.concurrent.FutureTask.report(FutureTask.java:122)
+java.util.concurrent.ExecutionException: org.apache.solr.common.SolrException: Unable to create core [localDOcs_shard2_replica_n6]
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:?]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:191) ~[?:?]
+	at org.apache.solr.core.CoreContainer.lambda$load$12(CoreContainer.java:882) ~[?:?]
+	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedRunnable.run(InstrumentedExecutorService.java:180) ~[metrics-core-4.1.5.jar:4.1.5]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:218) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[?:?]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+Caused by: org.apache.solr.common.SolrException: Unable to create core [localDOcs_shard2_replica_n6]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1459) ~[?:?]
+	at org.apache.solr.core.CoreContainer.lambda$load$11(CoreContainer.java:853) ~[?:?]
+	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedCallable.call(InstrumentedExecutorService.java:202) ~[metrics-core-4.1.5.jar:4.1.5]
+	... 5 more
+Caused by: org.apache.solr.common.SolrException: Index dir '/home/tnguy107/Desktop/573/solr-8.8.1/example/cloud/node1/solr/localDOcs_shard2_replica_n6/data/index/' of core 'localDOcs_shard2_replica_n6' is already locked. The most likely cause is another Solr server (or another solr core in this server) also configured to use this directory; other possible causes may be specific to lockType: native
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:1087) ~[?:?]
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:922) ~[?:?]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1438) ~[?:?]
+	at org.apache.solr.core.CoreContainer.lambda$load$11(CoreContainer.java:853) ~[?:?]
+	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedCallable.call(InstrumentedExecutorService.java:202) ~[metrics-core-4.1.5.jar:4.1.5]
+	... 5 more
+Caused by: org.apache.lucene.store.LockObtainFailedException: Index dir '/home/tnguy107/Desktop/573/solr-8.8.1/example/cloud/node1/solr/localDOcs_shard2_replica_n6/data/index/' of core 'localDOcs_shard2_replica_n6' is already locked. The most likely cause is another Solr server (or another solr core in this server) also configured to use this directory; other possible causes may be specific to lockType: native
+	at org.apache.solr.core.SolrCore.initIndex(SolrCore.java:798) ~[?:?]
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:1004) ~[?:?]
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:922) ~[?:?]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1438) ~[?:?]
+	at org.apache.solr.core.CoreContainer.lambda$load$11(CoreContainer.java:853) ~[?:?]
+	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedCallable.call(InstrumentedExecutorService.java:202) ~[metrics-core-4.1.5.jar:4.1.5]
+	... 5 more
+2021-03-26 06:19:26.169 ERROR (coreContainerWorkExecutor-2-thread-1-processing-n:127.0.1.1:8984_solr) [   ] o.a.s.c.CoreContainer Error waiting for SolrCore to be loaded on startup => java.util.concurrent.ExecutionException: org.apache.solr.common.SolrException: Unable to create core [localDocs_shard1_replica_n1]
+	at java.base/java.util.concurrent.FutureTask.report(FutureTask.java:122)
+java.util.concurrent.ExecutionException: org.apache.solr.common.SolrException: Unable to create core [localDocs_shard1_replica_n1]
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:?]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:191) ~[?:?]
+	at org.apache.solr.core.CoreContainer.lambda$load$12(CoreContainer.java:882) ~[?:?]
+	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedRunnable.run(InstrumentedExecutorService.java:180) ~[metrics-core-4.1.5.jar:4.1.5]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:218) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[?:?]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+Caused by: org.apache.solr.common.SolrException: Unable to create core [localDocs_shard1_replica_n1]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1459) ~[?:?]
+	at org.apache.solr.core.CoreContainer.lambda$load$11(CoreContainer.java:853) ~[?:?]
+	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedCallable.call(InstrumentedExecutorService.java:202) ~[metrics-core-4.1.5.jar:4.1.5]
+	... 5 more
+Caused by: org.apache.solr.common.SolrException: Index dir '/home/tnguy107/Desktop/573/solr-8.8.1/example/cloud/node1/solr/localDocs_shard1_replica_n1/data/index/' of core 'localDocs_shard1_replica_n1' is already locked. The most likely cause is another Solr server (or another solr core in this server) also configured to use this directory; other possible causes may be specific to lockType: native
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:1087) ~[?:?]
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:922) ~[?:?]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1438) ~[?:?]
+	at org.apache.solr.core.CoreContainer.lambda$load$11(CoreContainer.java:853) ~[?:?]
+	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedCallable.call(InstrumentedExecutorService.java:202) ~[metrics-core-4.1.5.jar:4.1.5]
+	... 5 more
+Caused by: org.apache.lucene.store.LockObtainFailedException: Index dir '/home/tnguy107/Desktop/573/solr-8.8.1/example/cloud/node1/solr/localDocs_shard1_replica_n1/data/index/' of core 'localDocs_shard1_replica_n1' is already locked. The most likely cause is another Solr server (or another solr core in this server) also configured to use this directory; other possible causes may be specific to lockType: native
+	at org.apache.solr.core.SolrCore.initIndex(SolrCore.java:798) ~[?:?]
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:1004) ~[?:?]
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:922) ~[?:?]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1438) ~[?:?]
+	at org.apache.solr.core.CoreContainer.lambda$load$11(CoreContainer.java:853) ~[?:?]
+	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedCallable.call(InstrumentedExecutorService.java:202) ~[metrics-core-4.1.5.jar:4.1.5]
+	... 5 more
+2021-03-26 06:19:26.200 INFO  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8984_solr) [   ] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.8.1
+2021-03-26 06:19:26.225 INFO  (coreLoadExecutor-19-thread-2-processing-n:127.0.1.1:8984_solr) [   ] o.a.s.c.RequestParams conf resource params.json loaded . version : 0 
+2021-03-26 06:19:26.226 INFO  (coreLoadExecutor-19-thread-2-processing-n:127.0.1.1:8984_solr) [   ] o.a.s.c.RequestParams request params refreshed to version 0
+2021-03-26 06:19:26.231 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8984_solr) [   ] o.a.s.c.RequestParams conf resource params.json loaded . version : 0 
+2021-03-26 06:19:26.231 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8984_solr) [   ] o.a.s.c.RequestParams request params refreshed to version 0
+2021-03-26 06:19:26.234 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8984_solr) [   ] o.a.s.c.SolrResourceLoader Added 57 libs to classloader, from paths: [/home/tnguy107/Desktop/573/solr-8.8.1/contrib/extraction/lib, /home/tnguy107/Desktop/573/solr-8.8.1/contrib/langid/lib, /home/tnguy107/Desktop/573/solr-8.8.1/contrib/velocity/lib, /home/tnguy107/Desktop/573/solr-8.8.1/dist]
+2021-03-26 06:19:26.237 INFO  (coreLoadExecutor-19-thread-2-processing-n:127.0.1.1:8984_solr) [   ] o.a.s.c.SolrResourceLoader Added 57 libs to classloader, from paths: [/home/tnguy107/Desktop/573/solr-8.8.1/contrib/extraction/lib, /home/tnguy107/Desktop/573/solr-8.8.1/contrib/langid/lib, /home/tnguy107/Desktop/573/solr-8.8.1/contrib/velocity/lib, /home/tnguy107/Desktop/573/solr-8.8.1/dist]
+2021-03-26 06:19:26.370 INFO  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8984_solr) [   ] o.a.s.s.IndexSchema Schema name=default-config
+2021-03-26 06:19:26.388 WARN  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8984_solr) [   ] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitNorms to be specified in schema, hardcoded behavior is omitNorms=true
+2021-03-26 06:19:26.388 WARN  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8984_solr) [   ] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitTermFreqAndPositions to be specified in schema, hardcoded behavior is omitTermFreqAndPositions=true
+2021-03-26 06:19:26.389 WARN  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8984_solr) [   ] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termOffsets to be specified in schema, hardcoded behavior is termOffsets=false
+2021-03-26 06:19:26.389 WARN  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8984_solr) [   ] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termPositions to be specified in schema, hardcoded behavior is termPositions=false
+2021-03-26 06:19:26.389 WARN  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8984_solr) [   ] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitPositions to be specified in schema, hardcoded behavior is omitPositions=true
+2021-03-26 06:19:26.557 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8984_solr) [   ] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.8.1
+2021-03-26 06:19:26.599 INFO  (coreLoadExecutor-19-thread-2-processing-n:127.0.1.1:8984_solr) [   ] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.8.1
+2021-03-26 06:19:26.611 INFO  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8984_solr) [   ] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2021-03-26 06:19:26.621 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8984_solr) [   ] o.a.s.u.SolrIndexConfig IndexWriter infoStream solr logging is enabled
+2021-03-26 06:19:26.628 INFO  (coreLoadExecutor-19-thread-2-processing-n:127.0.1.1:8984_solr) [   ] o.a.s.u.SolrIndexConfig IndexWriter infoStream solr logging is enabled
+2021-03-26 06:19:26.716 INFO  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8984_solr) [c:localDocs s:shard2 r:core_node7 x:localDocs_shard2_replica_n4] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.8.1
+2021-03-26 06:19:26.770 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8984_solr) [   ] o.a.s.s.IndexSchema Schema name=example
+2021-03-26 06:19:26.780 INFO  (coreLoadExecutor-19-thread-2-processing-n:127.0.1.1:8984_solr) [   ] o.a.s.s.IndexSchema Schema name=example
+2021-03-26 06:19:26.780 INFO  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8984_solr) [c:localDocs s:shard2 r:core_node7 x:localDocs_shard2_replica_n4] o.a.s.s.IndexSchema Schema name=default-config
+2021-03-26 06:19:26.827 WARN  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8984_solr) [c:localDocs s:shard2 r:core_node7 x:localDocs_shard2_replica_n4] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitNorms to be specified in schema, hardcoded behavior is omitNorms=true
+2021-03-26 06:19:26.827 WARN  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8984_solr) [c:localDocs s:shard2 r:core_node7 x:localDocs_shard2_replica_n4] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitTermFreqAndPositions to be specified in schema, hardcoded behavior is omitTermFreqAndPositions=true
+2021-03-26 06:19:26.827 WARN  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8984_solr) [c:localDocs s:shard2 r:core_node7 x:localDocs_shard2_replica_n4] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termOffsets to be specified in schema, hardcoded behavior is termOffsets=false
+2021-03-26 06:19:26.827 WARN  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8984_solr) [c:localDocs s:shard2 r:core_node7 x:localDocs_shard2_replica_n4] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termPositions to be specified in schema, hardcoded behavior is termPositions=false
+2021-03-26 06:19:26.827 WARN  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8984_solr) [c:localDocs s:shard2 r:core_node7 x:localDocs_shard2_replica_n4] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitPositions to be specified in schema, hardcoded behavior is omitPositions=true
+2021-03-26 06:19:26.950 INFO  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8984_solr) [c:localDocs s:shard2 r:core_node7 x:localDocs_shard2_replica_n4] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2021-03-26 06:19:27.044 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8984_solr) [   ] o.a.s.r.RestManager Registered ManagedResource impl org.apache.solr.rest.schema.analysis.ManagedWordSetResource for path /schema/analysis/stopwords/english
+2021-03-26 06:19:27.047 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8984_solr) [   ] o.a.s.r.RestManager Registered ManagedResource impl org.apache.solr.rest.schema.analysis.ManagedSynonymGraphFilterFactory$SynonymManager for path /schema/analysis/synonyms/english
+2021-03-26 06:19:27.047 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8984_solr) [   ] o.a.s.r.RestManager Added observer of type org.apache.solr.rest.schema.analysis.ManagedStopFilterFactory to existing ManagedResource /schema/analysis/stopwords/english
+2021-03-26 06:19:27.048 INFO  (coreLoadExecutor-19-thread-2-processing-n:127.0.1.1:8984_solr) [   ] o.a.s.r.RestManager Registered ManagedResource impl org.apache.solr.rest.schema.analysis.ManagedWordSetResource for path /schema/analysis/stopwords/english
+2021-03-26 06:19:27.052 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8984_solr) [   ] o.a.s.r.RestManager Added observer of type org.apache.solr.rest.schema.analysis.ManagedSynonymGraphFilterFactory to existing ManagedResource /schema/analysis/synonyms/english
+2021-03-26 06:19:27.053 INFO  (coreLoadExecutor-19-thread-2-processing-n:127.0.1.1:8984_solr) [   ] o.a.s.r.RestManager Registered ManagedResource impl org.apache.solr.rest.schema.analysis.ManagedSynonymGraphFilterFactory$SynonymManager for path /schema/analysis/synonyms/english
+2021-03-26 06:19:27.053 INFO  (coreLoadExecutor-19-thread-2-processing-n:127.0.1.1:8984_solr) [   ] o.a.s.r.RestManager Added observer of type org.apache.solr.rest.schema.analysis.ManagedStopFilterFactory to existing ManagedResource /schema/analysis/stopwords/english
+2021-03-26 06:19:27.053 INFO  (coreLoadExecutor-19-thread-2-processing-n:127.0.1.1:8984_solr) [   ] o.a.s.r.RestManager Added observer of type org.apache.solr.rest.schema.analysis.ManagedSynonymGraphFilterFactory to existing ManagedResource /schema/analysis/synonyms/english
+2021-03-26 06:19:27.060 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8984_solr) [   ] o.a.s.s.IndexSchema Loaded schema example/1.6 with uniqueid field id
+2021-03-26 06:19:27.060 INFO  (coreLoadExecutor-19-thread-2-processing-n:127.0.1.1:8984_solr) [   ] o.a.s.s.IndexSchema Loaded schema example/1.6 with uniqueid field id
+2021-03-26 06:19:27.061 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8984_solr) [   ] o.a.s.r.RestManager Added observer of type org.apache.solr.rest.schema.analysis.ManagedStopFilterFactory to existing ManagedResource /schema/analysis/stopwords/english
+2021-03-26 06:19:27.061 INFO  (coreLoadExecutor-19-thread-2-processing-n:127.0.1.1:8984_solr) [   ] o.a.s.r.RestManager Added observer of type org.apache.solr.rest.schema.analysis.ManagedStopFilterFactory to existing ManagedResource /schema/analysis/stopwords/english
+2021-03-26 06:19:27.061 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8984_solr) [   ] o.a.s.r.RestManager Added observer of type org.apache.solr.rest.schema.analysis.ManagedSynonymGraphFilterFactory to existing ManagedResource /schema/analysis/synonyms/english
+2021-03-26 06:19:27.061 INFO  (coreLoadExecutor-19-thread-2-processing-n:127.0.1.1:8984_solr) [   ] o.a.s.r.RestManager Added observer of type org.apache.solr.rest.schema.analysis.ManagedSynonymGraphFilterFactory to existing ManagedResource /schema/analysis/synonyms/english
+2021-03-26 06:19:27.061 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8984_solr) [   ] o.a.s.r.RestManager Added observer of type org.apache.solr.rest.schema.analysis.ManagedStopFilterFactory to existing ManagedResource /schema/analysis/stopwords/english
+2021-03-26 06:19:27.061 INFO  (coreLoadExecutor-19-thread-2-processing-n:127.0.1.1:8984_solr) [   ] o.a.s.r.RestManager Added observer of type org.apache.solr.rest.schema.analysis.ManagedStopFilterFactory to existing ManagedResource /schema/analysis/stopwords/english
+2021-03-26 06:19:27.062 INFO  (coreLoadExecutor-19-thread-2-processing-n:127.0.1.1:8984_solr) [   ] o.a.s.r.RestManager Added observer of type org.apache.solr.rest.schema.analysis.ManagedSynonymGraphFilterFactory to existing ManagedResource /schema/analysis/synonyms/english
+2021-03-26 06:19:27.062 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8984_solr) [   ] o.a.s.r.RestManager Added observer of type org.apache.solr.rest.schema.analysis.ManagedSynonymGraphFilterFactory to existing ManagedResource /schema/analysis/synonyms/english
+2021-03-26 06:19:27.066 INFO  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8984_solr) [c:localDocs s:shard2 r:core_node7 x:localDocs_shard2_replica_n4] o.a.s.c.CoreContainer Creating SolrCore 'localDocs_shard2_replica_n4' using configuration from configset localDocs, trusted=true
+2021-03-26 06:19:27.066 INFO  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8984_solr) [c:localDocs s:shard2 r:core_node7 x:localDocs_shard2_replica_n4] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.localDocs.shard2.replica_n4' (registry 'solr.core.localDocs.shard2.replica_n4') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@7d9d0818
+2021-03-26 06:19:27.067 INFO  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8984_solr) [c:localDocs s:shard2 r:core_node7 x:localDocs_shard2_replica_n4] o.a.s.c.SolrCore [[localDocs_shard2_replica_n4] ] Opening new SolrCore at [/home/tnguy107/Desktop/573/solr-8.8.1/example/cloud/node1/solr/localDocs_shard2_replica_n4], dataDir=[/home/tnguy107/Desktop/573/solr-8.8.1/example/cloud/node1/solr/localDocs_shard2_replica_n4/data/]
+2021-03-26 06:19:27.071 ERROR (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8984_solr) [c:localDocs s:shard2 r:core_node7 x:localDocs_shard2_replica_n4] o.a.s.c.SolrCore [localDocs_shard2_replica_n4] Solr index directory '/home/tnguy107/Desktop/573/solr-8.8.1/example/cloud/node1/solr/localDocs_shard2_replica_n4/data/index/' is locked (lockType=native).  Throwing exception.
+2021-03-26 06:19:27.071 INFO  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8984_solr) [   ] o.a.s.c.SolrCore [localDocs_shard2_replica_n4]  CLOSING SolrCore org.apache.solr.core.SolrCore@2f473d79
+2021-03-26 06:19:27.071 INFO  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8984_solr) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.localDocs.shard2.replica_n4 tag=SolrCore@2f473d79
+2021-03-26 06:19:27.072 INFO  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8984_solr) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@4fda3543: rootName = null, domain = solr.core.localDocs.shard2.replica_n4, service url = null, agent id = null] for registry solr.core.localDocs.shard2.replica_n4/com.codahale.metrics.MetricRegistry@4811a460
+2021-03-26 06:19:27.073 INFO  (coreLoadExecutor-19-thread-1-processing-n:127.0.1.1:8984_solr) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.collection.localDocs.shard2.leader tag=SolrCore@2f473d79
+2021-03-26 06:19:27.095 ERROR (coreContainerWorkExecutor-2-thread-1-processing-n:127.0.1.1:8984_solr) [   ] o.a.s.c.CoreContainer Error waiting for SolrCore to be loaded on startup => java.util.concurrent.ExecutionException: org.apache.solr.common.SolrException: Unable to create core [localDocs_shard2_replica_n4]
+	at java.base/java.util.concurrent.FutureTask.report(FutureTask.java:122)
+java.util.concurrent.ExecutionException: org.apache.solr.common.SolrException: Unable to create core [localDocs_shard2_replica_n4]
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:?]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:191) ~[?:?]
+	at org.apache.solr.core.CoreContainer.lambda$load$12(CoreContainer.java:882) ~[?:?]
+	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedRunnable.run(InstrumentedExecutorService.java:180) ~[metrics-core-4.1.5.jar:4.1.5]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:218) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[?:?]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+Caused by: org.apache.solr.common.SolrException: Unable to create core [localDocs_shard2_replica_n4]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1459) ~[?:?]
+	at org.apache.solr.core.CoreContainer.lambda$load$11(CoreContainer.java:853) ~[?:?]
+	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedCallable.call(InstrumentedExecutorService.java:202) ~[metrics-core-4.1.5.jar:4.1.5]
+	... 5 more
+Caused by: org.apache.solr.common.SolrException: Index dir '/home/tnguy107/Desktop/573/solr-8.8.1/example/cloud/node1/solr/localDocs_shard2_replica_n4/data/index/' of core 'localDocs_shard2_replica_n4' is already locked. The most likely cause is another Solr server (or another solr core in this server) also configured to use this directory; other possible causes may be specific to lockType: native
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:1087) ~[?:?]
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:922) ~[?:?]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1438) ~[?:?]
+	at org.apache.solr.core.CoreContainer.lambda$load$11(CoreContainer.java:853) ~[?:?]
+	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedCallable.call(InstrumentedExecutorService.java:202) ~[metrics-core-4.1.5.jar:4.1.5]
+	... 5 more
+Caused by: org.apache.lucene.store.LockObtainFailedException: Index dir '/home/tnguy107/Desktop/573/solr-8.8.1/example/cloud/node1/solr/localDocs_shard2_replica_n4/data/index/' of core 'localDocs_shard2_replica_n4' is already locked. The most likely cause is another Solr server (or another solr core in this server) also configured to use this directory; other possible causes may be specific to lockType: native
+	at org.apache.solr.core.SolrCore.initIndex(SolrCore.java:798) ~[?:?]
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:1004) ~[?:?]
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:922) ~[?:?]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1438) ~[?:?]
+	at org.apache.solr.core.CoreContainer.lambda$load$11(CoreContainer.java:853) ~[?:?]
+	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedCallable.call(InstrumentedExecutorService.java:202) ~[metrics-core-4.1.5.jar:4.1.5]
+	... 5 more
+2021-03-26 06:19:28.224 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8984_solr) [c:techproducts s:shard2 r:core_node8 x:techproducts_shard2_replica_n6] o.a.s.c.RequestParams conf resource params.json loaded . version : 0 
+2021-03-26 06:19:28.224 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8984_solr) [c:techproducts s:shard2 r:core_node8 x:techproducts_shard2_replica_n6] o.a.s.c.RequestParams request params refreshed to version 0
+2021-03-26 06:19:28.227 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8984_solr) [c:techproducts s:shard2 r:core_node8 x:techproducts_shard2_replica_n6] o.a.s.c.SolrResourceLoader Added 57 libs to classloader, from paths: [/home/tnguy107/Desktop/573/solr-8.8.1/contrib/extraction/lib, /home/tnguy107/Desktop/573/solr-8.8.1/contrib/langid/lib, /home/tnguy107/Desktop/573/solr-8.8.1/contrib/velocity/lib, /home/tnguy107/Desktop/573/solr-8.8.1/dist]
+2021-03-26 06:19:28.244 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8984_solr) [c:techproducts s:shard2 r:core_node8 x:techproducts_shard2_replica_n6] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.8.1
+2021-03-26 06:19:28.254 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8984_solr) [c:techproducts s:shard2 r:core_node8 x:techproducts_shard2_replica_n6] o.a.s.u.SolrIndexConfig IndexWriter infoStream solr logging is enabled
+2021-03-26 06:19:28.285 INFO  (coreLoadExecutor-19-thread-2-processing-n:127.0.1.1:8984_solr) [c:techproducts s:shard1 r:core_node5 x:techproducts_shard1_replica_n2] o.a.s.c.RequestParams conf resource params.json loaded . version : 0 
+2021-03-26 06:19:28.285 INFO  (coreLoadExecutor-19-thread-2-processing-n:127.0.1.1:8984_solr) [c:techproducts s:shard1 r:core_node5 x:techproducts_shard1_replica_n2] o.a.s.c.RequestParams request params refreshed to version 0
+2021-03-26 06:19:28.287 INFO  (coreLoadExecutor-19-thread-2-processing-n:127.0.1.1:8984_solr) [c:techproducts s:shard1 r:core_node5 x:techproducts_shard1_replica_n2] o.a.s.c.SolrResourceLoader Added 57 libs to classloader, from paths: [/home/tnguy107/Desktop/573/solr-8.8.1/contrib/extraction/lib, /home/tnguy107/Desktop/573/solr-8.8.1/contrib/langid/lib, /home/tnguy107/Desktop/573/solr-8.8.1/contrib/velocity/lib, /home/tnguy107/Desktop/573/solr-8.8.1/dist]
+2021-03-26 06:19:28.307 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8984_solr) [c:techproducts s:shard2 r:core_node8 x:techproducts_shard2_replica_n6] o.a.s.s.IndexSchema Schema name=example
+2021-03-26 06:19:28.315 INFO  (coreLoadExecutor-19-thread-2-processing-n:127.0.1.1:8984_solr) [c:techproducts s:shard1 r:core_node5 x:techproducts_shard1_replica_n2] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.8.1
+2021-03-26 06:19:28.325 INFO  (coreLoadExecutor-19-thread-2-processing-n:127.0.1.1:8984_solr) [c:techproducts s:shard1 r:core_node5 x:techproducts_shard1_replica_n2] o.a.s.u.SolrIndexConfig IndexWriter infoStream solr logging is enabled
+2021-03-26 06:19:28.358 INFO  (coreLoadExecutor-19-thread-2-processing-n:127.0.1.1:8984_solr) [c:techproducts s:shard1 r:core_node5 x:techproducts_shard1_replica_n2] o.a.s.s.IndexSchema Schema name=example
+2021-03-26 06:19:28.375 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8984_solr) [c:techproducts s:shard2 r:core_node8 x:techproducts_shard2_replica_n6] o.a.s.r.RestManager Registered ManagedResource impl org.apache.solr.rest.schema.analysis.ManagedWordSetResource for path /schema/analysis/stopwords/english
+2021-03-26 06:19:28.375 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8984_solr) [c:techproducts s:shard2 r:core_node8 x:techproducts_shard2_replica_n6] o.a.s.r.RestManager Registered ManagedResource impl org.apache.solr.rest.schema.analysis.ManagedSynonymGraphFilterFactory$SynonymManager for path /schema/analysis/synonyms/english
+2021-03-26 06:19:28.375 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8984_solr) [c:techproducts s:shard2 r:core_node8 x:techproducts_shard2_replica_n6] o.a.s.r.RestManager Added observer of type org.apache.solr.rest.schema.analysis.ManagedStopFilterFactory to existing ManagedResource /schema/analysis/stopwords/english
+2021-03-26 06:19:28.375 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8984_solr) [c:techproducts s:shard2 r:core_node8 x:techproducts_shard2_replica_n6] o.a.s.r.RestManager Added observer of type org.apache.solr.rest.schema.analysis.ManagedSynonymGraphFilterFactory to existing ManagedResource /schema/analysis/synonyms/english
+2021-03-26 06:19:28.384 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8984_solr) [c:techproducts s:shard2 r:core_node8 x:techproducts_shard2_replica_n6] o.a.s.s.IndexSchema Loaded schema example/1.6 with uniqueid field id
+2021-03-26 06:19:28.384 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8984_solr) [c:techproducts s:shard2 r:core_node8 x:techproducts_shard2_replica_n6] o.a.s.r.RestManager Added observer of type org.apache.solr.rest.schema.analysis.ManagedStopFilterFactory to existing ManagedResource /schema/analysis/stopwords/english
+2021-03-26 06:19:28.384 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8984_solr) [c:techproducts s:shard2 r:core_node8 x:techproducts_shard2_replica_n6] o.a.s.r.RestManager Added observer of type org.apache.solr.rest.schema.analysis.ManagedSynonymGraphFilterFactory to existing ManagedResource /schema/analysis/synonyms/english
+2021-03-26 06:19:28.384 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8984_solr) [c:techproducts s:shard2 r:core_node8 x:techproducts_shard2_replica_n6] o.a.s.r.RestManager Added observer of type org.apache.solr.rest.schema.analysis.ManagedStopFilterFactory to existing ManagedResource /schema/analysis/stopwords/english
+2021-03-26 06:19:28.384 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8984_solr) [c:techproducts s:shard2 r:core_node8 x:techproducts_shard2_replica_n6] o.a.s.r.RestManager Added observer of type org.apache.solr.rest.schema.analysis.ManagedSynonymGraphFilterFactory to existing ManagedResource /schema/analysis/synonyms/english
+2021-03-26 06:19:28.487 INFO  (coreLoadExecutor-19-thread-2-processing-n:127.0.1.1:8984_solr) [c:techproducts s:shard1 r:core_node5 x:techproducts_shard1_replica_n2] o.a.s.r.RestManager Registered ManagedResource impl org.apache.solr.rest.schema.analysis.ManagedWordSetResource for path /schema/analysis/stopwords/english
+2021-03-26 06:19:28.488 INFO  (coreLoadExecutor-19-thread-2-processing-n:127.0.1.1:8984_solr) [c:techproducts s:shard1 r:core_node5 x:techproducts_shard1_replica_n2] o.a.s.r.RestManager Registered ManagedResource impl org.apache.solr.rest.schema.analysis.ManagedSynonymGraphFilterFactory$SynonymManager for path /schema/analysis/synonyms/english
+2021-03-26 06:19:28.488 INFO  (coreLoadExecutor-19-thread-2-processing-n:127.0.1.1:8984_solr) [c:techproducts s:shard1 r:core_node5 x:techproducts_shard1_replica_n2] o.a.s.r.RestManager Added observer of type org.apache.solr.rest.schema.analysis.ManagedStopFilterFactory to existing ManagedResource /schema/analysis/stopwords/english
+2021-03-26 06:19:28.488 INFO  (coreLoadExecutor-19-thread-2-processing-n:127.0.1.1:8984_solr) [c:techproducts s:shard1 r:core_node5 x:techproducts_shard1_replica_n2] o.a.s.r.RestManager Added observer of type org.apache.solr.rest.schema.analysis.ManagedSynonymGraphFilterFactory to existing ManagedResource /schema/analysis/synonyms/english
+2021-03-26 06:19:28.492 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8984_solr) [c:techproducts s:shard2 r:core_node8 x:techproducts_shard2_replica_n6] o.a.s.c.CoreContainer Creating SolrCore 'techproducts_shard2_replica_n6' using configuration from configset techproducts, trusted=true
+2021-03-26 06:19:28.493 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8984_solr) [c:techproducts s:shard2 r:core_node8 x:techproducts_shard2_replica_n6] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.techproducts.shard2.replica_n6' (registry 'solr.core.techproducts.shard2.replica_n6') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@7d9d0818
+2021-03-26 06:19:28.494 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8984_solr) [c:techproducts s:shard2 r:core_node8 x:techproducts_shard2_replica_n6] o.a.s.c.SolrCore [[techproducts_shard2_replica_n6] ] Opening new SolrCore at [/home/tnguy107/Desktop/573/solr-8.8.1/example/cloud/node1/solr/techproducts_shard2_replica_n6], dataDir=[/home/tnguy107/Desktop/573/solr-8.8.1/example/cloud/node1/solr/techproducts_shard2_replica_n6/data/]
+2021-03-26 06:19:28.496 INFO  (coreLoadExecutor-19-thread-2-processing-n:127.0.1.1:8984_solr) [c:techproducts s:shard1 r:core_node5 x:techproducts_shard1_replica_n2] o.a.s.s.IndexSchema Loaded schema example/1.6 with uniqueid field id
+2021-03-26 06:19:28.497 INFO  (coreLoadExecutor-19-thread-2-processing-n:127.0.1.1:8984_solr) [c:techproducts s:shard1 r:core_node5 x:techproducts_shard1_replica_n2] o.a.s.r.RestManager Added observer of type org.apache.solr.rest.schema.analysis.ManagedStopFilterFactory to existing ManagedResource /schema/analysis/stopwords/english
+2021-03-26 06:19:28.497 INFO  (coreLoadExecutor-19-thread-2-processing-n:127.0.1.1:8984_solr) [c:techproducts s:shard1 r:core_node5 x:techproducts_shard1_replica_n2] o.a.s.r.RestManager Added observer of type org.apache.solr.rest.schema.analysis.ManagedSynonymGraphFilterFactory to existing ManagedResource /schema/analysis/synonyms/english
+2021-03-26 06:19:28.497 INFO  (coreLoadExecutor-19-thread-2-processing-n:127.0.1.1:8984_solr) [c:techproducts s:shard1 r:core_node5 x:techproducts_shard1_replica_n2] o.a.s.r.RestManager Added observer of type org.apache.solr.rest.schema.analysis.ManagedStopFilterFactory to existing ManagedResource /schema/analysis/stopwords/english
+2021-03-26 06:19:28.497 INFO  (coreLoadExecutor-19-thread-2-processing-n:127.0.1.1:8984_solr) [c:techproducts s:shard1 r:core_node5 x:techproducts_shard1_replica_n2] o.a.s.r.RestManager Added observer of type org.apache.solr.rest.schema.analysis.ManagedSynonymGraphFilterFactory to existing ManagedResource /schema/analysis/synonyms/english
+2021-03-26 06:19:28.498 ERROR (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8984_solr) [c:techproducts s:shard2 r:core_node8 x:techproducts_shard2_replica_n6] o.a.s.c.SolrCore [techproducts_shard2_replica_n6] Solr index directory '/home/tnguy107/Desktop/573/solr-8.8.1/example/cloud/node1/solr/techproducts_shard2_replica_n6/data/index/' is locked (lockType=native).  Throwing exception.
+2021-03-26 06:19:28.499 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8984_solr) [   ] o.a.s.c.SolrCore [techproducts_shard2_replica_n6]  CLOSING SolrCore org.apache.solr.core.SolrCore@74bb2efb
+2021-03-26 06:19:28.499 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8984_solr) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.techproducts.shard2.replica_n6 tag=SolrCore@74bb2efb
+2021-03-26 06:19:28.499 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8984_solr) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@2f136b89: rootName = null, domain = solr.core.techproducts.shard2.replica_n6, service url = null, agent id = null] for registry solr.core.techproducts.shard2.replica_n6/com.codahale.metrics.MetricRegistry@53c75738
+2021-03-26 06:19:28.501 INFO  (coreLoadExecutor-19-thread-3-processing-n:127.0.1.1:8984_solr) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.collection.techproducts.shard2.leader tag=SolrCore@74bb2efb
+2021-03-26 06:19:28.588 INFO  (coreLoadExecutor-19-thread-2-processing-n:127.0.1.1:8984_solr) [c:techproducts s:shard1 r:core_node5 x:techproducts_shard1_replica_n2] o.a.s.c.CoreContainer Creating SolrCore 'techproducts_shard1_replica_n2' using configuration from configset techproducts, trusted=true
+2021-03-26 06:19:28.589 INFO  (coreLoadExecutor-19-thread-2-processing-n:127.0.1.1:8984_solr) [c:techproducts s:shard1 r:core_node5 x:techproducts_shard1_replica_n2] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.techproducts.shard1.replica_n2' (registry 'solr.core.techproducts.shard1.replica_n2') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@7d9d0818
+2021-03-26 06:19:28.589 INFO  (coreLoadExecutor-19-thread-2-processing-n:127.0.1.1:8984_solr) [c:techproducts s:shard1 r:core_node5 x:techproducts_shard1_replica_n2] o.a.s.c.SolrCore [[techproducts_shard1_replica_n2] ] Opening new SolrCore at [/home/tnguy107/Desktop/573/solr-8.8.1/example/cloud/node1/solr/techproducts_shard1_replica_n2], dataDir=[/home/tnguy107/Desktop/573/solr-8.8.1/example/cloud/node1/solr/techproducts_shard1_replica_n2/data/]
+2021-03-26 06:19:28.592 ERROR (coreLoadExecutor-19-thread-2-processing-n:127.0.1.1:8984_solr) [c:techproducts s:shard1 r:core_node5 x:techproducts_shard1_replica_n2] o.a.s.c.SolrCore [techproducts_shard1_replica_n2] Solr index directory '/home/tnguy107/Desktop/573/solr-8.8.1/example/cloud/node1/solr/techproducts_shard1_replica_n2/data/index/' is locked (lockType=native).  Throwing exception.
+2021-03-26 06:19:28.592 INFO  (coreLoadExecutor-19-thread-2-processing-n:127.0.1.1:8984_solr) [   ] o.a.s.c.SolrCore [techproducts_shard1_replica_n2]  CLOSING SolrCore org.apache.solr.core.SolrCore@43c6b0cf
+2021-03-26 06:19:28.592 INFO  (coreLoadExecutor-19-thread-2-processing-n:127.0.1.1:8984_solr) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.techproducts.shard1.replica_n2 tag=SolrCore@43c6b0cf
+2021-03-26 06:19:28.592 INFO  (coreLoadExecutor-19-thread-2-processing-n:127.0.1.1:8984_solr) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@7539e391: rootName = null, domain = solr.core.techproducts.shard1.replica_n2, service url = null, agent id = null] for registry solr.core.techproducts.shard1.replica_n2/com.codahale.metrics.MetricRegistry@1dfcaa21
+2021-03-26 06:19:28.597 INFO  (coreLoadExecutor-19-thread-2-processing-n:127.0.1.1:8984_solr) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.collection.techproducts.shard1.leader tag=SolrCore@43c6b0cf
+2021-03-26 06:19:28.605 ERROR (coreContainerWorkExecutor-2-thread-1-processing-n:127.0.1.1:8984_solr) [   ] o.a.s.c.CoreContainer Error waiting for SolrCore to be loaded on startup => java.util.concurrent.ExecutionException: org.apache.solr.common.SolrException: Unable to create core [techproducts_shard1_replica_n2]
+	at java.base/java.util.concurrent.FutureTask.report(FutureTask.java:122)
+java.util.concurrent.ExecutionException: org.apache.solr.common.SolrException: Unable to create core [techproducts_shard1_replica_n2]
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:?]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:191) ~[?:?]
+	at org.apache.solr.core.CoreContainer.lambda$load$12(CoreContainer.java:882) ~[?:?]
+	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedRunnable.run(InstrumentedExecutorService.java:180) ~[metrics-core-4.1.5.jar:4.1.5]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:218) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[?:?]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+Caused by: org.apache.solr.common.SolrException: Unable to create core [techproducts_shard1_replica_n2]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1459) ~[?:?]
+	at org.apache.solr.core.CoreContainer.lambda$load$11(CoreContainer.java:853) ~[?:?]
+	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedCallable.call(InstrumentedExecutorService.java:202) ~[metrics-core-4.1.5.jar:4.1.5]
+	... 5 more
+Caused by: org.apache.solr.common.SolrException: Index dir '/home/tnguy107/Desktop/573/solr-8.8.1/example/cloud/node1/solr/techproducts_shard1_replica_n2/data/index/' of core 'techproducts_shard1_replica_n2' is already locked. The most likely cause is another Solr server (or another solr core in this server) also configured to use this directory; other possible causes may be specific to lockType: native
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:1087) ~[?:?]
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:922) ~[?:?]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1438) ~[?:?]
+	at org.apache.solr.core.CoreContainer.lambda$load$11(CoreContainer.java:853) ~[?:?]
+	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedCallable.call(InstrumentedExecutorService.java:202) ~[metrics-core-4.1.5.jar:4.1.5]
+	... 5 more
+Caused by: org.apache.lucene.store.LockObtainFailedException: Index dir '/home/tnguy107/Desktop/573/solr-8.8.1/example/cloud/node1/solr/techproducts_shard1_replica_n2/data/index/' of core 'techproducts_shard1_replica_n2' is already locked. The most likely cause is another Solr server (or another solr core in this server) also configured to use this directory; other possible causes may be specific to lockType: native
+	at org.apache.solr.core.SolrCore.initIndex(SolrCore.java:798) ~[?:?]
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:1004) ~[?:?]
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:922) ~[?:?]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1438) ~[?:?]
+	at org.apache.solr.core.CoreContainer.lambda$load$11(CoreContainer.java:853) ~[?:?]
+	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedCallable.call(InstrumentedExecutorService.java:202) ~[metrics-core-4.1.5.jar:4.1.5]
+	... 5 more
+2021-03-26 06:19:28.605 ERROR (coreContainerWorkExecutor-2-thread-1-processing-n:127.0.1.1:8984_solr) [   ] o.a.s.c.CoreContainer Error waiting for SolrCore to be loaded on startup => java.util.concurrent.ExecutionException: org.apache.solr.common.SolrException: Unable to create core [techproducts_shard2_replica_n6]
+	at java.base/java.util.concurrent.FutureTask.report(FutureTask.java:122)
+java.util.concurrent.ExecutionException: org.apache.solr.common.SolrException: Unable to create core [techproducts_shard2_replica_n6]
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:?]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:191) ~[?:?]
+	at org.apache.solr.core.CoreContainer.lambda$load$12(CoreContainer.java:882) ~[?:?]
+	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedRunnable.run(InstrumentedExecutorService.java:180) ~[metrics-core-4.1.5.jar:4.1.5]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:218) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[?:?]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+Caused by: org.apache.solr.common.SolrException: Unable to create core [techproducts_shard2_replica_n6]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1459) ~[?:?]
+	at org.apache.solr.core.CoreContainer.lambda$load$11(CoreContainer.java:853) ~[?:?]
+	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedCallable.call(InstrumentedExecutorService.java:202) ~[metrics-core-4.1.5.jar:4.1.5]
+	... 5 more
+Caused by: org.apache.solr.common.SolrException: Index dir '/home/tnguy107/Desktop/573/solr-8.8.1/example/cloud/node1/solr/techproducts_shard2_replica_n6/data/index/' of core 'techproducts_shard2_replica_n6' is already locked. The most likely cause is another Solr server (or another solr core in this server) also configured to use this directory; other possible causes may be specific to lockType: native
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:1087) ~[?:?]
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:922) ~[?:?]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1438) ~[?:?]
+	at org.apache.solr.core.CoreContainer.lambda$load$11(CoreContainer.java:853) ~[?:?]
+	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedCallable.call(InstrumentedExecutorService.java:202) ~[metrics-core-4.1.5.jar:4.1.5]
+	... 5 more
+Caused by: org.apache.lucene.store.LockObtainFailedException: Index dir '/home/tnguy107/Desktop/573/solr-8.8.1/example/cloud/node1/solr/techproducts_shard2_replica_n6/data/index/' of core 'techproducts_shard2_replica_n6' is already locked. The most likely cause is another Solr server (or another solr core in this server) also configured to use this directory; other possible causes may be specific to lockType: native
+	at org.apache.solr.core.SolrCore.initIndex(SolrCore.java:798) ~[?:?]
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:1004) ~[?:?]
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:922) ~[?:?]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1438) ~[?:?]
+	at org.apache.solr.core.CoreContainer.lambda$load$11(CoreContainer.java:853) ~[?:?]
+	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedCallable.call(InstrumentedExecutorService.java:202) ~[metrics-core-4.1.5.jar:4.1.5]
+	... 5 more
+2021-03-26 06:21:24.801 INFO  (AutoscalingActionExecutor-22-thread-1) [   ] o.a.s.c.a.ExecutePlanAction No operations to execute for event: {
+  "id":"5d137885be8Tbhz3dnsg3z68c5fmu2epeda96",
+  "source":".auto_add_replicas",
+  "eventTime":6396137987048,
+  "eventType":"NODELOST",
+  "properties":{
+    "eventTimes":[
+      6396137987048,
+      6396137989493],
+    "preferredOperation":"movereplica",
+    "_enqueue_time_":6516384306853,
+    "nodeNames":[
+      "127.0.1.1:7574_solr",
+      "127.0.1.1:8983_solr"]}}
+2021-03-26 06:33:45.437 INFO  (OverseerThreadFactory-23-thread-1-processing-n:127.0.1.1:8984_solr) [   ] o.a.s.c.a.c.CreateCollectionCmd Create collection allData
+2021-03-26 06:33:45.574 INFO  (OverseerStateUpdate-72058011135770624-127.0.1.1:8984_solr-n_0000000012) [   ] o.a.s.c.o.SliceMutator createReplica() {
+  "core":"allData_shard1_replica_n1",
+  "node_name":"127.0.1.1:8984_solr",
+  "base_url":"http://127.0.1.1:8984/solr",
+  "collection":"allData",
+  "shard":"shard1",
+  "state":"down",
+  "type":"NRT",
+  "operation":"ADDREPLICA",
+  "waitForFinalState":"false"} 
+2021-03-26 06:33:45.581 INFO  (OverseerStateUpdate-72058011135770624-127.0.1.1:8984_solr-n_0000000012) [   ] o.a.s.c.o.SliceMutator createReplica() {
+  "core":"allData_shard1_replica_n2",
+  "node_name":"127.0.1.1:7575_solr",
+  "base_url":"http://127.0.1.1:7575/solr",
+  "collection":"allData",
+  "shard":"shard1",
+  "state":"down",
+  "type":"NRT",
+  "operation":"ADDREPLICA",
+  "waitForFinalState":"false"} 
+2021-03-26 06:33:45.587 INFO  (OverseerStateUpdate-72058011135770624-127.0.1.1:8984_solr-n_0000000012) [   ] o.a.s.c.o.SliceMutator createReplica() {
+  "core":"allData_shard2_replica_n4",
+  "node_name":"127.0.1.1:8984_solr",
+  "base_url":"http://127.0.1.1:8984/solr",
+  "collection":"allData",
+  "shard":"shard2",
+  "state":"down",
+  "type":"NRT",
+  "operation":"ADDREPLICA",
+  "waitForFinalState":"false"} 
+2021-03-26 06:33:45.593 INFO  (OverseerStateUpdate-72058011135770624-127.0.1.1:8984_solr-n_0000000012) [   ] o.a.s.c.o.SliceMutator createReplica() {
+  "core":"allData_shard2_replica_n6",
+  "node_name":"127.0.1.1:7575_solr",
+  "base_url":"http://127.0.1.1:7575/solr",
+  "collection":"allData",
+  "shard":"shard2",
+  "state":"down",
+  "type":"NRT",
+  "operation":"ADDREPLICA",
+  "waitForFinalState":"false"} 
+2021-03-26 06:33:45.809 INFO  (qtp261748192-20) [   x:allData_shard2_replica_n4] o.a.s.h.a.CoreAdminOperation core create command qt=/admin/cores&coreNodeName=core_node7&collection.configName=allData&newCollection=true&name=allData_shard2_replica_n4&action=CREATE&numShards=2&collection=allData&shard=shard2&wt=javabin&version=2&replicaType=NRT
+2021-03-26 06:33:45.812 INFO  (qtp261748192-19) [   x:allData_shard1_replica_n1] o.a.s.h.a.CoreAdminOperation core create command qt=/admin/cores&coreNodeName=core_node3&collection.configName=allData&newCollection=true&name=allData_shard1_replica_n1&action=CREATE&numShards=2&collection=allData&shard=shard1&wt=javabin&version=2&replicaType=NRT
+2021-03-26 06:33:45.875 INFO  (qtp261748192-19) [c:allData s:shard1 r:core_node3 x:allData_shard1_replica_n1] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.8.1
+2021-03-26 06:33:45.880 INFO  (qtp261748192-20) [c:allData s:shard2 r:core_node7 x:allData_shard2_replica_n4] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.8.1
+2021-03-26 06:33:45.953 INFO  (qtp261748192-19) [c:allData s:shard1 r:core_node3 x:allData_shard1_replica_n1] o.a.s.s.IndexSchema Schema name=default-config
+2021-03-26 06:33:45.957 INFO  (qtp261748192-20) [c:allData s:shard2 r:core_node7 x:allData_shard2_replica_n4] o.a.s.s.IndexSchema Schema name=default-config
+2021-03-26 06:33:46.089 INFO  (qtp261748192-20) [c:allData s:shard2 r:core_node7 x:allData_shard2_replica_n4] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2021-03-26 06:33:46.088 INFO  (qtp261748192-19) [c:allData s:shard1 r:core_node3 x:allData_shard1_replica_n1] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2021-03-26 06:33:46.209 INFO  (qtp261748192-19) [c:allData s:shard1 r:core_node3 x:allData_shard1_replica_n1] o.a.s.c.CoreContainer Creating SolrCore 'allData_shard1_replica_n1' using configuration from configset allData, trusted=true
+2021-03-26 06:33:46.210 INFO  (qtp261748192-19) [c:allData s:shard1 r:core_node3 x:allData_shard1_replica_n1] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.allData.shard1.replica_n1' (registry 'solr.core.allData.shard1.replica_n1') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@7d9d0818
+2021-03-26 06:33:46.210 INFO  (qtp261748192-19) [c:allData s:shard1 r:core_node3 x:allData_shard1_replica_n1] o.a.s.c.SolrCore [[allData_shard1_replica_n1] ] Opening new SolrCore at [/home/tnguy107/Desktop/573/solr-8.8.1/example/cloud/node1/solr/allData_shard1_replica_n1], dataDir=[/home/tnguy107/Desktop/573/solr-8.8.1/example/cloud/node1/solr/allData_shard1_replica_n1/data/]
+2021-03-26 06:33:46.231 INFO  (qtp261748192-20) [c:allData s:shard2 r:core_node7 x:allData_shard2_replica_n4] o.a.s.c.CoreContainer Creating SolrCore 'allData_shard2_replica_n4' using configuration from configset allData, trusted=true
+2021-03-26 06:33:46.232 INFO  (qtp261748192-20) [c:allData s:shard2 r:core_node7 x:allData_shard2_replica_n4] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.allData.shard2.replica_n4' (registry 'solr.core.allData.shard2.replica_n4') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@7d9d0818
+2021-03-26 06:33:46.232 INFO  (qtp261748192-20) [c:allData s:shard2 r:core_node7 x:allData_shard2_replica_n4] o.a.s.c.SolrCore [[allData_shard2_replica_n4] ] Opening new SolrCore at [/home/tnguy107/Desktop/573/solr-8.8.1/example/cloud/node1/solr/allData_shard2_replica_n4], dataDir=[/home/tnguy107/Desktop/573/solr-8.8.1/example/cloud/node1/solr/allData_shard2_replica_n4/data/]
+2021-03-26 06:33:47.411 INFO  (qtp261748192-20) [c:allData s:shard2 r:core_node7 x:allData_shard2_replica_n4] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2021-03-26 06:33:47.411 INFO  (qtp261748192-19) [c:allData s:shard1 r:core_node3 x:allData_shard1_replica_n1] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2021-03-26 06:33:47.411 INFO  (qtp261748192-19) [c:allData s:shard1 r:core_node3 x:allData_shard1_replica_n1] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2021-03-26 06:33:47.411 INFO  (qtp261748192-20) [c:allData s:shard2 r:core_node7 x:allData_shard2_replica_n4] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2021-03-26 06:33:47.427 INFO  (qtp261748192-20) [c:allData s:shard2 r:core_node7 x:allData_shard2_replica_n4] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2021-03-26 06:33:47.427 INFO  (qtp261748192-19) [c:allData s:shard1 r:core_node3 x:allData_shard1_replica_n1] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2021-03-26 06:33:47.428 INFO  (qtp261748192-20) [c:allData s:shard2 r:core_node7 x:allData_shard2_replica_n4] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2021-03-26 06:33:47.437 INFO  (qtp261748192-19) [c:allData s:shard1 r:core_node3 x:allData_shard1_replica_n1] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2021-03-26 06:33:47.546 INFO  (qtp261748192-20) [c:allData s:shard2 r:core_node7 x:allData_shard2_replica_n4] o.a.s.r.ManagedResourceStorage Configured ZooKeeperStorageIO with znodeBase: /configs/allData
+2021-03-26 06:33:47.546 INFO  (qtp261748192-19) [c:allData s:shard1 r:core_node3 x:allData_shard1_replica_n1] o.a.s.r.ManagedResourceStorage Configured ZooKeeperStorageIO with znodeBase: /configs/allData
+2021-03-26 06:33:47.549 INFO  (qtp261748192-19) [c:allData s:shard1 r:core_node3 x:allData_shard1_replica_n1] o.a.s.r.ManagedResourceStorage Loaded null at path _rest_managed.json using ZooKeeperStorageIO:path=/configs/allData
+2021-03-26 06:33:47.550 INFO  (qtp261748192-20) [c:allData s:shard2 r:core_node7 x:allData_shard2_replica_n4] o.a.s.r.ManagedResourceStorage Loaded null at path _rest_managed.json using ZooKeeperStorageIO:path=/configs/allData
+2021-03-26 06:33:47.552 INFO  (qtp261748192-20) [c:allData s:shard2 r:core_node7 x:allData_shard2_replica_n4] o.a.s.s.ZkIndexSchemaReader Creating ZooKeeper watch for the managed schema at /configs/allData/managed-schema
+2021-03-26 06:33:47.552 INFO  (qtp261748192-19) [c:allData s:shard1 r:core_node3 x:allData_shard1_replica_n1] o.a.s.s.ZkIndexSchemaReader Creating ZooKeeper watch for the managed schema at /configs/allData/managed-schema
+2021-03-26 06:33:47.556 INFO  (qtp261748192-19) [c:allData s:shard1 r:core_node3 x:allData_shard1_replica_n1] o.a.s.s.ZkIndexSchemaReader Current schema version 0 is already the latest
+2021-03-26 06:33:47.556 INFO  (qtp261748192-20) [c:allData s:shard2 r:core_node7 x:allData_shard2_replica_n4] o.a.s.s.ZkIndexSchemaReader Current schema version 0 is already the latest
+2021-03-26 06:33:47.571 INFO  (qtp261748192-20) [c:allData s:shard2 r:core_node7 x:allData_shard2_replica_n4] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2021-03-26 06:33:47.572 INFO  (qtp261748192-19) [c:allData s:shard1 r:core_node3 x:allData_shard1_replica_n1] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2021-03-26 06:33:47.578 INFO  (qtp261748192-20) [c:allData s:shard2 r:core_node7 x:allData_shard2_replica_n4] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2021-03-26 06:33:47.579 INFO  (qtp261748192-19) [c:allData s:shard1 r:core_node3 x:allData_shard1_replica_n1] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2021-03-26 06:33:47.594 INFO  (qtp261748192-19) [c:allData s:shard1 r:core_node3 x:allData_shard1_replica_n1] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2021-03-26 06:33:47.598 INFO  (qtp261748192-20) [c:allData s:shard2 r:core_node7 x:allData_shard2_replica_n4] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2021-03-26 06:33:47.615 INFO  (qtp261748192-19) [c:allData s:shard1 r:core_node3 x:allData_shard1_replica_n1] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1695275210626826240
+2021-03-26 06:33:47.619 INFO  (qtp261748192-20) [c:allData s:shard2 r:core_node7 x:allData_shard2_replica_n4] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1695275210631020544
+2021-03-26 06:33:47.625 INFO  (searcherExecutor-37-thread-1-processing-n:127.0.1.1:8984_solr x:allData_shard1_replica_n1 c:allData s:shard1 r:core_node3) [c:allData s:shard1 r:core_node3 x:allData_shard1_replica_n1] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2021-03-26 06:33:47.625 INFO  (searcherExecutor-37-thread-1-processing-n:127.0.1.1:8984_solr x:allData_shard1_replica_n1 c:allData s:shard1 r:core_node3) [c:allData s:shard1 r:core_node3 x:allData_shard1_replica_n1] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2021-03-26 06:33:47.630 INFO  (searcherExecutor-39-thread-1-processing-n:127.0.1.1:8984_solr x:allData_shard2_replica_n4 c:allData s:shard2 r:core_node7) [c:allData s:shard2 r:core_node7 x:allData_shard2_replica_n4] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2021-03-26 06:33:47.636 INFO  (searcherExecutor-39-thread-1-processing-n:127.0.1.1:8984_solr x:allData_shard2_replica_n4 c:allData s:shard2 r:core_node7) [c:allData s:shard2 r:core_node7 x:allData_shard2_replica_n4] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2021-03-26 06:33:47.659 INFO  (searcherExecutor-39-thread-1-processing-n:127.0.1.1:8984_solr x:allData_shard2_replica_n4 c:allData s:shard2 r:core_node7) [c:allData s:shard2 r:core_node7 x:allData_shard2_replica_n4] o.a.s.c.SolrCore [allData_shard2_replica_n4]  Registered new searcher autowarm time: 0 ms
+2021-03-26 06:33:47.660 INFO  (searcherExecutor-37-thread-1-processing-n:127.0.1.1:8984_solr x:allData_shard1_replica_n1 c:allData s:shard1 r:core_node3) [c:allData s:shard1 r:core_node3 x:allData_shard1_replica_n1] o.a.s.c.SolrCore [allData_shard1_replica_n1]  Registered new searcher autowarm time: 0 ms
+2021-03-26 06:33:47.684 INFO  (qtp261748192-19) [c:allData s:shard1 r:core_node3 x:allData_shard1_replica_n1] o.a.s.c.ZkShardTerms Successful update of terms at /collections/allData/terms/shard1 to Terms{values={core_node3=0}, version=0}
+2021-03-26 06:33:47.693 INFO  (qtp261748192-19) [c:allData s:shard1 r:core_node3 x:allData_shard1_replica_n1] o.a.s.c.ShardLeaderElectionContextBase make sure parent is created /collections/allData/leaders/shard1
+2021-03-26 06:33:47.696 INFO  (qtp261748192-20) [c:allData s:shard2 r:core_node7 x:allData_shard2_replica_n4] o.a.s.c.ZkShardTerms Successful update of terms at /collections/allData/terms/shard2 to Terms{values={core_node7=0, core_node8=0}, version=1}
+2021-03-26 06:33:47.697 INFO  (qtp261748192-20) [c:allData s:shard2 r:core_node7 x:allData_shard2_replica_n4] o.a.s.c.ShardLeaderElectionContextBase make sure parent is created /collections/allData/leaders/shard2
+2021-03-26 06:33:47.728 INFO  (qtp261748192-20) [c:allData s:shard2 r:core_node7 x:allData_shard2_replica_n4] o.a.s.c.ShardLeaderElectionContext Enough replicas found to continue.
+2021-03-26 06:33:47.728 INFO  (qtp261748192-20) [c:allData s:shard2 r:core_node7 x:allData_shard2_replica_n4] o.a.s.c.ShardLeaderElectionContext I may be the new leader - try and sync
+2021-03-26 06:33:47.729 INFO  (qtp261748192-20) [c:allData s:shard2 r:core_node7 x:allData_shard2_replica_n4] o.a.s.c.SyncStrategy Sync replicas to http://127.0.1.1:8984/solr/allData_shard2_replica_n4/
+2021-03-26 06:33:47.730 INFO  (qtp261748192-19) [c:allData s:shard1 r:core_node3 x:allData_shard1_replica_n1] o.a.s.c.ShardLeaderElectionContext Enough replicas found to continue.
+2021-03-26 06:33:47.730 INFO  (qtp261748192-19) [c:allData s:shard1 r:core_node3 x:allData_shard1_replica_n1] o.a.s.c.ShardLeaderElectionContext I may be the new leader - try and sync
+2021-03-26 06:33:47.730 INFO  (qtp261748192-19) [c:allData s:shard1 r:core_node3 x:allData_shard1_replica_n1] o.a.s.c.SyncStrategy Sync replicas to http://127.0.1.1:8984/solr/allData_shard1_replica_n1/
+2021-03-26 06:33:47.736 INFO  (qtp261748192-20) [c:allData s:shard2 r:core_node7 x:allData_shard2_replica_n4] o.a.s.u.PeerSync PeerSync: core=allData_shard2_replica_n4 url=http://127.0.1.1:8984/solr  START replicas=[http://127.0.1.1:7575/solr/allData_shard2_replica_n6/] nUpdates=100
+2021-03-26 06:33:47.738 INFO  (qtp261748192-19) [c:allData s:shard1 r:core_node3 x:allData_shard1_replica_n1] o.a.s.u.PeerSync PeerSync: core=allData_shard1_replica_n1 url=http://127.0.1.1:8984/solr  START replicas=[http://127.0.1.1:7575/solr/allData_shard1_replica_n2/] nUpdates=100
+2021-03-26 06:33:47.753 INFO  (qtp261748192-19) [c:allData s:shard1 r:core_node3 x:allData_shard1_replica_n1] o.a.s.u.PeerSync PeerSync: core=allData_shard1_replica_n1 url=http://127.0.1.1:8984/solr  DONE. We have no versions. sync failed.
+2021-03-26 06:33:47.753 INFO  (qtp261748192-20) [c:allData s:shard2 r:core_node7 x:allData_shard2_replica_n4] o.a.s.u.PeerSync PeerSync: core=allData_shard2_replica_n4 url=http://127.0.1.1:8984/solr  DONE. We have no versions. sync failed.
+2021-03-26 06:33:47.768 INFO  (qtp261748192-20) [c:allData s:shard2 r:core_node7 x:allData_shard2_replica_n4] o.a.s.c.SyncStrategy Leader's attempt to sync with shard failed, moving to the next candidate
+2021-03-26 06:33:47.768 INFO  (qtp261748192-20) [c:allData s:shard2 r:core_node7 x:allData_shard2_replica_n4] o.a.s.c.ShardLeaderElectionContext We failed sync, but we have no versions - we can't sync in that case - we were active before, so become leader anyway
+2021-03-26 06:33:47.770 INFO  (qtp261748192-20) [c:allData s:shard2 r:core_node7 x:allData_shard2_replica_n4] o.a.s.c.ShardLeaderElectionContextBase Creating leader registration node /collections/allData/leaders/shard2/leader after winning as /collections/allData/leader_elect/shard2/election/72058011135770624-core_node7-n_0000000000
+2021-03-26 06:33:47.772 INFO  (qtp261748192-19) [c:allData s:shard1 r:core_node3 x:allData_shard1_replica_n1] o.a.s.c.SyncStrategy Leader's attempt to sync with shard failed, moving to the next candidate
+2021-03-26 06:33:47.772 INFO  (qtp261748192-19) [c:allData s:shard1 r:core_node3 x:allData_shard1_replica_n1] o.a.s.c.ShardLeaderElectionContext We failed sync, but we have no versions - we can't sync in that case - we were active before, so become leader anyway
+2021-03-26 06:33:47.772 INFO  (qtp261748192-19) [c:allData s:shard1 r:core_node3 x:allData_shard1_replica_n1] o.a.s.c.ShardLeaderElectionContextBase Creating leader registration node /collections/allData/leaders/shard1/leader after winning as /collections/allData/leader_elect/shard1/election/72058011135770624-core_node3-n_0000000000
+2021-03-26 06:33:47.779 INFO  (qtp261748192-19) [c:allData s:shard1 r:core_node3 x:allData_shard1_replica_n1] o.a.s.c.ShardLeaderElectionContext I am the new leader: http://127.0.1.1:8984/solr/allData_shard1_replica_n1/ shard1
+2021-03-26 06:33:47.784 INFO  (qtp261748192-20) [c:allData s:shard2 r:core_node7 x:allData_shard2_replica_n4] o.a.s.c.ShardLeaderElectionContext I am the new leader: http://127.0.1.1:8984/solr/allData_shard2_replica_n4/ shard2
+2021-03-26 06:33:47.889 INFO  (zkCallback-10-thread-4) [   ] o.a.s.c.c.ZkStateReader A cluster state change: [WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/allData/state.json] for collection [allData] has occurred - updating... (live nodes size: [2])
+2021-03-26 06:33:47.896 INFO  (qtp261748192-20) [c:allData s:shard2 r:core_node7 x:allData_shard2_replica_n4] o.a.s.c.ZkController I am the leader, no recovery necessary
+2021-03-26 06:33:47.902 INFO  (qtp261748192-19) [c:allData s:shard1 r:core_node3 x:allData_shard1_replica_n1] o.a.s.c.ZkController I am the leader, no recovery necessary
+2021-03-26 06:33:47.911 INFO  (qtp261748192-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={qt=/admin/cores&coreNodeName=core_node3&collection.configName=allData&newCollection=true&name=allData_shard1_replica_n1&action=CREATE&numShards=2&collection=allData&shard=shard1&wt=javabin&version=2&replicaType=NRT} status=0 QTime=2099
+2021-03-26 06:33:47.914 INFO  (qtp261748192-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={qt=/admin/cores&coreNodeName=core_node7&collection.configName=allData&newCollection=true&name=allData_shard2_replica_n4&action=CREATE&numShards=2&collection=allData&shard=shard2&wt=javabin&version=2&replicaType=NRT} status=0 QTime=2105
+2021-03-26 06:33:48.014 INFO  (zkCallback-10-thread-5) [   ] o.a.s.c.c.ZkStateReader A cluster state change: [WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/allData/state.json] for collection [allData] has occurred - updating... (live nodes size: [2])
+2021-03-26 06:33:48.014 INFO  (zkCallback-10-thread-4) [   ] o.a.s.c.c.ZkStateReader A cluster state change: [WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/allData/state.json] for collection [allData] has occurred - updating... (live nodes size: [2])
+2021-03-26 06:33:48.857 INFO  (zkCallback-10-thread-4) [   ] o.a.s.c.c.ZkStateReader A cluster state change: [WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/allData/state.json] for collection [allData] has occurred - updating... (live nodes size: [2])
+2021-03-26 06:33:48.857 INFO  (zkCallback-10-thread-5) [   ] o.a.s.c.c.ZkStateReader A cluster state change: [WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/allData/state.json] for collection [allData] has occurred - updating... (live nodes size: [2])
+2021-03-26 06:33:49.444 INFO  (OverseerCollectionConfigSetProcessor-72058011135770624-127.0.1.1:8984_solr-n_0000000012) [   ] o.a.s.c.OverseerTaskQueue Response ZK path: /overseer/collection-queue-work/qnr-0000000014 doesn't exist. Requestor may have disconnected from ZooKeeper
+2021-03-26 06:36:50.784 INFO  (ShutdownMonitor) [   ] o.e.j.s.AbstractConnector Stopped ServerConnector@1817f1eb{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8984}
+2021-03-26 06:36:50.784 INFO  (ShutdownMonitor) [   ] o.e.j.s.session node0 Stopped scavenging
+2021-03-26 06:36:50.786 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=1980194149
+2021-03-26 06:36:50.787 INFO  (ShutdownMonitor) [   ] o.a.s.c.ZkController Remove node as live in ZooKeeper:/live_nodes/127.0.1.1:8984_solr
+2021-03-26 06:36:50.791 INFO  (ShutdownMonitor) [   ] o.a.s.c.ZkController Publish this node as DOWN...
+2021-03-26 06:36:50.791 INFO  (ShutdownMonitor) [   ] o.a.s.c.ZkController Publish node=127.0.1.1:8984_solr as DOWN
+2021-03-26 06:36:50.810 INFO  (zkCallback-10-thread-7) [   ] o.a.s.c.c.ZkStateReader A cluster state change: [WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/allData/state.json] for collection [allData] has occurred - updating... (live nodes size: [2])
+2021-03-26 06:36:50.813 INFO  (zkCallback-10-thread-8) [   ] o.a.s.c.c.ZkStateReader A cluster state change: [WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/allData/state.json] for collection [allData] has occurred - updating... (live nodes size: [2])
+2021-03-26 06:36:50.824 INFO  (coreCloseExecutor-50-thread-1) [   ] o.a.s.c.SolrCore [allData_shard2_replica_n4]  CLOSING SolrCore org.apache.solr.core.SolrCore@48515a6a
+2021-03-26 06:36:50.824 INFO  (coreCloseExecutor-50-thread-1) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.allData.shard2.replica_n4 tag=SolrCore@48515a6a
+2021-03-26 06:36:50.824 INFO  (coreCloseExecutor-50-thread-1) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@39540bb3: rootName = null, domain = solr.core.allData.shard2.replica_n4, service url = null, agent id = null] for registry solr.core.allData.shard2.replica_n4/com.codahale.metrics.MetricRegistry@ef95fb8
+2021-03-26 06:36:50.841 INFO  (coreCloseExecutor-50-thread-2) [   ] o.a.s.c.SolrCore [allData_shard1_replica_n1]  CLOSING SolrCore org.apache.solr.core.SolrCore@5149002
+2021-03-26 06:36:50.845 INFO  (coreCloseExecutor-50-thread-1) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.collection.allData.shard2.leader tag=SolrCore@48515a6a
+2021-03-26 06:36:50.848 INFO  (coreCloseExecutor-50-thread-2) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.allData.shard1.replica_n1 tag=SolrCore@5149002
+2021-03-26 06:36:50.848 INFO  (coreCloseExecutor-50-thread-2) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@5335826: rootName = null, domain = solr.core.allData.shard1.replica_n1, service url = null, agent id = null] for registry solr.core.allData.shard1.replica_n1/com.codahale.metrics.MetricRegistry@43a86f5a
+2021-03-26 06:36:50.854 INFO  (coreCloseExecutor-50-thread-1) [   ] o.a.s.u.DirectUpdateHandler2 Committing on IndexWriter.close()  ... SKIPPED (unnecessary).
+2021-03-26 06:36:50.865 INFO  (coreCloseExecutor-50-thread-2) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.collection.allData.shard1.leader tag=SolrCore@5149002
+2021-03-26 06:36:50.874 INFO  (coreCloseExecutor-50-thread-2) [   ] o.a.s.u.DirectUpdateHandler2 Committing on IndexWriter.close()  ... SKIPPED (unnecessary).
+2021-03-26 06:36:50.897 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node tag=null
+2021-03-26 06:36:50.897 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@4fd05028: rootName = null, domain = solr.node, service url = null, agent id = null] for registry solr.node/com.codahale.metrics.MetricRegistry@5675416a
+2021-03-26 06:36:50.900 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm tag=null
+2021-03-26 06:36:50.900 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@58b91d57: rootName = null, domain = solr.jvm, service url = null, agent id = null] for registry solr.jvm/com.codahale.metrics.MetricRegistry@6d4cce9a
+2021-03-26 06:36:50.901 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty tag=null
+2021-03-26 06:36:50.901 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@61a91c9b: rootName = null, domain = solr.jetty, service url = null, agent id = null] for registry solr.jetty/com.codahale.metrics.MetricRegistry@de065dc
+2021-03-26 06:36:50.902 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.cluster tag=null
+2021-03-26 06:36:50.908 INFO  (closeThreadPool-52-thread-1) [   ] o.a.s.c.Overseer Overseer (id=72058011135770624-127.0.1.1:8984_solr-n_0000000012) closing
+2021-03-26 06:36:50.911 INFO  (OverseerStateUpdate-72058011135770624-127.0.1.1:8984_solr-n_0000000012) [   ] o.a.s.c.Overseer Overseer Loop exiting : 127.0.1.1:8984_solr
+2021-03-26 06:36:50.913 INFO  (OverseerAutoScalingTriggerThread-72058011135770624-127.0.1.1:8984_solr-n_0000000012) [   ] o.a.s.c.a.OverseerTriggerThread OverseerTriggerThread woken up but we are closed, exiting.
+2021-03-26 06:36:50.921 INFO  (closeThreadPool-52-thread-2) [   ] o.a.s.c.Overseer Overseer (id=72058011135770624-127.0.1.1:8984_solr-n_0000000012) closing
+2021-03-26 06:36:50.925 WARN  (main-SendThread(localhost:9984)) [   ] o.a.z.ClientCnxn An exception was thrown while closing send thread for session 0x10000611cf80000. => EndOfStreamException: Unable to read additional data from server sessionid 0x10000611cf80000, likely server has closed socket
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doIO(ClientCnxnSocketNIO.java:77)
+org.apache.zookeeper.ClientCnxn$EndOfStreamException: Unable to read additional data from server sessionid 0x10000611cf80000, likely server has closed socket
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doIO(ClientCnxnSocketNIO.java:77) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1275) ~[?:?]
+2021-03-26 06:36:51.027 INFO  (ShutdownMonitor) [   ] o.a.s.c.Overseer Overseer (id=72058011135770624-127.0.1.1:8984_solr-n_0000000012) closing
+2021-03-26 06:36:51.029 WARN  (Thread-11) [   ] o.a.z.s.ZooKeeperServerMain Server interrupted => java.lang.InterruptedException
+	at java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer.doAcquireSharedInterruptibly(AbstractQueuedSynchronizer.java:1040)
+java.lang.InterruptedException: null
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.doAcquireSharedInterruptibly(AbstractQueuedSynchronizer.java:1040) ~[?:?]
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireSharedInterruptibly(AbstractQueuedSynchronizer.java:1345) ~[?:?]
+	at java.util.concurrent.CountDownLatch.await(CountDownLatch.java:232) ~[?:?]
+	at org.apache.zookeeper.server.ZooKeeperServerMain.runFromConfig(ZooKeeperServerMain.java:181) ~[?:?]
+	at org.apache.solr.cloud.SolrZkServer$1.run(SolrZkServer.java:121) ~[?:?]
+2021-03-26 06:36:51.031 INFO  (Thread-11) [   ] o.a.s.c.SolrZkServer ZooKeeper Server exited.
+2021-03-26 06:36:51.035 INFO  (ShutdownMonitor) [   ] o.e.j.s.h.ContextHandler Stopped o.e.j.w.WebAppContext@4a335fa8{/solr,null,STOPPED}{/home/tnguy107/Desktop/573/solr-8.8.1/server/solr-webapp/webapp}
+2021-03-26 06:36:51.040 ERROR (SyncThread:0) [   ] o.a.z.s.ZooKeeperCriticalThread Severe unrecoverable error, from thread : SyncThread:0 => java.lang.NullPointerException
+	at org.apache.zookeeper.server.persistence.FileTxnSnapLog.append(FileTxnSnapLog.java:582)
+java.lang.NullPointerException: null
+	at org.apache.zookeeper.server.persistence.FileTxnSnapLog.append(FileTxnSnapLog.java:582) ~[?:?]
+	at org.apache.zookeeper.server.ZKDatabase.append(ZKDatabase.java:641) ~[?:?]
+	at org.apache.zookeeper.server.SyncRequestProcessor.run(SyncRequestProcessor.java:181) ~[?:?]
