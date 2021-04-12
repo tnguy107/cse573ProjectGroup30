@@ -20,24 +20,15 @@ articles = json.load(open('articles.json', 'r'))
 def hello_world():
     return render_template('index.html')
 
-@app.route('/logistic-sample/', methods=['GET'])
-def logistic_regression_sample():
-    text = request.args['text'].strip()
-    return text
-
-@app.route('/article-data/', methods=['GET'])
-def get_articles():
+@app.route('/search/', methods=['GET'])
+def search_articles():
     #data = jsonify(articles)
-    return make_response({"response": '+result+'})
-
-@app.route('/query/', methods=['GET'])
-def send_queries():
-    query_parameters = request.args
-    id = query_parameters.get('searchTerm')
-    published = query_parameters.get('selectedFilters')
-    print(id)
-    term = quote_plus(input('Enter search term: '))
-    query(term)
+    #return make_response({"response": '+result+'})
+    search_term = request.args['searchTerm'].strip()
+    filters = request.args['selectedFilters'].strip()
+    print("search term", search_term, "filters", filters)
+    results = query(term=search_term)
+    return results
 
 if __name__ == "__main__":
     app.run(port=PORT)
