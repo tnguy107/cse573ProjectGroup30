@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>ADR Detection Demo</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://bootswatch.com/4/flatly/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="../static/script.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders  */
+    .navbar {
+	  text-align: left;
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+	html, body {
+    max-width: 100%;
+	max-height: 100%;
+	overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+	.center {
+		text-align: center;
+		margin-top: -80px;
+		margin-left: 240px;
+		margin-right: auto;
+		width: 100%;
+		padding: 0px;
+	}
+
+
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;}
+    }
+
+	body {
+		background-image: url("https://columbiaairport.com/wp-content/uploads/2015/12/CAE-Website-Full-Background-Texture1902x1200-9.jpg");
+		background-repeat: no-repeat;
+		background-size: auto;
+	}
+
+	.column {
+  float: center;
+  padding: 0px;
+  height: 210px; /* Should be removed. Only for demonstration */
+}
+
+.left {
+	text-align:left;
+  width: 50%;
+}
+
+.right {
+text-align:left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+  </style>
+
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+	  <img src="https://engineering.asu.edu/wp-content/uploads/2017/06/asu_fultonengineering_vert_rgb_maroongold_300px.png" style="width:100px;height:120px;" />
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid text-center">
+<div class="center">
+  <div class="row content">
+    <div class="col-sm-8 text-center">
+      <h1>Solr Search Demo</h1>
+	  </div>
+	  <div class="col-sm-8 text-center">
+	  <div class="form-group">
+    <label for="input-box" id='description'>Search using Apache Solr:</label>
+    <input type="text" class="form-control" placeholder="IP Address" id="input-box">
+    </div>
+	  <button type="button" class="btn btn-info" onclick="call_logistic_regression()">Search</button>
+      <hr>
+      <h3>Result:</h3>
+      <p id='result_container' style="text-style:bold"></p>
+    </div>
+	</div>
+  </div>
+</div>
+</body>
+</html>
