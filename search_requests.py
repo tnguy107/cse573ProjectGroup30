@@ -3,7 +3,7 @@ from urllib.parse import quote_plus
 import json
 import ast
 
-def query(term: str):
+def query(term):
     runLoop = True
     while runLoop:
 
@@ -17,7 +17,7 @@ def query(term: str):
         #######################################################################
         # uncomment next line to return up to 800 results
         # with urlopen('http://localhost:8983/solr/metamapData/select?q={}&rows=800'.format(term)) as url: 
-        with urlopen('http://localhost:8983/solr/metamapData/select?q={}'.format(term)) as u: #return upto 10 results by default
+        with urlopen('http://localhost:8983/solr/metamapData/select?q=SymptomName%3A{}'.format(term)) as u: #return upto 10 results by default
             result1 = json.loads(u.read().decode())
         
         # post_num is the list of post numbers (used for Query 2)
@@ -85,20 +85,21 @@ def query(term: str):
             # 'replies' format: {'content', 'sub_replies}
             final_results_all.append(final_results)   
 
-        
 
-        # print out final result
-        for url_res in final_results_all:
-            for res in url_res:
-                url = res['url']
-                content = res['content']
-                replies = res['replies']
-                print("Url: {}".format(url))
-                print("Content: {}".format(content))
-                for reply in replies:
-                    print("\tReply: {}".format(reply['content']) )
-                    for subreply in reply['sub_replies']:
-                        if subreply != '':
-                            print("\t\tSubreply: {}".format(subreply))
-                print("\n")
-            print('\n------------------------------------------------------------------------')
+        # # print out final result
+        # for url_res in final_results_all:
+        #     for res in url_res:
+        #         url = res['url']
+        #         content = res['content']
+        #         replies = res['replies']
+        #         print("Url: {}".format(url))
+        #         print("Content: {}".format(content))
+        #         for reply in replies:
+        #             print("\tReply: {}".format(reply['content']) )
+        #             for subreply in reply['sub_replies']:
+        #                 if subreply != '':
+        #                     print("\t\tSubreply: {}".format(subreply))
+        #         print("\n")
+        #     print('\n------------------------------------------------------------------------')
+
+        return str(final_results_all)
