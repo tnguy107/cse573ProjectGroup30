@@ -7,7 +7,7 @@ runLoop = True
 while runLoop:
 
     # Uncomment to only run once
-    # runLoop = False
+    runLoop = False
 
     term = quote_plus(input('Enter search term: '))
 
@@ -84,20 +84,22 @@ while runLoop:
         # 'replies' format: {'content', 'sub_replies}
         final_results_all.append(final_results)   
 
-    
+        
+        print("Printing results on webpage")
+        return str(final_results_all)
 
-    # print out final result
-    for url_res in final_results_all:
-        for res in url_res:
-            url = res['url']
-            content = res['content']
-            replies = res['replies']
-            print("Url: {}".format(url))
-            print("Content: {}".format(content))
-            for reply in replies:
-                print("\tReply: {}".format(reply['content']) )
-                for subreply in reply['sub_replies']:
-                    if subreply != '':
-                        print("\t\tSubreply: {}".format(subreply))
-            print("\n")
-        print('\n------------------------------------------------------------------------')
+#     # print out final result
+#     for url_res in final_results_all:
+#         for res in url_res:
+#             url = res['url']
+#             content = res['content']
+#             replies = res['replies']
+#             print("Url: {}".format(url))
+#             print("Content: {}".format(content))
+#             for reply in replies:
+#                 print("\tReply: {}".format(reply['content']) )
+#                 for subreply in reply['sub_replies']:
+#                     if subreply != '':
+#                         print("\t\tSubreply: {}".format(subreply))
+#             print("\n")
+#         print('\n------------------------------------------------------------------------')
