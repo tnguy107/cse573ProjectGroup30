@@ -3,7 +3,7 @@ from urllib.parse import quote_plus
 import json
 import ast
 
-def query(term: str):
+def query(term):
     runLoop = True
     while runLoop:
 
