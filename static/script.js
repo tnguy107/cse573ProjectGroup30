@@ -1,8 +1,7 @@
 const url =
-	"http://localhost:8080/article-data";
-	//"http://localhost:8080/query"
+	//"http://localhost:8080/search";
 	//"http://localhost:8983/solr/metamapData/select?q=cough";
-	//"https://f747eceb-c84f-4389-90bb-22783cedd28f.mock.pstmn.io/getarticles";
+	"https://f747eceb-c84f-4389-90bb-22783cedd28f.mock.pstmn.io/getarticles";
 
 
 let searchTerm = "covid";
