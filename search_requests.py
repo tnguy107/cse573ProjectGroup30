@@ -2,6 +2,50 @@ from urllib.request import urlopen
 from urllib.parse import quote_plus
 import json
 import ast
+# TODO: We could use truecase to try put the text back into original casing since everything is lowercase currently
+#import truecase
+
+def default_query():
+    # Some default articles to show when the user first opens the page or submits a search with no search term
+    # TODO: Find a way to return all or a large number of articles in a random order
+    post_url = [
+        'https://www.medhelp.org/posts/Coronavirus/COVID-19-Evaluating-the-risk/show/3063200',
+        'https://patient.info/forums/discuss/painful-mouth-throat-post-covid-756606',
+        'https://covid19.camhx.ca/mod/forum/discuss.php?d=63',
+        'https://forums.livescience.com/forums/coronavirus-epidemiology.42/?prefix_id=8',
+        'https://connect.mayoclinic.org/discussion/copd-and-the-covid-19-vaccine/',
+        ]
+
+    #######################################################################
+    # Query 3: Get the content, replies, and subreplies of a group of posts
+    #######################################################################
+    unique_url = list(set(post_url))
+    final_results_all = []
+    for url in unique_url:
+        with urlopen('http://localhost:8983/solr/allData/select?q=url%3A%22{}%22'.format(
+                url)) as u:  # return upto 10 results by default
+            result3 = json.loads(u.read().decode())
+
+        final_results = []
+        for res in result3['response']['docs']:
+            title = res['title'][0]
+            if 'author' in res.keys():
+                author = res['author'][0]
+            else:
+                author = 'unknown'
+            content = res['content'][0]
+            replies = res['replies'][0]
+            replies_list = ast.literal_eval(replies)
+
+            final_results.append(
+                {'title': title, 'author': author, 'url': url, 'content': content, 'replies': replies_list})
+
+        # Format of final_results_all: [{title1, author1, url1, content1, replies1}, {title2, author2, url2, content2, replies2}, ...]
+        # 'replies' format: {'content', 'sub_replies}
+        final_results_all.append(final_results)
+
+    return final_results_all
+
 
 def query(term):
     runLoop = True
@@ -30,8 +74,11 @@ def query(term):
 
         if not post_num:
             print("No results.\n")
-            continue
-        
+            # Sid: instead of "continue" (not needed if not looping), return a "no results" object
+            #continue
+            return [[{'title': 'No results', 'author': '', 'url': '', 'content': '', 'replies': ''}]]
+
+
         # post_info format: [(post_num1, post_url2), (post_num2, post_url2), ...]
         post_info = list(zip(post_num, post_url))
 
@@ -75,13 +122,18 @@ def query(term):
         
             final_results = []
             for res in result3['response']['docs']:
+                title = res['title'][0]
+                if 'author' in res.keys():
+                    author = res['author'][0]
+                else:
+                    author = 'unknown'
                 content = res['content'][0]
                 replies = res['replies'][0]
                 replies_list = ast.literal_eval(replies)
                 
-                final_results.append({'url': url, 'content': content, 'replies': replies_list})
+                final_results.append({'title': title, 'author': author, 'url': url, 'content': content, 'replies': replies_list})
                 
-            # Format of final_results_all: [{url1, content1, replies1}, {url2, content2, replies2}, ...]
+            # Format of final_results_all: [{title1, author1, url1, content1, replies1}, {title2, author2, url2, content2, replies2}, ...]
             # 'replies' format: {'content', 'sub_replies}
             final_results_all.append(final_results)   
 
@@ -89,9 +141,13 @@ def query(term):
         # # print out final result
         # for url_res in final_results_all:
         #     for res in url_res:
+        #         title = res['title']
+        #         author = res['author']
         #         url = res['url']
         #         content = res['content']
         #         replies = res['replies']
+        #         print("Title: {}".format(title))
+        #         print("Author: {}".format(author))
         #         print("Url: {}".format(url))
         #         print("Content: {}".format(content))
         #         for reply in replies:
@@ -102,4 +158,5 @@ def query(term):
         #         print("\n")
         #     print('\n------------------------------------------------------------------------')
 
-        return str(final_results_all)
+        #return str(final_results_all)
+        return final_results_all
