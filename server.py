@@ -13,7 +13,7 @@ app.config['TEMPLATES_AUTO_RELOAD'] = True
 CORS(app)
 PORT = 8080
 
-articles = json.load(open('articles.json', 'r'))
+#articles = json.load(open('articles.json', 'r'))
 
 @app.route('/')
 def hello_world():
