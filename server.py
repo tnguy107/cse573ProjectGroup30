@@ -4,10 +4,9 @@ from flask import Flask, request, redirect, jsonify, render_template, make_respo
 import os
 import json
 
-from search_requests import query
+from search_requests import query, default_query
 from urllib.parse import quote_plus
 
-#app = Flask(__name__)
 app = Flask(__name__, static_folder='./static')
 app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0
 app.config['TEMPLATES_AUTO_RELOAD'] = True
@@ -20,15 +19,22 @@ articles = json.load(open('articles.json', 'r'))
 def hello_world():
     return render_template('index.html')
 
-@app.route('/search/', methods=['GET'])
+@app.route('/search/')
 def search_articles():
-    #data = jsonify(articles)
-    #return make_response({"response": '+result+'})
-    search_term = request.args['searchTerm'].strip()
-    filters = request.args['selectedFilters'].strip()
-    print("search term", search_term, "filters", filters)
-    results = query(term=search_term)
-    return results
+    if request.args['searchTerm']:
+        search_term = request.args['searchTerm'].strip()
+        filters = request.args['selectedFilters'].strip()
+        print("search term", search_term, "filters", filters)
+        results = query(term=search_term)
+    else:
+        results = default_query()
+
+    for i in range(len(results)):
+        results[i] = results[i][0]
+    final_result = {'articles': results}
+
+    return final_result
+
 
 if __name__ == "__main__":
     app.run(port=PORT)
