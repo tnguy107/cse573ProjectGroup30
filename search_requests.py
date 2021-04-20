@@ -61,7 +61,7 @@ def query(term):
         #######################################################################
         # uncomment next line to return up to 800 results
         # with urlopen('http://localhost:8983/solr/metamapData/select?q={}&rows=800'.format(term)) as url: 
-        with urlopen('http://localhost:8983/solr/metamapData/select?q=SymptomName%3A{}'.format(term)) as u: #return upto 10 results by default
+        with urlopen('http://localhost:8983/solr/metamapData/select?q=*%3A{}'.format(term)) as u: #return upto 10 results by default
             result1 = json.loads(u.read().decode())
         
         # post_num is the list of post numbers (used for Query 2)
