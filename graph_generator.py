@@ -82,8 +82,8 @@ class searchNetwork():
                 elif node['type'] == 'bodypart':
                     node['color'] = '#ffc2c2'
             
-			# Use a low max-velocity so the graph doesn't move around too much
-            # nt.show_buttons()
+	    # nt.show_buttons()
+	    # Use a low max-velocity so the graph doesn't move around too much
             nt.set_options("""
             var options = {
             "nodes": {
