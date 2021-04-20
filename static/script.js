@@ -34,6 +34,12 @@ searchButton.addEventListener("click", (e) => {
 	loadData();
 });
 
+//Sid: Added event listener for "Network" button
+const networkButton = document.querySelector("#networkBtn");
+networkButton.addEventListener("click", (e) => {
+	showNetwork();
+});
+
 // divs inside which the respective HTML will be updated
 const articlesWrapper = document.querySelector(".results");
 const filtersWrapper = document.querySelector(".filter-content");
@@ -121,6 +127,31 @@ const loadData = async () => {
 	}
 	clearFiltersAndSearch();
 };
+
+
+const showNetwork = async () => {
+	searchTerm = searchField.value;
+	const netParams = new URLSearchParams({
+		searchTerm,
+		selectedFilters,
+	});
+	//Sid: add new query to draw network
+	const netUrl = "http://127.0.0.1:8080/network";
+	const netQueryURL = `${netUrl}?${netParams.toString()}`;
+	const netResponse = await fetch(netQueryURL, {
+		headers: {
+			"Content-Type": "application/json",
+			Accept: "application/json",
+		},
+	});
+    const netData = await netResponse.json();
+    if (netData.results == "none") {
+        alert("No exact matches.")
+    }
+
+};
+
+
 
 const init = () => {
 	loadData();
