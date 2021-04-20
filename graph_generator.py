@@ -51,15 +51,15 @@ class searchNetwork():
         # input keywords in input
         # No results for "cough"
         # input = ["Coughing"]
-        for i in [input]:
-            try:
-                #print(nx.node_connected_component(self.G, i))
-                connected = nx.node_connected_component(self.G, i)
-                c = nx.edges(self.G, i)
-                self.H.add_edges_from(c)
-            except KeyError:
-                print("No results")
-                connected = ''
+        #for i in input:
+        try:
+            #print(nx.node_connected_component(self.G, input))
+            connected = nx.node_connected_component(self.G, input)
+            c = nx.edges(self.G, input)
+            self.H.add_edges_from(c)
+        except KeyError:
+            print("No results")
+            connected = ''
 
         if connected:
             #nx.draw(H, node_size=40)
