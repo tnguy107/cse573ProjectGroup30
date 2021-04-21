@@ -25,7 +25,7 @@ document.addEventListener("click", (e) => {
 
 const applyFilterButton = document.querySelector(".apply-filters");
 applyFilterButton.addEventListener("click", (e) => {
-	loadData();
+	filterData();
 });
 
 const searchField = document.querySelector("#search");
@@ -122,8 +122,48 @@ const loadData = async () => {
 	clearFiltersAndSearch();
 };
 
+//filter data 
+const filterData = async () => {
+	url1 = "http://127.0.0.1:8080/filter";
+	searchTerm = searchField.value;
+	const params = new URLSearchParams({
+		searchTerm,
+		selectedFilters,
+	});
+	const queryURL = `${url1}?${params.toString()}`;
+
+	const response = await fetch(queryURL, {
+		headers: {
+			"Content-Type": "application/json",
+			Accept: "application/json",
+		},
+	});
+	const data = await response.json();
+	populateDataOnScreen(data);
+	filtersFromPreviousSearch = selectedFilters;
+	if (filtersFromPreviousSearch.length > 0) {
+		filtersFromPreviousSearchDiv.innerHTML = `
+           <p>Filters Selected:  ${filtersFromPreviousSearch.join(", ")}</p>
+        `;
+		filtersFromPreviousSearchDiv.style.display = "block";
+	}
+	clearFiltersAndSearch();
+};
+
 const init = () => {
 	loadData();
 };
 
 init();
+
+
+// ignore: UML testing
+// function umlsSearch(input){
+// 	var jqXHR = $.ajax({
+//         type: "POST",
+//         url: "../umls.py",
+//         async: false,
+//         data: { param: input }
+//     });
+// 	return jqXHR.responseText;
+// }

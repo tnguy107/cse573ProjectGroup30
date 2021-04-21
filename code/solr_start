@@ -1,0 +1,2 @@
+solr-8.8.1/bin/solr start -c -p 8983 -s solr-8.8.1/example/cloud/node1/solr
+solr-8.8.1/bin/solr start -c -p 7574 -s solr-8.8.1/example/cloud/node2/solr -z localhost:9983
