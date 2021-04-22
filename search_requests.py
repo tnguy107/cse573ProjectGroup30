@@ -2,19 +2,21 @@ from urllib.request import urlopen
 from urllib.parse import quote_plus
 import json
 import ast
+import random
 # TODO: We could use truecase to try put the text back into original casing since everything is lowercase currently
 #import truecase
 
 def default_query():
     # Some default articles to show when the user first opens the page or submits a search with no search term
-    # TODO: Find a way to return all or a large number of articles in a random order
-    post_url = [
-        'https://www.medhelp.org/posts/Coronavirus/COVID-19-Evaluating-the-risk/show/3063200',
-        'https://patient.info/forums/discuss/painful-mouth-throat-post-covid-756606',
-        'https://covid19.camhx.ca/mod/forum/discuss.php?d=63',
-        'https://forums.livescience.com/forums/coronavirus-epidemiology.42/?prefix_id=8',
-        'https://connect.mayoclinic.org/discussion/copd-and-the-covid-19-vaccine/',
-        ]
+    # Get n articles from each site and randomize the order
+    post_url = []
+    for site in ['medhelp', 'camhx', 'livescience', 'mayoclinic', 'patient.info']:
+        with urlopen('http://localhost:8983/solr/allData/select?q=url%3A*{}*&rows=5'.format(site)) as u:  # return upto 10 results by default
+            result = json.loads(u.read().decode())
+        for res in result['response']['docs']:
+            post_url.append(res['url'][0])
+
+    random.shuffle(post_url)
 
     #######################################################################
     # Query 3: Get the content, replies, and subreplies of a group of posts
@@ -22,8 +24,7 @@ def default_query():
     unique_url = list(set(post_url))
     final_results_all = []
     for url in unique_url:
-        with urlopen('http://localhost:8983/solr/allData/select?q=url%3A%22{}%22'.format(
-                url)) as u:  # return upto 10 results by default
+        with urlopen('http://localhost:8983/solr/allData/select?q=url%3A%22{}%22'.format(url)) as u:  # return upto 10 results by default
             result3 = json.loads(u.read().decode())
 
         final_results = []
@@ -61,7 +62,7 @@ def query(term):
         #######################################################################
         # uncomment next line to return up to 800 results
         # with urlopen('http://localhost:8983/solr/metamapData/select?q={}&rows=800'.format(term)) as url: 
-        with urlopen('http://localhost:8983/solr/metamapData/select?q=*%3A{}'.format(term)) as u: #return upto 10 results by default
+        with urlopen('http://localhost:8983/solr/metamapData/select?q=SymptomName%3A{0}%20OR%20TreatmentName%3A{0}%20OR%20DrugName%3A{0}%20OR%20BodypartName%3A{0}'.format(quote_plus(term))) as u: #return upto 10 results by default
             result1 = json.loads(u.read().decode())
         
         # post_num is the list of post numbers (used for Query 2)
@@ -158,5 +159,4 @@ def query(term):
         #         print("\n")
         #     print('\n------------------------------------------------------------------------')
 
-        #return str(final_results_all)
         return final_results_all
