@@ -46,7 +46,6 @@ def default_query():
 
     return final_results_all
 
-
 def query(term):
     runLoop = True
     while runLoop:
@@ -61,7 +60,7 @@ def query(term):
         #######################################################################
         # uncomment next line to return up to 800 results
         # with urlopen('http://localhost:8983/solr/metamapData/select?q={}&rows=800'.format(term)) as url: 
-        with urlopen('http://localhost:8983/solr/metamapData/select?q=SymptomName%3A{}'.format(term)) as u: #return upto 10 results by default
+        with urlopen('http://localhost:8983/solr/metamapData/select?q={}&rows=100'.format(term)) as u: #return upto 10 results by default
             result1 = json.loads(u.read().decode())
         
         # post_num is the list of post numbers (used for Query 2)
@@ -140,28 +139,25 @@ def query(term):
             # 'replies' format: {'content', 'sub_replies}
             final_results_all.append(final_results)   
         
-        # # print out final result
-        # for url_res in final_results_all:
-        #     for res in url_res:
-        #         title = res['title']
-        #         author = res['author']
-        #         url = res['url']
-        #         content = res['content']
-        #         replies = res['replies']
-        #         print("Title: {}".format(title))
-        #         print("Author: {}".format(author))
-        #         print("Url: {}".format(url))
-        #         print("Content: {}".format(content))
-        #         for reply in replies:
-        #             print("\tReply: {}".format(reply['content']) )
-        #             for subreply in reply['sub_replies']:
-        #                 if subreply != '':
-        #                     print("\t\tSubreply: {}".format(subreply))
-        #         print("\n")
-        #     print('\n------------------------------------------------------------------------')
+       
 
-        #return str(final_results_all)
-        return final_results_all
+        
+
+        #dict to sort results (len, post)
+        sorted_results = {}
+        for post in final_results_all:
+            sorted_results[len(post[0]['replies'])] = post
+        # for i in range(len(final_results_all)):
+        #     print("replies: " + final_results_all[i]["replies"])
+        
+        
+        #list of post in sorted order
+        final_sorted_results = []
+        for i in reversed(sorted (sorted_results.keys())):
+            final_sorted_results.append(sorted_results[i])
+
+        print (len(final_sorted_results))
+        return final_sorted_results
 
 def filter_query(term, filter_terms):
     print("start filter_query: \n")
@@ -234,5 +230,41 @@ def filter_query(term, filter_terms):
         # Format of final_results_all: [{title1, author1, url1, content1, replies1}, {title2, author2, url2, content2, replies2}, ...]
         # 'replies' format: {'content', 'sub_replies}
         final_results_all.append(final_results)
-    return final_results_all
 
+
+
+        #dict to sort results (len, post)
+        sorted_results = {}
+        for post in final_results_all:
+            sorted_results[len(post[0]['replies'])] = post
+        # for i in range(len(final_results_all)):
+        #     print("replies: " + final_results_all[i]["replies"])
+        
+        
+        #list of post in sorted order
+        final_sorted_results = []
+        for i in reversed(sorted (sorted_results.keys())):
+            final_sorted_results.append(sorted_results[i])
+
+        print (len(final_sorted_results))
+        return final_sorted_results
+
+ # # print out final result
+        # for url_res in final_results_all:
+        #     for res in url_res:
+        #         title = res['title']
+        #         author = res['author']
+        #         url = res['url']
+        #         content = res['content']
+        #         replies = res['replies']
+        #         print("Title: {}".format(title))
+        #         print("Author: {}".format(author))
+        #         print("Url: {}".format(url))
+        #         print("Content: {}".format(content))
+        #         for reply in replies:
+        #             print("\tReply: {}".format(reply['content']) )
+        #             for subreply in reply['sub_replies']:
+        #                 if subreply != '':
+        #                     print("\t\tSubreply: {}".format(subreply))
+        #         print("\n")
+        #     print('\n------------------------------------------------------------------------')
