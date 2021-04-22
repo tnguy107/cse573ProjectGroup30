@@ -9,6 +9,7 @@ import networkx as nx
 from itertools import combinations
 import pandas as pd
 import ast
+import random
 from pyvis.network import Network
 
 
@@ -28,6 +29,23 @@ class searchNetwork():
         # creating the graph
         self.G = nx.Graph()
         self.H = nx.Graph()
+        self.nt = Network(height='100%', width='100%', )
+        self.nt.set_options("""
+        var options = {
+          "edges": {
+            "color": {
+              "inherit": "both",
+              "opacity": 0.75
+            },
+            "smooth": false
+          },
+          "physics": {
+            "maxVelocity": 2,
+            "minVelocity": 0.2,
+            "solver": "forceAtlas2Based"
+          }
+        }
+        """)
 
         for i in range(len(symptoms)):
             for j in range(len(symptoms[i])):
@@ -47,10 +65,10 @@ class searchNetwork():
         #nx.draw(self.G, node_size=40)
 
     def create_edges(self, search_terms):
-        nt = Network(height='100%', width='100%', )
         # input keywords in input
         # No results for "cough"
         #inputs = ["slight fever", "Vertigo", "Gingival Diseases", "Renal carnitine transport defect", "Arthralgia"]
+
         inputs = list(set(search_terms))
         inputs = [i.lower() for i in inputs]
         connected = ''
@@ -76,14 +94,16 @@ class searchNetwork():
         if connected:
             #nx.draw(H, node_size=40)
             #print(self.H.nodes())
-            nt.from_nx(self.H, default_node_size=15)
+            self.nt.from_nx(self.H, default_node_size=15)
             # Set hover text, remove labels
-            for node in nt.nodes:
+            for node in self.nt.nodes:
                 # Title is printed on hover (need to add), label is printed without hover (need to remove)
-                node['title'] = node['label']
-                node.pop('label', None)
-                name = node['title']
-                node['type'] = self.G.nodes[name]['type']
+                if 'label' in node.keys():
+                    node['title'] = node['label']
+                    node.pop('label', None)
+                    name = node['title']
+                    node['type'] = self.G.nodes[name]['type']
+
                 # Assign color based on type of term and darken nodes based on number of degrees
                 # Don't darken nodes that are search terms, otherwise they will become black
                 if node['title'] not in inputs:
@@ -108,28 +128,44 @@ class searchNetwork():
                     print(node['title'])
                 # else:
                 #     #node['color'] = '#d6d6d6'
-            # Use a low max-velocity so the graph doesn't move around too much
-            #nt.show_buttons()
-            nt.set_options("""
-            var options = {
-              "edges": {
-                "color": {
-                  "inherit": "both",
-                  "opacity": 0.75
-                },
-                "smooth": false
-              },
-              "physics": {
-                "maxVelocity": 2,
-                "minVelocity": 0.2,
-                "solver": "forceAtlas2Based"
-              }
-            }
-            """)
-            nt.show('nx.html')
+
 
         #return list(connected)
-        return node_degrees
+
+        # Create a set of filter terms based on number of degrees
+        symptom_filters = []
+        treatment_filters = []
+        bodypart_filters = []
+        drug_filters = []
+
+        for node in self.nt.nodes:
+            term_name = node['title']
+            term_type = node['type']
+            # Only return terms that are related to ALL of the search terms (may change in future)
+            # Only take the first 5 terms for each category
+            if node_degrees[term_name] == len(search_terms) and term_name not in search_terms:
+                if term_type == 'symptom':
+                    symptom_filters.append(term_name)
+                elif term_type == 'treatment':
+                    treatment_filters.append(term_name)
+                elif term_type == 'bodypart':
+                    bodypart_filters.append(term_name)
+                elif term_type == 'drug':
+                    drug_filters.append(term_name)
+
+        random.shuffle(symptom_filters)
+        random.shuffle(treatment_filters)
+        random.shuffle(bodypart_filters)
+        random.shuffle(drug_filters)
+        filter_terms = [{'title': 'Treatments', 'filterItems': treatment_filters[:5]}, {'title': 'Symptoms', 'filterItems': symptom_filters[:5]}]
+
+        return filter_terms
+
+    def show_network(self):
+        # Use a low max-velocity so the graph doesn't move around too much
+        # nt.show_buttons()
+
+        self.nt.show('nx.html')
 
     def clear_edges(self):
         self.H = nx.Graph()

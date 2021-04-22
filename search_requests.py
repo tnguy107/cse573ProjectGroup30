@@ -63,8 +63,11 @@ def query(term):
         # uncomment next line to return up to 800 results
         # with urlopen('http://localhost:8983/solr/metamapData/select?q={}&rows=800'.format(term)) as url: 
         with urlopen('http://localhost:8983/solr/metamapData/select?q=SymptomName%3A{0}%20OR%20TreatmentName%3A{0}%20OR%20DrugName%3A{0}%20OR%20BodypartName%3A{0}'.format(quote_plus(term))) as u: #return upto 10 results by default
-            result1 = json.loads(u.read().decode())
-        
+           result1 = json.loads(u.read().decode())
+        # with urlopen('http://localhost:8983/solr/metamapData/select?q={}'.format(quote_plus(term))) as u: #return upto 10 results by default
+        #     result1 = json.loads(u.read().decode())
+
+
         # post_num is the list of post numbers (used for Query 2)
         post_num = []
         # post_url is the list of urls (used for Query 3)
@@ -160,3 +163,82 @@ def query(term):
         #     print('\n------------------------------------------------------------------------')
 
         return final_results_all
+
+
+def filter_query(term, filter_terms):
+    if filter_terms == '':
+        return default_query()
+    print("start filter_query: \n")
+    #######################################################################
+    # Query 1: Search for a term across all posts
+    #######################################################################
+    # uncomment next line to return up to 800 results
+    # with urlopen('http://localhost:8983/solr/metamapData/select?q={}&rows=800'.format(term)) as url:
+    with urlopen('http://localhost:8983/solr/metamapData/select?q=SymptomName%3A{0}%20OR%20TreatmentName%3A{0}%20OR%20DrugName%3A{0}%20OR%20BodypartName%3A{0}'.format(
+            term)) as u:  # return upto 10 results by default
+        result1 = json.loads(u.read().decode())
+
+    # post_url is the list of urls (used for Query 3)
+    post_url = []
+    for res in result1['response']['docs']:
+        post_url.append(res['PostLink'][0])
+
+    # if no results, return no results
+    if not post_url:
+        print("No results.\n")
+        return [[{'title': 'No results', 'author': '', 'url': '', 'content': '', 'replies': ''}]]
+
+    print("url before filter: " + '\n'.join(list(set(post_url))))
+    # for each url in list, if no filter terms exists, remove url
+    for url in list(set(post_url)):
+        # old = (':','/')
+        # new = ("%3A",'%2F')
+        # for x, y in zip(old, new):
+        processed_url = url.replace(':', '%3A').replace('/', '%2F')
+        # term = filter_terms[0]
+        all_filter_term = '('
+        print(' '.join(filter_terms))
+        for term in filter_terms.split(','):
+            print("\nAll filter terms before add: " + all_filter_term)
+            all_filter_term += term.replace(' ', '%20+') + '+'
+            print("\nAll filter terms after add: " + all_filter_term)
+        all_filter_term += ')'
+        print(all_filter_term)
+        # with urlopen('http://localhost:8983/solr/metamapData/select?q=%2B{}%20%2B%22{}%22'.format(term, processed_url)) as u:
+        with urlopen('http://localhost:8983/solr/metamapData/select?q=(SymptomName%3A{0}%20OR%20TreatmentName%3A{0}%20OR%20DrugName%3A{0}%20OR%20BodypartName%3A{0})%20AND%20(PostLink:%22{1}%22)'.format(all_filter_term,
+                                                                                            processed_url)) as u:
+            print("urlopen: " + 'http://localhost:8983/solr/metamapData/select?q=(SymptomName%3A{0}%20OR%20TreatmentName%3A{0}%20OR%20DrugName%3A{0}%20OR%20BodypartName%3A{0})%20AND%20(%22{1}%22)'.format(all_filter_term,
+                                                                                                             processed_url))
+            resultURLSearch = json.loads(u.read().decode())
+            if not resultURLSearch['response']['docs']:
+                post_url.remove(url)
+
+    print("url after filter: " + '\n'.join(list(set(post_url))))
+    #######################################################################
+    # Query 3: Get the content, replies, and subreplies of a group of posts
+    #######################################################################
+    unique_url = list(set(post_url))
+    final_results_all = []
+    for url in unique_url:
+        with urlopen('http://localhost:8983/solr/allData/select?q=url%3A%22{}%22'.format(
+                url)) as u:  # return upto 10 results by default
+            result3 = json.loads(u.read().decode())
+
+        final_results = []
+        for res in result3['response']['docs']:
+            title = res['title'][0]
+            if 'author' in res.keys():
+                author = res['author'][0]
+            else:
+                author = 'unknown'
+            content = res['content'][0]
+            replies = res['replies'][0]
+            replies_list = ast.literal_eval(replies)
+
+            final_results.append(
+                {'title': title, 'author': author, 'url': url, 'content': content, 'replies': replies_list})
+
+        # Format of final_results_all: [{title1, author1, url1, content1, replies1}, {title2, author2, url2, content2, replies2}, ...]
+        # 'replies' format: {'content', 'sub_replies}
+        final_results_all.append(final_results)
+    return final_results_all
