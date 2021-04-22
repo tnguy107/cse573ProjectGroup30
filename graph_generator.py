@@ -15,7 +15,7 @@ from pyvis.network import Network
 class searchNetwork():
 
     def __init__(self):
-        df = pd.read_csv('all_terms_metamap_categories.csv')
+        df = pd.read_csv('all_terms_metamap_categories_lowercase.csv')
         symptoms = [ast.literal_eval(term_list) for term_list in df['symptoms']]
         treatments = [ast.literal_eval(term_list) for term_list in df['treatments']]
         drugs = [ast.literal_eval(term_list) for term_list in df['drugs']]
@@ -52,6 +52,7 @@ class searchNetwork():
         # No results for "cough"
         #inputs = ["slight fever", "Vertigo", "Gingival Diseases", "Renal carnitine transport defect", "Arthralgia"]
         inputs = list(set(search_terms))
+        inputs = [i.lower() for i in inputs]
         connected = ''
         for i in inputs:
             try:
