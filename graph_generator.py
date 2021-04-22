@@ -44,27 +44,38 @@ class searchNetwork():
                 b.append(j)
             self.G.add_edges_from(b)
 
-            # nx.draw(G, node_size=40)
+        #nx.draw(self.G, node_size=40)
 
-    def create_edges(self, input):
+    def create_edges(self, search_terms):
         nt = Network(height='100%', width='100%', )
         # input keywords in input
         # No results for "cough"
-        # input = ["Coughing"]
-        #for i in input:
-        try:
-            #print(nx.node_connected_component(self.G, input))
-            connected = nx.node_connected_component(self.G, input)
-            c = nx.edges(self.G, input)
-            self.H.add_edges_from(c)
-        except KeyError:
-            print("No results")
-            connected = ''
+        #inputs = ["slight fever", "Vertigo", "Gingival Diseases", "Renal carnitine transport defect", "Arthralgia"]
+        inputs = list(set(search_terms))
+        connected = ''
+        for i in inputs:
+            try:
+                #print(nx.node_connected_component(self.G, input))
+                connected = nx.node_connected_component(self.G, i)
+                c = nx.edges(self.G, i)
+                self.H.add_edges_from(c)
+            except KeyError:
+                print("No results")
+
+        # dict = {}
+        # for i in inputs:
+        #     dict[i] = self.H.degree(i)
+
+        node_degrees = {}
+        for node in self.G.nodes:
+            degrees = self.H.degree(node)
+            if type(degrees) == int and degrees > 0:  # can change to 1 or more
+                node_degrees[node] = degrees
 
         if connected:
             #nx.draw(H, node_size=40)
             #print(self.H.nodes())
-            nt.from_nx(self.H, default_node_size=10)
+            nt.from_nx(self.H, default_node_size=15)
             # Set hover text, remove labels
             for node in nt.nodes:
                 # Title is printed on hover (need to add), label is printed without hover (need to remove)
@@ -72,39 +83,64 @@ class searchNetwork():
                 node.pop('label', None)
                 name = node['title']
                 node['type'] = self.G.nodes[name]['type']
-                # Assign color based on type of term
+                # Assign color based on type of term and darken nodes based on number of degrees
+                # Don't darken nodes that are search terms, otherwise they will become black
+                if node['title'] not in inputs:
+                    num_degrees = node_degrees[node['title']]
+                else:
+                    node['borderWidth'] = 2
+                    num_degrees = 1
+
                 if node['type'] == 'symptom':
-                    node['color'] = '#85dcff'
+                    blue = '#72c1e0'
+                    node['color'] = color_variant(blue, -75*(num_degrees-2))  # first number is multiplier (rate of darkening), second is the starting shade (higher=brighter)
                 elif node['type'] == 'treatment':
-                    node['color'] = '#9ef78b'
+                    green = '#9ef78b'
+                    node['color'] = color_variant(green, -75*(num_degrees-2))
                 elif node['type'] == 'drug':
-                    node['color'] = '#f7f781'
+                    yellow = '#7fcf6d'
+                    node['color'] = color_variant(yellow, -75*(num_degrees-2))
                 elif node['type'] == 'bodypart':
-                    node['color'] = '#ffc2c2'
-            
-	    # nt.show_buttons()
-	    # Use a low max-velocity so the graph doesn't move around too much
+                    red = '#e09b9b'
+                    node['color'] = color_variant(red, -75*(num_degrees-2))
+                if num_degrees > 1:
+                    print(node['title'])
+                # else:
+                #     #node['color'] = '#d6d6d6'
+            # Use a low max-velocity so the graph doesn't move around too much
+            #nt.show_buttons()
             nt.set_options("""
             var options = {
-            "nodes": {
-                "borderWidth": 1.5
-            },
-            "edges": {
-              "color": {
-                "inherit": false,
-                "opacity": 0.75
-            },
+              "edges": {
+                "color": {
+                  "inherit": "both",
+                  "opacity": 0.75
+                },
                 "smooth": false
               },
               "physics": {
-                "maxVelocity": 1,
-                "minVelocity": 0.2
+                "maxVelocity": 2,
+                "minVelocity": 0.2,
+                "solver": "forceAtlas2Based"
               }
             }
             """)
             nt.show('nx.html')
 
-        return list(connected)
+        #return list(connected)
+        return node_degrees
 
     def clear_edges(self):
         self.H = nx.Graph()
+
+
+# Copied from: https://chase-seibert.github.io/blog/2011/07/29/python-calculate-lighterdarker-rgb-colors.html
+def color_variant(hex_color, brightness_offset=1):
+    """ takes a color like #87c95f and produces a lighter or darker variant """
+    if len(hex_color) != 7:
+        raise Exception("Passed %s into color_variant(), needs to be in #87c95f format." % hex_color)
+    rgb_hex = [hex_color[x:x+2] for x in [1, 3, 5]]
+    new_rgb_int = [int(hex_value, 16) + brightness_offset for hex_value in rgb_hex]
+    new_rgb_int = [min([255, max([0, i])]) for i in new_rgb_int] # make sure new values are between 0 and 255
+    # hex() produces "0x88", we want just "88"
+    return "#" + "".join([hex(i)[2:] for i in new_rgb_int])
