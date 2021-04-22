@@ -15,6 +15,7 @@ PORT = 8080
 
 #articles = json.load(open('articles.json', 'r'))
 net = searchNetwork()
+search_history = []
 
 
 @app.route('/')
@@ -26,6 +27,7 @@ def search_articles():
     if request.args['searchTerm']:
         search_term = request.args['searchTerm'].strip()
         filters = request.args['selectedFilters'].strip()
+        search_history.append(search_term)
         #print("search term", search_term, "filters", filters)
         results = query(term=search_term)
     else:
@@ -42,8 +44,9 @@ def generate_network():
     net.clear_edges()
     if request.args['searchTerm']:
         search_term = request.args['searchTerm'].strip()
+        search_history.append(search_term)
         #print("search term", search_term)
-        conn_nodes = net.create_edges(input=search_term)
+        conn_nodes = net.create_edges(search_terms=search_history)
         if conn_nodes:
             return {'results': conn_nodes}
         else:
