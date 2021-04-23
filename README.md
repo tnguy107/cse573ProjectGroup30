@@ -1,5 +1,5 @@
 # cse573ProjectGroup30
-Mining Healthcare Website
+Mining Healthcare Websites
 
 
 ## Required packages:
